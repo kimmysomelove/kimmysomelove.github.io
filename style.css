@@ -818,11 +818,13 @@ footer::before {
 }
 
 .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+  margin-top: 1rem; /* Already present */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
+
 
 .footer-links a {
     color: var(--light-color);
