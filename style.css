@@ -767,13 +767,15 @@ nav ul li a:hover {
 }
 
 /* Footer */
-footer {
-    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-    color: var(--light-color);
-    padding: 3rem 0;
-    position: relative;
-    overflow: hidden;
+
+    .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
+
 
 footer::before {
     content: '';
