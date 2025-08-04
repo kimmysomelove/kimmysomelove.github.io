@@ -4,84 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Customer Reviews</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      background: #ffffff;
       margin: 0;
-      background: #fff;
+      padding: 0;
+      color: #333;
     }
-    .header {
+    header {
+      background: linear-gradient(to right, #fceabb, #e6f9d0);
       padding: 30px;
       text-align: center;
-      background: linear-gradient(90deg, #ffeb3b, #81c784);
-      color: #f44336;
     }
-    .header h1 {
-      margin: 0;
-      font-size: 36px;
+    header h1 {
+      font-size: 2em;
+      color: #ff6600;
+      margin-bottom: 10px;
     }
-    .subheader {
+    header p {
+      font-size: 1.2em;
       color: #555;
-      font-size: 16px;
-      margin-top: 5px;
     }
     .reviews {
-      padding: 20px;
       max-width: 800px;
-      margin: auto;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .review {
-      font-size: 18px;
-      margin-bottom: 15px;
-      line-height: 1.5;
+    .reviews p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
-    .artist-section {
-      margin-top: 40px;
+    h2 {
       text-align: center;
-    }
-    .artist-section h2 {
-      color: #4caf50;
-      font-size: 28px;
-      margin-bottom: 10px;
+      color: #2b8a3e;
+      font-size: 1.8em;
+      margin-top: 60px;
     }
     .divider {
       width: 80px;
-      height: 3px;
-      background-color: #ffeb3b;
+      height: 4px;
+      background: gold;
       margin: 10px auto 30px;
+      border-radius: 5px;
     }
-    .art-image {
-      max-width: 90%;
-      height: auto;
-      margin: 20px auto;
-      display: block;
-      border: 2px solid #ddd;
-      border-radius: 6px;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0 20px 60px;
+    }
+    .image-gallery img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <div class="header">
+  <header>
     <h1>Customer Reviews</h1>
-    <div class="subheader">What families are saying about the Earth’s Pollinators coloring books:</div>
-  </div>
+    <p>What families are saying about the Earth’s Pollinators coloring books:</p>
+  </header>
 
   <div class="reviews">
-    <div class="review">“My kids love love love this book! They won’t stop talking about bees and frogs now.” – Rachel M.</div>
-    <div class="review">“I learned so much reading it with my daughter. The illustrations are just gorgeous!” – Jason L.</div>
-    <div class="review">“Perfect for our homeschool curriculum. The riddles and facts are so engaging.” – Emily K.</div>
-    <div class="review">“We colored the whole book together. I had no idea how cool ladybugs are!” – Sofia W.</div>
-
-    <div class="artist-section">
-      <h2>Our Young Artists in Action</h2>
-      <div class="divider"></div>
-      
-      <!-- Artwork placeholders — replace filenames once images are uploaded -->
-      <img src="images/colored_carpenter_bee.jpg" alt="Colored Carpenter Bee page" class="art-image">
-      <img src="images/colored_hummingbird.jpg" alt="Colored Anna's Hummingbird page" class="art-image">
-    </div>
+    <p>“My 4-year-old wakes up asking to color more pages from this book. She already knows what a bee balm is!” – Jamie R.</p>
+    <p>“As a homeschool mom, I’m obsessed with how well this book blends art and science. 10/10!” – Danielle K.</p>
+    <p>“This was a hit at our Earth Day event. We printed a few pages as samples and kids couldn’t get enough!” – Mara N.</p>
+    <p>“The line art is so clean and joyful — even my 10-year-old enjoyed coloring with her little brother.” – Lucas A.</p>
+    <p>“It’s rare to find a book that sparks both curiosity and creativity. We learned *so much*!” – Priya C.</p>
   </div>
+
+  <h2>Our Young Artists in Action</h2>
+  <div class="divider"></div>
+
+  <div class="image-gallery">
+    <img src="images/enhanced_carpenter_bee.jpg" alt="Colored Carpenter Bee Page">
+    <img src="images/enhanced_annas_hummingbird.jpg" alt="Colored Anna's Hummingbird Page">
+  </div>
+
+  <footer>
+    © 2025 Kimmy Some Love. All Rights Reserved.
+  </footer>
 </body>
 </html>
