@@ -3,34 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Customer Reviews – Earth’s Pollinators</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Customer Reviews</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+    }
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: linear-gradient(90deg, #ffeb3b, #81c784);
+      color: #f44336;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .subheader {
+      color: #555;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    .reviews {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .review {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+    .artist-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .artist-section h2 {
+      color: #4caf50;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .divider {
+      width: 80px;
+      height: 3px;
+      background-color: #ffeb3b;
+      margin: 10px auto 30px;
+    }
+    .art-image {
+      max-width: 90%;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <div class="header">
     <h1>Customer Reviews</h1>
-    <p>What families are saying about the Earth’s Pollinators coloring books:</p>
-  </header>
+    <div class="subheader">What families are saying about the Earth’s Pollinators coloring books:</div>
+  </div>
 
-  <section class="reviews">
-    <div class="review">
-      <blockquote>"My kids love love this book! They won’t stop talking about bees and frogs now." – Rachel M.</blockquote>
-    </div>
-    <div class="review">
-      <blockquote>"I learned so much reading it with my daughter. The illustrations are just gorgeous!" – Jason L.</blockquote>
-    </div>
-    <div class="review">
-      <blockquote>"Perfect for our homeschool curriculum. The riddles and facts are so engaging." – Emily K.</blockquote>
-    </div>
-    <div class="review">
-      <blockquote>"We colored the whole book together. I had no idea how cool ladybugs are!" – Sofia W.</blockquote>
-    </div>
+  <div class="reviews">
+    <div class="review">“My kids love love love this book! They won’t stop talking about bees and frogs now.” – Rachel M.</div>
+    <div class="review">“I learned so much reading it with my daughter. The illustrations are just gorgeous!” – Jason L.</div>
+    <div class="review">“Perfect for our homeschool curriculum. The riddles and facts are so engaging.” – Emily K.</div>
+    <div class="review">“We colored the whole book together. I had no idea how cool ladybugs are!” – Sofia W.</div>
 
-    <h2>Our Young Artists in Action</h2>
-    <div class="review-images">
-      <img src="images/FullSizeR.jpg" alt="Colored Carpenter Bee page" />
-      <img src="images/Resized_IMG_6786.jpeg" alt="Colored Anna’s Hummingbird page" />
+    <div class="artist-section">
+      <h2>Our Young Artists in Action</h2>
+      <div class="divider"></div>
+      
+      <!-- Artwork placeholders — replace filenames once images are uploaded -->
+      <img src="images/colored_carpenter_bee.jpg" alt="Colored Carpenter Bee page" class="art-image">
+      <img src="images/colored_hummingbird.jpg" alt="Colored Anna's Hummingbird page" class="art-image">
     </div>
-  </section>
+  </div>
 </body>
 </html>
