@@ -837,21 +837,36 @@ footer::before {
   gap: 0.5rem;
 }
 
+/* ===== Footer links ===== */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
 .footer-links a {
   background-color: #fff;
   color: #333;
   padding: 8px 14px;
   border-radius: 12px;
   text-decoration: none;
-  font-weight: bold;
+
+  /* Make the pills use your heading font and a consistent weight */
+  font-family: var(--heading-font);
+  font-weight: 600; /* change to 700 if you want it bolder */
+
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.2s ease, transform 0.1s ease-in-out;
 }
 
 .footer-links a:hover {
-  background-color: #ffdd57;
+  background-color: #ffd557;
   color: #000;
+  transform: translateY(-1px);
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
