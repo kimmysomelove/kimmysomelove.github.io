@@ -954,3 +954,31 @@ footer::before {
 .review-button:hover {
   background-color: #c1121f; /* darker red on hover */
 }
+/* Reviews page back-to-home button */
+.review-nav {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.review-button {
+  display: inline-block;
+  font-family: var(--heading-font, "Bubblegum Sans", cursive);
+  font-weight: 700;
+  letter-spacing: .3px;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #e94a4a;
+  color: #fff;
+  box-shadow: 0 4px 0 rgba(0,0,0,.15);
+  transition: transform .05s ease, box-shadow .05s ease, opacity .2s ease;
+}
+
+.review-button:hover {
+  opacity: .92;
+}
+
+.review-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0,0,0,.15);
+}
