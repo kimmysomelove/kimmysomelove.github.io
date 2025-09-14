@@ -18,8 +18,10 @@ h1, h2, h3, h4, h5, nav a {
     --bright-blue: #1E88E5; /* Bright blue */
     --bright-purple: #9C27B0; /* Bright purple */
     --text-color: #333333;
-    --light-color: #FFFFFF;
+    --light-color: #FFFFFF;--background-color: #fdf6e3; /* RESET from dark green to pale cream */
+
 --background-color: #fffde6; /* Light cream */
+--highlight-green: #2e4c2c;
 
 
 
