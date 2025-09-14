@@ -102,27 +102,31 @@
                 </div>
             </div>
         </section>
+<section id="contact" style="background-color: #f4f4f4; padding: 60px 20px;">
+  <h2 style="text-align: center;">Get In Touch</h2>
+  <p style="text-align: center; max-width: 600px; margin: 0 auto 30px;">
+    Questions, collaboration ideas, or feedback? I'd love to hear from you!
+    Just send a quick note below and I’ll get back to you.
+  </p>
 
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2>Contact</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Get in Touch</h3>
-                        <p>Have questions or want to say hello? We'd love to hear from you.</p>
-                        <p>Subscribe for updates on new book releases, riddles, and coloring page previews.</p>
-                    </div>
-                    <div class="contact-form">
-                        <form action="https://formspree.io/f/xkgrewok" method="POST">
-                            <input type="text" name="name" placeholder="Your Name" required />
-                            <input type="email" name="email" placeholder="Your Email" required />
-                            <textarea name="message" placeholder="Message (Optional)"></textarea>
-                            <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <form action="https://formspree.io/f/xkgrewok" method="POST" style="max-width: 500px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <label for="name" style="display: block; margin-bottom: 10px; font-weight: bold;">Your Name</label>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;">
+
+    <label for="email" style="display: block; margin-bottom: 10px; font-weight: bold;">Your Email</label>
+    <input type="email" id="email" name="_replyto" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;">
+
+    <label for="message" style="display: block; margin-bottom: 10px; font-weight: bold;">Message</label>
+    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;"></textarea>
+
+    <button type="submit" style="background-color: #3b9d4c; color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px;">
+      Send Message
+    </button>
+  </form>
+</section>
+
+        
+                        
     </main>
 
     <footer>
