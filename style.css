@@ -114,7 +114,8 @@ section {
 
 /* Top Header Styles */
 .top-header {
-    background: linear-gradient(to right, #FF5722, #FF9800, #E91E63);
+    background: linear-gradient(to right, #FFB347, #FFD700, #FFF8DC);
+
     padding: 1.5rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
