@@ -72,37 +72,68 @@
     <img src="images/southwestcover-left.png" alt="Southwest Book Left Side" style="width: 100%; height: auto; border-radius: 12px;">
   </div>
 
-<!-- Sample Pages Southwest -->
-<section style="background-color: #006400; padding: 60px 20px;">
-  <div style="max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-
-    <!-- Isabella Tiger Moth -->
-    <div style="flex: 1 1 300px; text-align: center;">
-      <img src="images/isabella-tiger-moth.png" alt="Isabella Tiger Moth Page" style="width: 100%; max-width: 300px; border-radius: 12px;">
-      <p><strong>Isabella Tiger Moth</strong><br><em>Pyrrharctia isabella</em></p>
-    </div>
-
-    <!-- Prickly Pear Cactus -->
-    <div style="flex: 1 1 300px; text-align: center;">
-      <img src="images/prickly-pear-cactus.png" alt="Prickly Pear Coloring Page" style="width: 100%; max-width: 300px; border-radius: 12px;">
-      <p><strong>Prickly Pear Cactus</strong><br><em>Opuntia spp.</em></p>
-    </div>
-
-    <!-- Xylocopa Bee -->
-    <div style="flex: 1 1 300px; text-align: center;">
-      <img src="images/xylocopa-bee-coloring.png" alt="Xylocopa Bee Coloring Page" style="width: 100%; max-width: 300px; border-radius: 12px; margin-bottom: 12px;">
-      <img src="images/xylocopa-bee-info.png" alt="Xylocopa Bee Info Page" style="width: 100%; max-width: 300px; border-radius: 12px;">
-      <p><strong>Xylocopa Bee</strong><br><em>Xylocopa spp.</em></p>
-    </div>
+<div class="sample-section">
+  <h2>Southwest Sample Pages</h2>
+  
+  <div class="sample-pair">
+    <img src="images/isabella-tiger-moth-coloring.jpg" alt="Isabella Tiger Moth Coloring Page">
+    <img src="images/isabella-tiger-moth-info.jpg" alt="Isabella Tiger Moth Info Page">
   </div>
 
-  <!-- Amazon Buy Button -->
-  <div style="text-align: center; margin-top: 40px;">
-    <a href="https://www.amazon.com/Pollinators-Insects-Beneficial-Friends-Southwest/dp/B0FPMMT5HW" target="_blank" style="background-color: #ffcc00; color: #000; padding: 14px 28px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block;">
-      🛒 Buy on Amazon
+  <div class="sample-pair">
+    <img src="images/prickly-pear-cactus-coloring.jpg" alt="Prickly Pear Coloring Page">
+    <img src="images/prickly-pear-cactus-info.jpg" alt="Prickly Pear Info Page">
+  </div>
+
+  <div class="sample-pair">
+    <img src="images/xylocopa-bee-coloring.jpg" alt="Xylocopa Bee Coloring Page">
+    <img src="images/xylocopa-bee-info.jpg" alt="Xylocopa Bee Info Page">
+  </div>
+
+  <div class="buy-button">
+    <a href="https://www.amazon.com/Pollinators-Insects-Beneficial-Friends-Southwest/dp/B0FPMMT5HW" target="_blank">
+      <button>🛒 Buy on Amazon</button>
     </a>
   </div>
-</section>
+</div>
+
+<style>
+.sample-section {
+  padding: 40px 20px;
+  background-color: #045d00;
+  color: white;
+  text-align: center;
+}
+.sample-pair {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.sample-pair img {
+  width: 45%;
+  max-width: 400px;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.buy-button {
+  margin-top: 30px;
+}
+.buy-button button {
+  background-color: #ffce00;
+  color: #000;
+  font-size: 1.1em;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.buy-button button:hover {
+  background-color: #f5b800;
+}
+</style>
 
       
 
