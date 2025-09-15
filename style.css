@@ -1086,81 +1086,76 @@ footer::before {
 .buy-button button:hover {
   background-color: #e68a00;
 }
-/* Force visible text + backgrounds for all key sections */
-.section,
-.book-section,
-.riddle-section,
-#mission,
-footer {
-  color: var(--text-color);
-  background-color: #fff;
-  font-family: var(--body-font);
-}
-/* ----------------------------
-   Default text = black
-   ---------------------------- */
-body, p, li, small, label, input, textarea {
-  color: #000;
-  font-size: 1em;
-  line-height: 1.6;
-  font-family: 'Nunito', sans-serif;
-}
-
-/* ----------------------------
-   Sample grid captions
-   ---------------------------- */
-.sample-item h3,
-.sample-item p,
-.sample-item small {
-  color: #000;
-  text-align: center;
-}
-
-/* ===========================
-   FOOTER + DARK SECTIONS
-   =========================== */
-
-/* Footer */
-footer {
-  background-color: #fdf6e3; /* cream background */
-  padding: 20px 0;
-  color: #000; /* black text */
-}
-
-footer .footer-links a {
-  color: #000;
-  font-size: 1rem;
-  margin: 0 12px;
-  text-decoration: none;
-}
-
-footer .footer-links a:hover {
-  text-decoration: underline;
-}
-
 /* Dark green announcement section */
-.dark-section,
 #southwest-announcement {
   background-color: #006400; /* dark green */
   color: #fff; /* white text */
   padding: 60px 20px;
 }
 
-.dark-section h1,
-.dark-section h2,
-.dark-section h3,
-.dark-section p,
-.dark-section small,
-#southwest-announcement h1,
-#southwest-announcement h2,
-#southwest-announcement h3,
-#southwest-announcement p,
-#southwest-announcement small {
-  color: #fff; /* keep text white inside dark sections */
-}
 
 /* Keep the gold Southwest title */
 #southwest-announcement h1 {
   color: #FFD700; /* gold */
 }
+#southwest-announcement a {
+  color: #FFD700; /* gold links */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#southwest-announcement a:hover {
+  color: #FFA500; /* orange hover */
+}
+/* ====== FINAL OVERRIDES (safe, minimal) ====== */
+
+/* 1) Make default text truly black everywhere (unless overridden below) */
+:root {
+  --text-color: #000; /* force black as the base */
+}
+
+body {
+  color: #000 !important;
+  background-color: var(--background-color) !important;
+  font-family: var(--body-font);
+}
+
+/* 2) Headings default to black in light sections */
+h1, h2, h3, h4, h5, h6 {
+  color: #000 !important;
+}
+
+/* 3) Keep nav readable */
+header nav a { 
+  color: #fff !important;
+}
+
+/* 4) Southwest announcement: dark green block w/ white text, gold H1, links gold */
+#southwest-announcement {
+  background-color: #006400 !important;
+  color: #fff !important;
+  padding: 60px 20px;
+}
+#southwest-announcement * { color: #fff !important; }
+#southwest-announcement h1 { color: #FFD700 !important; }
+#southwest-announcement a { color: #FFD700 !important; font-weight: bold; text-decoration: underline; }
+#southwest-announcement a:hover { color: #FFA500 !important; }
+
+/* 5) Sample cards: remove white “frame” around images */
+.sample-image-container {
+  background: transparent !important;
+  padding: 0 !important;
+}
+.sample-item img {
+  padding: 0 !important;
+  object-fit: contain;
+}
+.sample-item {
+  border: none !important;               /* drop the border */
+  box-shadow: 0 8px 20px rgba(0,0,0,.12); /* keep a soft lift */
+}
+
+/* 6) Footer stays readable on cream */
+footer { color: #000 !important; }
+footer .footer-links a { color: #000 !important; }
 
