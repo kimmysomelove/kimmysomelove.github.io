@@ -1163,11 +1163,10 @@ footer .footer-links a:hover {
   color: #fff; /* make sure text inside is white */
 }
 
-/* === Default Sections (light background with black text) === */
-body {
-    background-color: #fdf6e3; /* light cream honeycomb */
+/* body, section {
+    background-color: #fdf6e3; 
     color: #000;
-}
+} */
 
 section {
     background-color: #fdf6e3; /* light cream honeycomb */
