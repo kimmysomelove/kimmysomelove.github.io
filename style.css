@@ -1083,77 +1083,54 @@ footer::before {
   transition: background-color 0.3s ease;
 }
 
-.buy-button button:hover {
-  background-color: #e68a00;
-}
-/* Dark green announcement section */
+/* ======================
+   Southwest Announcement
+   ====================== */
 #southwest-announcement {
   background-color: #006400; /* dark green */
-  color: #fff; /* white text */
+  color: #fff;
   padding: 60px 20px;
+  text-align: center;
 }
 
-
-/* Keep the gold Southwest title */
 #southwest-announcement h1 {
-  color: #FFD700; /* gold */
+  color: #FFD700;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
+
+#southwest-announcement h2,
+#southwest-announcement h3,
+#southwest-announcement p,
+#southwest-announcement small {
+  color: #fff;
+}
+
 #southwest-announcement a {
-  color: #FFD700; /* gold links */
+  color: #FFD700;
   font-weight: bold;
   text-decoration: underline;
 }
 
 #southwest-announcement a:hover {
-  color: #FFA500; /* orange hover */
-}
-/* ====== FINAL OVERRIDES (safe, minimal) ====== */
-
-/* 1) Make default text truly black everywhere (unless overridden below) */
-:root {
-  --text-color: #000; /* force black as the base */
+  color: #FFA500;
 }
 
-body {
-  color: #000 !important;
-  background-color: var(--background-color) !important;
-  font-family: var(--body-font);
-}
-
-/* 2) Headings default to black in light sections */
-h1, h2, h3, h4, h5, h6 {
-  color: #000 !important;
-}
-
-/* 3) Keep nav readable */
-header nav a { 
-  color: #fff !important;
-}
-
-/* 4) Southwest announcement: dark green block w/ white text, gold H1, links gold */
-#southwest-announcement {
-  background-color: #006400 !important;
-  color: #fff !important;
-  padding: 60px 20px;
-}
-#southwest-announcement * { color: #fff !important; }
-#southwest-announcement h1 { color: #FFD700 !important; }
-#southwest-announcement a { color: #FFD700 !important; font-weight: bold; text-decoration: underline; }
-#southwest-announcement a:hover { color: #FFA500 !important; }
-
-/* 5) Sample cards: remove white “frame” around images */
-.sample-image-container {
-  background: transparent !important;
-  padding: 0 !important;
-}
+/* ======================
+   Sample Pages Cleanup
+   ====================== */
 .sample-item img {
-  padding: 0 !important;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
   object-fit: contain;
 }
-.sample-item {
-  border: none !important;               /* drop the border */
-  box-shadow: 0 8px 20px rgba(0,0,0,.12); /* keep a soft lift */
-}
+
+
+
+
 
 /* 6) Footer stays readable on cream */
 footer { color: #000 !important; }
