@@ -1187,3 +1187,49 @@ section h4,
 section p {
   color: #000; /* all normal text back to black */
 }
+/* ================================
+   COLOR FIX FIX FIX
+   ================================ */
+
+/* Default (light sections like Welcome, About, Author, Mission, Contact) */
+body,
+section {
+  background-color: #fdf6e3; /* cream background */
+  color: #000; /* black text */
+}
+
+section h1,
+section h2,
+section h3,
+section h4,
+section p,
+section li,
+section small {
+  color: #000; /* headings + text in light sections = black */
+}
+
+/* Southwest announcement (dark green section only) */
+#southwest-announcement,
+#southwest-announcement h1,
+#southwest-announcement h2,
+#southwest-announcement h3,
+#southwest-announcement p,
+#southwest-announcement small {
+  color: #fff; /* white text inside green block */
+}
+
+/* Keep the gold title intact */
+#southwest-announcement h1 {
+  color: #FFD700;
+}
+
+/* Footer */
+footer {
+  background-color: #fdf6e3;
+  color: #000;
+}
+
+footer a {
+  color: #000;
+  font-size: 1rem;
+}
