@@ -1148,10 +1148,42 @@ footer .footer-links a:hover {
 
 /* ----------------------------
    SPECIAL SECTIONS WITH DARK GREEN BACKGROUND
-   ---------------------------- */
-#southwest-announcement,
-#southwest-announcement p,
-#southwest-announcement h1,
-#southwest-announcement h3 {
-  color: #fff;   /* keep white text so it’s visible on dark green */
+
+/* === Southwest Announcement + Dark Sections === */
+.dark-section {
+  background-color: #006400; /* dark green */
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.dark-section h1,
+.dark-section h2,
+.dark-section h3,
+.dark-section p {
+  color: #fff; /* make sure text inside is white */
+}
+
+/* === Default Sections (light background with black text) === */
+body {
+    background-color: #fdf6e3; /* light cream honeycomb */
+    color: #000;
+}
+
+section {
+    background-color: #fdf6e3; /* light cream honeycomb */
+    color: #000;
+}
+
+/* But keep dark sections using their own styling */
+.dark-section {
+    background-color: #006400; /* dark green */
+    color: #fff;
+}
+
+section h1,
+section h2,
+section h3,
+section h4,
+section p {
+  color: #000; /* all normal text back to black */
 }
