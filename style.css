@@ -1127,12 +1127,50 @@ footer::before {
   box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
   object-fit: contain;
 }
+/* === GLOBAL TEXT RESET (Final Clean Version) === */
+body {
+  color: #000; /* readable black text */
+  text-align: left; /* normal text flows left */
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+}
 
+p, ul, ol {
+  color: #000;
+  text-align: left; /* keep lists and paragraphs left-aligned */
+}
 
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  text-align: center; /* center only headings */
+}
 
+/* Pollinator Facts List */
+.pollinator-facts ul {
+  list-style-type: disc !important;
+  padding-left: 20px;
+  margin: 0 auto;
+  text-align: left;
+}
 
+.pollinator-facts ul li {
+  color: #000 !important;
+  border-bottom: 1px dashed #ccc;
+  padding: 6px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
-/* 6) Footer stays readable on cream */
+/* Sample Images Scale */
+.sample-item img,
+.samples-section img {
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Footer stays readable */
 footer { color: #000 !important; }
 footer .footer-links a { color: #000 !important; }
-
