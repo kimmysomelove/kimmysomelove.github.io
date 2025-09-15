@@ -1116,23 +1116,15 @@ body, p, li, small, label, input, textarea {
   text-align: center;
 }
 
-/* ----------------------------
-   Contact form text
-   ---------------------------- */
-.contact-info p,
-.contact-form label,
-.contact-form input,
-.contact-form textarea {
-  color: #000;
-  font-size: 1em;
-}
+/* ===========================
+   FOOTER + DARK SECTIONS
+   =========================== */
 
-/* ----------------------------
-   Footer
-   ---------------------------- */
+/* Footer */
 footer {
-  background-color: #fdf6e3;
+  background-color: #fdf6e3; /* cream background */
   padding: 20px 0;
+  color: #000; /* black text */
 }
 
 footer .footer-links a {
@@ -1146,89 +1138,29 @@ footer .footer-links a:hover {
   text-decoration: underline;
 }
 
-/* ----------------------------
-   SPECIAL SECTIONS WITH DARK GREEN BACKGROUND
-
-/* === Southwest Announcement + Dark Sections === */
-.dark-section {
+/* Dark green announcement section */
+.dark-section,
+#southwest-announcement {
   background-color: #006400; /* dark green */
-  color: #fff;
+  color: #fff; /* white text */
   padding: 60px 20px;
 }
 
 .dark-section h1,
 .dark-section h2,
 .dark-section h3,
-.dark-section p {
-  color: #fff; /* make sure text inside is white */
-}
-
-/* body, section {
-    background-color: #fdf6e3; 
-    color: #000;
-} */
-
-section {
-    background-color: #fdf6e3; /* light cream honeycomb */
-    color: #000;
-}
-
-/* But keep dark sections using their own styling */
-.dark-section {
-    background-color: #006400; /* dark green */
-    color: #fff;
-}
-
-section h1,
-section h2,
-section h3,
-section h4,
-section p {
-  color: #000; /* all normal text back to black */
-}
-/* ================================
-   COLOR FIX FIX FIX
-   ================================ */
-
-/* Default (light sections like Welcome, About, Author, Mission, Contact) */
-body,
-section {
-  background-color: #fdf6e3; /* cream background */
-  color: #000; /* black text */
-}
-
-section h1,
-section h2,
-section h3,
-section h4,
-section p,
-section li,
-section small {
-  color: #000; /* headings + text in light sections = black */
-}
-
-/* Southwest announcement (dark green section only) */
-#southwest-announcement,
+.dark-section p,
+.dark-section small,
 #southwest-announcement h1,
 #southwest-announcement h2,
 #southwest-announcement h3,
 #southwest-announcement p,
 #southwest-announcement small {
-  color: #fff; /* white text inside green block */
+  color: #fff; /* keep text white inside dark sections */
 }
 
-/* Keep the gold title intact */
+/* Keep the gold Southwest title */
 #southwest-announcement h1 {
-  color: #FFD700;
+  color: #FFD700; /* gold */
 }
 
-/* Footer */
-footer {
-  background-color: #fdf6e3;
-  color: #000;
-}
-
-footer a {
-  color: #000;
-  font-size: 1rem;
-}
