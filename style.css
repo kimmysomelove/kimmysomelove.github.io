@@ -1096,3 +1096,62 @@ footer {
   background-color: #fff;
   font-family: var(--body-font);
 }
+/* ----------------------------
+   Default text = black
+   ---------------------------- */
+body, p, li, small, label, input, textarea {
+  color: #000;
+  font-size: 1em;
+  line-height: 1.6;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ----------------------------
+   Sample grid captions
+   ---------------------------- */
+.sample-item h3,
+.sample-item p,
+.sample-item small {
+  color: #000;
+  text-align: center;
+}
+
+/* ----------------------------
+   Contact form text
+   ---------------------------- */
+.contact-info p,
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  color: #000;
+  font-size: 1em;
+}
+
+/* ----------------------------
+   Footer
+   ---------------------------- */
+footer {
+  background-color: #fdf6e3;
+  padding: 20px 0;
+}
+
+footer .footer-links a {
+  color: #000;
+  font-size: 1rem;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------
+   SPECIAL SECTIONS WITH DARK GREEN BACKGROUND
+   ---------------------------- */
+#southwest-announcement,
+#southwest-announcement p,
+#southwest-announcement h1,
+#southwest-announcement h3 {
+  color: #fff;   /* keep white text so it’s visible on dark green */
+}
