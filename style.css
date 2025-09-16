@@ -1031,3 +1031,24 @@ footer::before {
   transform: translateY(2px);
   box-shadow: 0 2px 0 rgba(0,0,0,.15);
 }
+.about-section .about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-section .pollinator-facts {
+  flex: 1.2;  /* give more space to the facts column */
+}
+
+.about-section .book-details {
+  flex: 1;    /* keep the right column balanced */
+}
+.pollinator-facts ul li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  gap: 8px;
+}
