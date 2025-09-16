@@ -1656,4 +1656,10 @@ nav ul li a:hover {
   height: auto;
   display: block;
 }
+.banner img {
+  width: 100%;       /* stretch full width */
+  max-height: 400px; /* keep it from being too tall */
+  object-fit: cover; /* crop edges instead of distorting */
+  display: block;
+}
 
