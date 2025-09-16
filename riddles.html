@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coloring Book Activities | KimmySomeLove42</title>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -15,17 +13,21 @@
       background: #fdfdfd;
       color: #333;
     }
+
+    /* Banner */
     .page-banner {
       text-align: center;
       padding: 2rem 1rem;
       background: linear-gradient(90deg, #9C27B0, #1E88E5, #FFC107);
       color: white;
     }
+
     .page-banner h1 {
       font-family: 'Bubblegum Sans', cursive;
       font-size: 2.2rem;
       margin: 0 0 1rem 0;
     }
+
     .back-button {
       display: inline-block;
       padding: 0.6rem 1.2rem;
@@ -35,6 +37,8 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* Sections */
     .section-box {
       margin: 2rem auto;
       max-width: 900px;
@@ -43,90 +47,60 @@
       background: #fff;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
-    /* Section Titles */
-.section-title {
-  text-align: center;
-  font-family: 'Bubblegum Sans', cursive;
-  font-size: 1.9rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border-radius: 8px;
-}
-
-.section-box:nth-of-type(1) .section-title {
-  background: #ffe0b2; /* warm desert orange */
-  color: #e65100;
-}
-
-.section-box:nth-of-type(2) .section-title {
-  background: #c8e6c9; /* soft forest green */
-  color: #1b5e20;
-}
-
-/* Riddles Sub-title */
-.sub-title {
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.7rem;
-  font-weight: bold;
-  color: #4a148c;
-  font-family: 'Bubblegum Sans', cursive;
-}
-
-/* Numbered Lists */
-ol {
-  padding-left: 2rem;
-}
-
-li {
-  margin: 0.6rem 0;
-  line-height: 1.6;
-  font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
-}
-
-li::marker {
-  font-family: 'Bubblegum Sans', cursive;
-  font-size: 1.2rem;
-  color: #ff7043; /* fun orange numbers */
-}
-
-/* Answers Highlight */
-strong {
-  color: #1E88E5;
-  font-weight: bold;
-  transition: background 0.2s ease;
-}
-
-strong:hover {
-  background: #fff59d; /* yellow highlight */
-  border-radius: 4px;
-  padding: 0 4px;
-}
 
     .section-title {
       text-align: center;
       font-family: 'Bubblegum Sans', cursive;
       font-size: 1.8rem;
       margin-bottom: 1rem;
-      color: #2e7d32;
     }
+
     .sub-title {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: #e64a19;
+      margin-bottom: 0.7rem;
       font-weight: bold;
+      font-family: 'Bubblegum Sans', cursive;
+      color: #e64a19;
     }
+
+    /* Riddle Styling */
+    .riddles-title {
+      font-size: 1.5rem;
+      font-family: 'Bubblegum Sans', cursive;
+      color: #ff5722;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
     ol {
-      padding-left: 1.5rem;
+      padding-left: 2rem;
     }
+
     li {
-      margin: 0.35rem 0;
-      line-height: 1.5;
+      margin: 0.6rem 0;
+      line-height: 1.6;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
     }
+
+    li::marker {
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: 1.2rem;
+      color: #ff7043; /* fun orange numbers */
+    }
+
     strong {
       color: #1E88E5;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+
+    strong:hover {
+      background: #fff59d; /* yellow highlight */
+      border-radius: 4px;
+      padding: 0 4px;
     }
   </style>
 </head>
@@ -176,7 +150,7 @@ strong:hover {
       </ol>
 
       <!-- Riddles -->
-      <h3 class="sub-title">❓ Riddles + Answers</h3>
+      <h3 class="riddles-title">❓ Riddles + Answers</h3>
       <ol>
         <li>I dart through sagebrush in desert heat, with wings of glass, I’m fast and fleet. → <strong>Dragonfly</strong></li>
         <li>Golden and fuzzy, I bumble around, helping cactus bloom in dry, dusty ground. → <strong>Agave Bee</strong></li>
@@ -187,21 +161,16 @@ strong:hover {
         <li>Climbing tall with roots so deep, desert’s giant my secrets keep. → <strong>Joshua Tree</strong></li>
         <li>Claws that snap, a lizard I be, blending with desert rocks unseen by thee. → <strong>Leaping Lizard</strong></li>
         <li>My cactus blooms with purple flame, I share my name with desert’s name. → <strong>Krameria</strong></li>
-        <li>My wings are orange, striped and bright, I flutter fast in desert light. → <strong>Isabella Tiger Moth</strong></li>
+        <li>My wings are orange striped and bright, I flutter fast in desert light. → <strong>Isabella Tiger Moth</strong></li>
         <li>I scuttle low with armored might, my spines defend both day and night. → <strong>Horny Toad</strong></li>
         <li>I bore in mesquite, wood is my friend, six legs of work without an end. → <strong>Mesquite Tree Beetle</strong></li>
         <li>I creep on webs with zigzag spun, my silky trap catches everyone. → <strong>Zigzag Spider</strong></li>
         <li>Petals yellow in moon’s embrace, I bloom at night with gentle grace. → <strong>Yellow Evening Primrose</strong></li>
-        <li>Prickly pads with juicy red, I feed the desert when hunger’s fed. → <strong>Prickly Pear Cactus</strong></li>
+        <li>Prickly pads with juice I bear, I feed the desert when hunger’s near. → <strong>Prickly Pear Cactus</strong></li>
         <li>I buzz inside citrus, orchard-bound, my tiny tunnels can be found. → <strong>Orchard Bee</strong></li>
         <li>I hum and bore with carpenter’s might, black and shiny, a buzzing sight. → <strong>Xylocopa Bee</strong></li>
-        <li>Green wings shimmer near desert trees, sipping nectar with graceful ease. → <strong>Gila Woodpecker</strong></li>
+        <li>Green wings shimmering near desert trees, sipping nectar with graceful ease. → <strong>Gila Woodpecker</strong></li>
         <li>I sting with caution, red stripes clear, in resin homes I reappear. → <strong>Resin Bee</strong></li>
-        <li>Poisonous bloom that opens wide, desert’s secret, dark inside. → <strong>Sacred Datura</strong></li>
-        <li>Eight hairy legs I stalk and wait, in desert burrows I hide my fate. → <strong>Tarantula</strong></li>
-        <li>Orange wings hidden under brown, I flutter at dusk when sun goes down. → <strong>Underwing Moth</strong></li>
-        <li>Scorpion’s cousin with vinegar spray, I creep at night then hide by day. → <strong>Vinegaroon</strong></li>
-        <li>White wings flutter, gardens know, I help green leaves to rise and grow. → <strong>White Cabbage Butterfly</strong></li>
       </ol>
     </section>
 
@@ -241,7 +210,7 @@ strong:hover {
       </ol>
 
       <!-- Riddles -->
-      <h3 class="sub-title">❓ Riddles + Answers</h3>
+      <h3 class="riddles-title">❓ Riddles + Answers</h3>
       <ol>
         <li>I hum at feeders, emerald and bright, hovering midair, a shimmering sight. → <strong>Anna’s Hummingbird</strong></li>
         <li>I build my nest in hollow trees, buzzing blue with gentle ease. → <strong>Blue Orchard Bee</strong></li>
@@ -250,7 +219,7 @@ strong:hover {
         <li>By moonlight’s glow on primrose sweet, I dance unseen where blossoms meet. → <strong>Evening Primrose Moth</strong></li>
         <li>Rare and golden, I bumble near, a fragile hum that may disappear. → <strong>Franklin’s Bumblebee</strong></li>
         <li>Bright and spotted, tiny and round, I feast on pests where they are found. → <strong>Glorious Ladybug</strong></li>
-        <li>Horns on my head, mud my tool, I build strong homes, nature’s school. → <strong>Horned Mason Bee</strong></li>
+        <li>Horns on my head, and mud my tool, I build strong homes, nature’s school. → <strong>Horned Mason Bee</strong></li>
         <li>I stand up tall with scented grace, and offer bugs a hiding place. → <strong>Incense Cedar</strong></li>
         <li>Green wings coppery in the light, near juniper blooms I take flight. → <strong>Juniper Hairstreak Butterfly</strong></li>
         <li>Silent at dusk, I take to the air, a bat with kisses beyond compare. → <strong>Kissing Bat</strong></li>
@@ -273,6 +242,5 @@ strong:hover {
     </section>
 
   </main>
-
 </body>
 </html>
