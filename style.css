@@ -1117,3 +1117,57 @@ footer::before {
   border-radius: 12px;
   padding: 20px;
 }
+/* --- About Section Layout Fix --- */
+.about-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.about-card {
+  flex: 1 1 320px;
+  max-width: 500px;
+  background: #fff8e1;
+  border: 2px solid orange;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #e65100;
+}
+
+.about-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Buttons styling */
+.about-buttons {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.about-buttons .btn {
+  background: #ff9800;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.about-buttons .btn:hover {
+  background: #e68900;
+}
