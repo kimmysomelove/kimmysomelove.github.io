@@ -1646,4 +1646,14 @@ nav ul li a:hover {
   font-family: var(--body-font);
 }
 /* FINAL FONT FIX — Force riddles page to use same font as homepage */
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
