@@ -5,94 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coloring Book Activities | KimmySomeLove42</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Banner */
-    .page-banner {
-      background: linear-gradient(90deg, var(--bright-blue), var(--bright-purple), var(--primary-color));
-      padding: 40px 20px;
-      text-align: center;
-      color: white;
-      font-family: var(--heading-font);
-      font-size: 3rem;
-      border-radius: 0 0 20px 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
-    /* Section titles with gradient text */
-    .section-title {
-      font-family: var(--heading-font);
-      font-size: 2rem;
-      text-align: center;
-      background: linear-gradient(90deg, var(--bright-blue), var(--primary-color));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin: 40px 0 20px;
-    }
-
-    /* Section box styling */
-    .section-box {
-      background: linear-gradient(180deg, #fffbe6, #fff);
-      border-radius: var(--border-radius);
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 900px;
-      box-shadow: var(--box-shadow);
-    }
-
-    .back-button {
-      display: inline-block;
-      margin: 15px 0;
-      padding: 10px 18px;
-      font-family: var(--heading-font);
-      background: var(--accent-color);
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .back-button:hover {
-      background: var(--primary-color);
-    }
-  </style>
 </head>
 <body>
   <!-- Banner -->
-  <div class="page-banner">
-    Coloring Book Activities
-  </div>
-
-  <!-- Back to Home -->
-  <div style="text-align:center;">
+  <header class="page-banner">
+    <h1>Coloring Book Activities</h1>
     <a href="index.html" class="back-button">← Back to Home</a>
-  </div>
+  </header>
 
-  <!-- Test Section -->
-  <div class="section-box">
-    <h2 class="section-title">📘 Species Index</h2>
-    <p style="text-align:center;">This is where the index will go.</p>
-  </div>
+  <!-- Species Index -->
+  <section class="section-box">
+    <h2 class="section-title">📖 Species Index</h2>
+    <p>Find all the pollinators and friends featured in the books.</p>
+    <div class="index-columns">
+      <div>
+        <h3>Pacific Northwest Index</h3>
+        <ul>
+          <li>Anna’s Hummingbird</li>
+          <li>Blue Orchard Bee</li>
+          <li>Carpenter Bee</li>
+          <!-- Add the rest here -->
+        </ul>
+      </div>
+      <div>
+        <h3>Southwest Index</h3>
+        <ul>
+          <li>Agave Bee</li>
+          <li>Black-Chinned Hummingbird</li>
+          <li>Cactus Longhorned Beetle</li>
+          <!-- Add the rest here -->
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <div class="section-box">
+  <!-- Riddles -->
+  <section class="section-box">
     <h2 class="section-title">❓ Riddles</h2>
-    <p style="text-align:center;">This is where riddles will go.</p>
-  </div>
+    <p>Test your knowledge of pollinators! Can you guess them all?</p>
+    <div class="riddle-list">
+      <p><strong>1.</strong> I dart through sagebrush in desert heat, with wings of glass, I’m fast and fleet.</p>
+      <p><strong>2.</strong> Golden and fuzzy, I bumble around, helping cactus bloom in dry, dusty ground.</p>
+      <!-- Add the rest of the riddles -->
+    </div>
+  </section>
 
-  <div class="section-box">
-    <h2 class="section-title">✅ Answer Keys</h2>
-    <p style="text-align:center;">This is where the answers will go.</p>
-  </div>
+  <!-- Answer Keys -->
+  <section class="section-box">
+    <h2 class="section-title">🗝 Answer Keys</h2>
+    <p>This is where the answers will go.</p>
+    <ul>
+      <li>1. Dragonfly</li>
+      <li>2. Desert Bumblebee</li>
+      <li>3. Krameria</li>
+      <!-- Add the rest here -->
+    </ul>
+  </section>
+
 </body>
 </html>
-.page-banner,
-.section-title,
-.section-box h2,
-.section-box h3 {
-  font-family: var(--heading-font) !important;
-}
-.page-banner,
-.section-title,
-.section-box h2,
-.section-box h3 {
-  font-family: var(--heading-font) !important;
-}
-
