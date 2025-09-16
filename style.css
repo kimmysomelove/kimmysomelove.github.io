@@ -1659,4 +1659,5 @@ nav ul li a:hover {
 .section-box li {
   font-family: var(--body-font);
 }
+/* FINAL FONT FIX — Force riddles page to use same font as homepage */
 
