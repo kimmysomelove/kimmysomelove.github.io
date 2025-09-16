@@ -1647,4 +1647,16 @@ nav ul li a:hover {
   line-height: 1.6;
   font-family: var(--body-font);
 }
+/* Force headings and banner titles to use the same font */
+.page-banner h1,
+.section-title,
+.section-box h2,
+.section-box h3 {
+  font-family: var(--heading-font);
+}
+
+.section-box p, 
+.section-box li {
+  font-family: var(--body-font);
+}
 
