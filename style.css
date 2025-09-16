@@ -1481,4 +1481,65 @@ nav ul li a:hover {
   margin-bottom: 0.5rem;     /* gap between lines */
   display: list-item;        /* keep real bullet behavior */
 }
+/* === HARD FIX: About section boxes show left-aligned, normal lists === */
+#about { text-align: left !important; }
+
+/* works for either structure you used (.about-blocks/.about-card or .about-content columns) */
+#about .about-card,
+#about .pollinator-facts,
+#about .book-details {
+  text-align: left !important;
+  background: #fff8e1;            /* keep the box look */
+  border: 2px solid orange;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* kill any inherited centering for everything inside the boxes */
+#about .about-card * ,
+#about .pollinator-facts * ,
+#about .book-details * {
+  text-align: left !important;
+}
+
+/* make the lists behave like normal bullets with proper wrapping */
+#about ul {
+  list-style: disc outside !important;
+  margin: 0 0 0.75rem 1.25rem !important;
+  padding: 0 !important;
+}
+
+/* every list item should wrap normally (no ellipsis, no flex row) */
+#about li {
+  display: list-item !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  line-height: 1.6;
+  margin: 0 0 .5rem 0;
+}
+
+/* if you’re using emoji icons via ::before in the facts list, keep them aligned left */
+#about .pollinator-facts ul { list-style: none !important; margin-left: 0 !important; }
+#about .pollinator-facts li { position: relative; padding-left: 1.6rem !important; }
+#about .pollinator-facts li::before { position: absolute; left: 0; top: .2rem; }
+
+/* keep the two boxes side-by-side on desktop (works for both structures) */
+#about .about-blocks,
+#about .about-content {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#about .about-blocks > div,
+#about .pollinator-facts,
+#about .book-details,
+#about .about-card {
+  flex: 1 1 320px;
+  max-width: 520px;
+}
 
