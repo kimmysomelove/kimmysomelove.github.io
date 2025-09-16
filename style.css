@@ -1088,3 +1088,9 @@ footer::before {
   flex: 1 1 48%;  /* each box takes ~half width */
   max-width: 48%;
 }
+/* --- Extend yellow background through Mission section --- */
+.yellow-section,
+.mission-section {
+  background: #fff9e6; /* same pale yellow you already used */
+  padding: 40px 0;
+}
