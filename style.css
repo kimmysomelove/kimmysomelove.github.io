@@ -1094,3 +1094,26 @@ footer::before {
   background: #fff9e6; /* same pale yellow you already used */
   padding: 40px 0;
 }
+/* Yellow Section — only affects About the Book area */
+.yellow-section {
+  background-color: #fff8e1;  /* soft yellow */
+  padding: 40px 20px;         /* space top/bottom */
+  margin: 40px 0;             /* gap above and below */
+}
+
+.yellow-section .about-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.yellow-section .about-blocks > div {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  background: #fffbe1;
+  border: 2px solid orange;
+  border-radius: 12px;
+  padding: 20px;
+}
