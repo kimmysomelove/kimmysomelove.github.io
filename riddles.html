@@ -3,79 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riddles & Answers | Earth's Pollinators</title>
+  <title>Coloring Book Activities | KimmySomeLove42</title>
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <style>
+    /* Banner */
+    .page-banner {
+      background: linear-gradient(90deg, var(--bright-blue), var(--bright-purple), var(--primary-color));
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+      font-family: var(--heading-font);
+      font-size: 3rem;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
 
-  <!-- Banner -->
-  <header class="top-header">
-    <div class="branding">
-      <h1 class="website-title">Coloring Book Activities</h1>
-    </div>
-  </header>
+    /* Section titles with gradient text */
+    .section-title {
+      font-family: var(--heading-font);
+      font-size: 2rem;
+      text-align: center;
+      background: linear-gradient(90deg, var(--bright-blue), var(--primary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 40px 0 20px;
+    }
 
-  <!-- Navigation -->
-  <nav class="nav-links" style="text-align:center; margin:20px;">
-    <a href="index.html" class="btn">← Back to Home</a>
-  </nav>
+    /* Section box styling */
+    .section-box {
+      background: linear-gradient(180deg, #fffbe6, #fff);
+      border-radius: var(--border-radius);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: var(--box-shadow);
+    }
 
-  <main class="container">
-
-    <!-- Index Section -->
-    <section id="index" class="yellow-section">
-      <h2>📖 Species Index</h2>
-      <p>Find all the pollinators and friends featured in the books.</p>
-      <div class="about-blocks">
-        <div class="about-card">
-          <h3>Pacific Northwest Index</h3>
-          <ul>
-            <li>Anna’s Hummingbird</li>
-            <li>Blue Orchard Bee</li>
-            <li>Carpenter Bee</li>
-            <!-- Add all PNW species here -->
-          </ul>
-        </div>
-        <div class="about-card">
-          <h3>Southwest Index</h3>
-          <ul>
-            <li>Agave Bee</li>
-            <li>Black-Chinned Hummingbird</li>
-            <li>Cactus Longhorned Beetle</li>
-            <!-- Add all SW species here -->
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Riddles Section -->
-    <section id="riddles" class="samples-section">
-      <h2>❓ Riddles</h2>
-      <p>Test your knowledge of pollinators! Can you guess them all?</p>
-
-      <h3>Pacific Northwest Riddles</h3>
-      <p>[Paste your PNW riddles here]</p>
-
-      <h3>Southwest Riddles</h3>
-      <p>[Paste your SW riddles here]</p>
-    </section>
-
-    <!-- Answer Keys Section -->
-    <section id="answers" class="mission-section">
-      <h2>✅ Answer Keys</h2>
-      <h3>Pacific Northwest</h3>
-      <p>[Paste PNW answers here]</p>
-
-      <h3>Southwest</h3>
-      <p>[Paste SW answers here]</p>
-    </section>
-
-  </main>
-
-  <footer class="footer-content">
-    <p>&copy; 2025 KimmySomeLove42 | Earth's Pollinators</p>
-  </footer>
-
-</body>
-</html>
-
+    .back-button {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 10px 18px;
+      font-family: var(--heading-font);
+      background: var(--accent-color);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .back-button:hover {
+      background: var(--primary-color);
+    }
