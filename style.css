@@ -1077,3 +1077,14 @@ footer::before {
   flex: 1 1 50%;       /* ensure each gets half width */
   padding: 20px;
 }
+.about-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  /* allows stacking on small screens */
+  gap: 20px;
+}
+
+.about-box {
+  flex: 1 1 48%;  /* each box takes ~half width */
+  max-width: 48%;
+}
