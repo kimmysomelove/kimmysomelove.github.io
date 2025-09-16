@@ -112,14 +112,14 @@ section {
     padding: 5rem 0;
 }
 
-/* Top Header Styles */
 .top-header {
   background: url("images/bannerkids.png") no-repeat center center;
-  background-size: cover;   /* makes it fill */
-  height: 400px;            /* adjust to make banner taller/shorter */
+  background-size: cover;
+  height: 400px;
   position: relative;
   overflow: hidden;
 }
+
 
 
 
