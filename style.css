@@ -1461,3 +1461,24 @@ nav ul li a:hover {
     align-items: center;
   }
 }
+/* === Fix About Section Boxes === */
+.about-section .about-card {
+  text-align: left;          /* force text left-aligned */
+}
+
+.about-section .about-card ul {
+  list-style: disc;          /* regular bullets */
+  margin-left: 1.5rem;       /* indent bullets */
+  padding-left: 0;           /* clean spacing */
+  text-align: left;          /* no centering */
+}
+
+.about-section .about-card ul li {
+  white-space: normal;       /* allow wrapping */
+  text-overflow: unset;      /* no cutoff */
+  overflow: visible;
+  line-height: 1.6;          /* nice spacing */
+  margin-bottom: 0.5rem;     /* gap between lines */
+  display: list-item;        /* keep real bullet behavior */
+}
+
