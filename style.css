@@ -1542,4 +1542,14 @@ nav ul li a:hover {
   flex: 1 1 320px;
   max-width: 520px;
 }
+/* Final About Section Fix */
+.about-section .pollinator-facts ul,
+.about-section .book-details ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  padding-left: 0;
+  text-align: left;
+}
+
+.about-section .pollinator-facts ul li,
 
