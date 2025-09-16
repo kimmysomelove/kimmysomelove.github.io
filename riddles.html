@@ -4,33 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coloring Book Activities | KimmySomeLove42</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+    .page-banner {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(90deg, #9C27B0, #1E88E5, #FFC107);
+      color: white;
+    }
+    .page-banner h1 {
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: 2.2rem;
+      margin: 0 0 1rem 0;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: #FF5722;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
     .section-box {
       margin: 2rem auto;
       max-width: 900px;
-      padding: 1rem 1.5rem;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
       background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
     .section-title {
-      margin-top: 0;
       text-align: center;
-      font-size: 1.5rem;
-      color: green;
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #2e7d32;
     }
     .sub-title {
-      margin-top: 1.5rem;
-      margin-bottom: .5rem;
-      color: #e64a19;
       font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #e64a19;
+      font-weight: bold;
     }
     ol {
-      padding-left: 1.25rem;
+      padding-left: 1.5rem;
     }
     li {
-      margin: .25rem 0;
+      margin: 0.35rem 0;
+      line-height: 1.5;
+    }
+    strong {
+      color: #1E88E5;
     }
   </style>
 </head>
@@ -80,44 +115,32 @@
       </ol>
 
       <!-- Riddles -->
-      <h3 class="sub-title">❓ Riddles</h3>
+      <h3 class="sub-title">❓ Riddles + Answers</h3>
       <ol>
-        <li>I dart through sagebrush in desert heat, with wings of glass, I’m fast and fleet. → Dragonfly</li>
-        <li>Golden and fuzzy, I bumble around, helping cactus bloom in dry, dusty ground. → Agave Bee</li>
-        <li>Shiny and buzzing with a fruity beat, I show up near blossoms and sugary treat. → Fig Beetle</li>
-        <li>Six-legged and wild, I tunnel and roam, near desert blooms, I build my home. → Queen Carpenter Ant</li>
-        <!-- Add the rest of your 26 SW riddles here -->
-      </ol>
-
-      <!-- Answer Key -->
-      <h3 class="sub-title">✅ Answer Key</h3>
-      <ol>
-        <li>Agave Bee</li>
-        <li>Black-Chinned Hummingbird</li>
-        <li>Cactus Longhorned Beetle</li>
-        <li>Dragonfly</li>
-        <li>Elf Owl</li>
-        <li>Fig Beetle</li>
-        <li>Gila Woodpecker</li>
-        <li>Horny Toad</li>
-        <li>Isabella Tiger Moth</li>
-        <li>Joshua Tree</li>
-        <li>Krameria</li>
-        <li>Leaping Lizard</li>
-        <li>Mesquite Tree</li>
-        <li>Net-Winged Beetle</li>
-        <li>Orchard Bee</li>
-        <li>Prickly Pear Cactus</li>
-        <li>Queen Carpenter Ant</li>
-        <li>Resin Bee</li>
-        <li>Sacred Datura</li>
-        <li>Tarantula</li>
-        <li>Underwing Moth</li>
-        <li>Vinegaroon</li>
-        <li>White Cabbage Butterfly</li>
-        <li>Xylocopa Bee</li>
-        <li>Yellow Evening Primrose</li>
-        <li>Zigzag Spider</li>
+        <li>I dart through sagebrush in desert heat, with wings of glass, I’m fast and fleet. → <strong>Dragonfly</strong></li>
+        <li>Golden and fuzzy, I bumble around, helping cactus bloom in dry, dusty ground. → <strong>Agave Bee</strong></li>
+        <li>Shiny and buzzing with a fruity beat, I show up near blossoms and sugary treat. → <strong>Fig Beetle</strong></li>
+        <li>Six-legged and wild, I tunnel and roam, near desert blooms, I build my home. → <strong>Queen Carpenter Ant</strong></li>
+        <li>At night I hoot with giant eyes, desert’s tiniest hunter in starry skies. → <strong>Elf Owl</strong></li>
+        <li>Black throat flashing in desert air, I hover at flowers without a care. → <strong>Black-Chinned Hummingbird</strong></li>
+        <li>Climbing tall with roots so deep, desert’s giant my secrets keep. → <strong>Joshua Tree</strong></li>
+        <li>Claws that snap, a lizard I be, blending with desert rocks unseen by thee. → <strong>Leaping Lizard</strong></li>
+        <li>My cactus blooms with purple flame, I share my name with desert’s name. → <strong>Krameria</strong></li>
+        <li>My wings are orange, striped and bright, I flutter fast in desert light. → <strong>Isabella Tiger Moth</strong></li>
+        <li>I scuttle low with armored might, my spines defend both day and night. → <strong>Horny Toad</strong></li>
+        <li>I bore in mesquite, wood is my friend, six legs of work without an end. → <strong>Mesquite Tree Beetle</strong></li>
+        <li>I creep on webs with zigzag spun, my silky trap catches everyone. → <strong>Zigzag Spider</strong></li>
+        <li>Petals yellow in moon’s embrace, I bloom at night with gentle grace. → <strong>Yellow Evening Primrose</strong></li>
+        <li>Prickly pads with juicy red, I feed the desert when hunger’s fed. → <strong>Prickly Pear Cactus</strong></li>
+        <li>I buzz inside citrus, orchard-bound, my tiny tunnels can be found. → <strong>Orchard Bee</strong></li>
+        <li>I hum and bore with carpenter’s might, black and shiny, a buzzing sight. → <strong>Xylocopa Bee</strong></li>
+        <li>Green wings shimmer near desert trees, sipping nectar with graceful ease. → <strong>Gila Woodpecker</strong></li>
+        <li>I sting with caution, red stripes clear, in resin homes I reappear. → <strong>Resin Bee</strong></li>
+        <li>Poisonous bloom that opens wide, desert’s secret, dark inside. → <strong>Sacred Datura</strong></li>
+        <li>Eight hairy legs I stalk and wait, in desert burrows I hide my fate. → <strong>Tarantula</strong></li>
+        <li>Orange wings hidden under brown, I flutter at dusk when sun goes down. → <strong>Underwing Moth</strong></li>
+        <li>Scorpion’s cousin with vinegar spray, I creep at night then hide by day. → <strong>Vinegaroon</strong></li>
+        <li>White wings flutter, gardens know, I help green leaves to rise and grow. → <strong>White Cabbage Butterfly</strong></li>
       </ol>
     </section>
 
@@ -157,48 +180,34 @@
       </ol>
 
       <!-- Riddles -->
-      <h3 class="sub-title">❓ Riddles</h3>
+      <h3 class="sub-title">❓ Riddles + Answers</h3>
       <ol>
-        <li>I hum at feeders, emerald and bright, hovering midair, a shimmering sight. → Anna’s Hummingbird</li>
-        <li>I build my nest in hollow trees, buzzing blue with gentle ease. → Blue Orchard Bee</li>
-        <!-- Add the rest of your 26 PNW riddles here -->
-      </ol>
-
-      <!-- Answer Key -->
-      <h3 class="sub-title">✅ Answer Key</h3>
-
-      <h4>Page 1 Answers</h4>
-      <ol>
-        <li>Incense Cedar</li>
-        <li>Saddleback Caterpillar</li>
-        <li>Anna’s Hummingbird</li>
-        <li>Kissing Bat</li>
-        <li>Lupine Blue Butterfly</li>
-        <li>White-lined Sphinx Moth</li>
-        <li>Evening Primrose Moth</li>
-        <li>Nootka Rose Beetle</li>
-        <li>Carpenter Bee</li>
-        <li>Zinnia</li>
-        <li>Horned Mason Bee</li>
-        <li>Glorious Ladybug</li>
-        <li>Rufous Hummingbird</li>
-      </ol>
-
-      <h4>Page 2 Answers</h4>
-      <ol start="14">
-        <li>Blue Orchard Bee</li>
-        <li>Dun Skipper</li>
-        <li>Franklin’s Bumblebee</li>
-        <li>Juniper Hairstreak Butterfly</li>
-        <li>Milkweed Moth</li>
-        <li>Oregon Grape Moth</li>
-        <li>Pacific Paper Wasp</li>
-        <li>Quaking Aspen Leaf Beetle</li>
-        <li>Tortoise Beetle</li>
-        <li>Ulmus Elm Tree</li>
-        <li>Variegated Meadowhawk Dragonfly</li>
-        <li>Xeno-Mantis</li>
-        <li>Yellow Garden Spider</li>
+        <li>I hum at feeders, emerald and bright, hovering midair, a shimmering sight. → <strong>Anna’s Hummingbird</strong></li>
+        <li>I build my nest in hollow trees, buzzing blue with gentle ease. → <strong>Blue Orchard Bee</strong></li>
+        <li>I carve my home inside a tree, no honey here—just buzzing me! → <strong>Carpenter Bee</strong></li>
+        <li>Brown wings flashing, I skim the breeze, tiny skipper among the trees. → <strong>Dun’s Skipper</strong></li>
+        <li>By moonlight’s glow on primrose sweet, I dance unseen where blossoms meet. → <strong>Evening Primrose Moth</strong></li>
+        <li>Rare and golden, I bumble near, a fragile hum that may disappear. → <strong>Franklin’s Bumblebee</strong></li>
+        <li>Bright and spotted, tiny and round, I feast on pests where they are found. → <strong>Glorious Ladybug</strong></li>
+        <li>Horns on my head, mud my tool, I build strong homes, nature’s school. → <strong>Horned Mason Bee</strong></li>
+        <li>I stand up tall with scented grace, and offer bugs a hiding place. → <strong>Incense Cedar</strong></li>
+        <li>Green wings coppery in the light, near juniper blooms I take flight. → <strong>Juniper Hairstreak Butterfly</strong></li>
+        <li>Silent at dusk, I take to the air, a bat with kisses beyond compare. → <strong>Kissing Bat</strong></li>
+        <li>Soft wings of blue in summer’s air, I flutter near lupines without a care. → <strong>Lupine Blue Butterfly</strong></li>
+        <li>I rest on milkweed, striped and still, a quiet moth with nature’s skill. → <strong>Milkweed Moth</strong></li>
+        <li>Green and shiny, beneath the rose, I crawl where only the gardener knows. → <strong>Nootka Rose Beetle</strong></li>
+        <li>Orange wings flutter, grapevine bound, near berries sweet I can be found. → <strong>Oregon Grape Moth</strong></li>
+        <li>Paper home, I buzz around, striped in black and yellow sound. → <strong>Pacific Paper Wasp</strong></li>
+        <li>I nibble leaves of quaking trees, spotted fast upon the breeze. → <strong>Quaking Aspen Leaf Beetle</strong></li>
+        <li>Copper flash in the springtime sky, I dart with speed as flowers fly by. → <strong>Rufous Hummingbird</strong></li>
+        <li>Strange and spiny, I hide away, a saddle on leaves where I lay. → <strong>Saddleback Caterpillar</strong></li>
+        <li>Slow and shiny, I carry my dome, a beetle in leaves making a home. → <strong>Tortoise Beetle</strong></li>
+        <li>Majestic and tall, elm is my name, in shady groves I stake my claim. → <strong>Ulmus Elm Tree</strong></li>
+        <li>Wings of glass, I hover and dart, a dragonfly fierce with a gentle heart. → <strong>Variegated Meadowhawk Dragonfly</strong></li>
+        <li>At dusk I rise with patterned wing, to the night flowers I softly cling. → <strong>White-Lined Sphinx Moth</strong></li>
+        <li>Alien stance, my legs hold true, a mantis rare with an emerald hue. → <strong>Xeno-Mantis</strong></li>
+        <li>In webs I shine with threads of gold, guarding the garden, brave and bold. → <strong>Yellow Garden Spider</strong></li>
+        <li>Rainbow petals, colors grand, I bloom with joy across the land. → <strong>Zinnia</strong></li>
       </ol>
     </section>
 
