@@ -166,8 +166,9 @@ background-color: #f9f9f9;
 
 header {
   background: url("images/bannerkids.png") no-repeat center center;
-  background-size: cover;
-  height: 400px;
+background-size: contain;
+background-color: #f9f9f9;
+ height: 400px;
   position: relative;
   overflow: hidden;
 }
