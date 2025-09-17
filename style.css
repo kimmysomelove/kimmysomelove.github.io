@@ -1799,6 +1799,19 @@ nav ul li a:hover {
   object-position: center; /* keeps the kids + books centered */
   display: block;
 }
+.banner {
+  width: 100%;
+  height: 350px;   /* try 350px instead of 520px */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* fills the area */
+  object-position: center; /* keeps kids centered */
+  display: block;
+}
 
 
 
