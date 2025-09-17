@@ -113,15 +113,6 @@ section {
     padding: 5rem 0;
 }
 
-.top-header {
-  background: url("images/bannerkids.png") no-repeat center center;
-background-size: contain;
-background-color: #f9f9f9;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-}
-
 
 
 
@@ -162,20 +153,15 @@ background-color: #f9f9f9;
     100% {
         transform: translateY(0px);
     }
-}
-
 header {
-header {
-  background: url("images/kidstopbanner.png") no-repeat center center;
+  background: url("images/kidstopbanner.png") no-repeat center top;
   background-size: contain;
   height: auto;
-  min-height: 400px;
+  min-height: 400px;  /* keeps some height even if image is short */
   position: relative;
   overflow: visible;
-}
 
-}
-
+ }
 
 .honeycomb-bg {
     position: absolute;
