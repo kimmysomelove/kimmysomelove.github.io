@@ -1786,3 +1786,19 @@ nav ul li a:hover {
   display: block;
   pointer-events: none; /* make sure it doesn’t block links */
 }
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Keep the banner behind the nav */
+.banner {
+  position: relative;
+  z-index: 0;
+}
+
+.main-nav {
+  position: relative;
+  z-index: 1;
+}
