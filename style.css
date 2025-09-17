@@ -1740,5 +1740,38 @@ nav ul li a:hover {
   font-size: 1.5rem;
   color: #333;
 }
+/* Full Logo/Header Bar */
+.logo-bar {
+  background: linear-gradient(to right, #fff9c4, #ffe082); /* soft honey gradient */
+  text-align: center;
+  padding: 30px 0; /* controls height */
+  border-bottom: 3px solid #fbc02d;
+  position: relative;
+  z-index: 1000;
+  min-height: 140px; /* about 2 inches on most screens */
+}
+
+.logo-text {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 2.8rem;
+  margin: 0;
+  color: #333;
+}
+
+.tagline {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+  margin: 5px 0 0;
+  color: #444;
+}
+
+/* Banner image scaling */
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+  max-height: 550px; /* adjust until heads + hands show nicely */
+}
 
 
