@@ -1848,17 +1848,19 @@ body {
   color: gold;
   font-size: 1.1rem;
 }
-/* Banner Fix */
+/* FINAL FIX - Banner Image Display */
 .banner {
-  position: relative;
-  width: 100%;
-  height: auto;      /* Let height follow the image */
-  overflow: visible; /* Don’t hide parts of the image */
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  overflow: visible !important;
+  max-height: none !important;
 }
 
 .banner img {
-  width: 100%;
-  height: auto;         /* Keep natural aspect ratio */
-  object-fit: contain;  /* Show the whole image */
-  display: block;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  max-height: none !important;
 }
