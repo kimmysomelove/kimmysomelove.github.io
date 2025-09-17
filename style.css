@@ -1863,3 +1863,17 @@ body {
   color: gold;
   font-size: 1.1rem;
 }
+/* Banner Fix */
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;      /* ✅ Let height follow the image */
+  overflow: visible; /* ✅ Don’t hide parts of the image */
+}
+
+.banner img {
+  width: 100%;
+  height: auto;         /* ✅ Keep natural aspect ratio */
+  object-fit: contain;  /* ✅ Show the whole image */
+  display: block;
+}
