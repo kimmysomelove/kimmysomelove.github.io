@@ -1759,87 +1759,31 @@ nav ul li a:hover {
   color: #444;
 }
 
-/* Banner image scaling */
-.banner img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center top;
-  max-height: 550px; /* adjust until heads + hands show nicely */
-}header img {
-  width: 100%;
-  height: auto;
-  max-height: 450px; /* adjust this number until you see the full kids coloring */
-  object-fit: cover; /* makes sure it fills without distortion */
-  object-position: center top; /* shows more of the top of the image */
-}
+/* === Banner Styling (hard override) === */
 .banner {
-  width: 100%;
-  max-height: 550px; /* adjust until kids’ heads + hands fit */
-  overflow: hidden;
+  width: 100% !important;
+  height: 320px !important;   /* adjust this number until happy */
+  overflow: hidden !important;
 }
 
 .banner img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
-.banner {
-  width: 100%;
-  height: 520px;   /* good default height for a 2400x800 banner */
-  overflow: hidden;
-}
-
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;       /* makes sure it fills the space without distortion */
-  object-position: center; /* keeps the kids + books centered */
-  display: block;
-}
-.banner {
-  width: 100%;
-  height: 350px;   /* try 350px instead of 520px */
-  overflow: hidden;
-}
-
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;       /* fills the area */
-  object-position: center; /* keeps kids centered */
-  display: block;
-}
-/* === Banner Styling (final override) === */
-.banner {
-  width: 100%;
-  height: 350px;   /* desktop default */
-  overflow: hidden;
-}
-
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;       
-  object-position: center; 
-  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;  /* keeps kids' faces visible */
+  display: block !important;
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
   .banner {
-    height: 280px;
+    height: 260px !important;
   }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
   .banner {
-    height: 200px;
+    height: 200px !important;
   }
 }
-
-
-
