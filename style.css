@@ -195,3 +195,6 @@ footer { position: relative; padding: 2rem 0; background: #333; color: #fff; }
   .logo-text { font-size: 2rem; }
   .banner { height: 200px; }
 }
+/* ===== FIX: offset for sticky header when jumping to #anchors ===== */
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 120px; } /* adjusts landing position under the sticky bar */
