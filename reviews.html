@@ -3,71 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Reviews | KimmySomeLove42</title>
+  <title>Customer Reviews | KimmySomeLove</title>
   <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
-      font-family: "Poppins", "Nunito", sans-serif; /* same as homepage */
-      background: #fdf6e3; /* soft cream from site */
+      font-family: 'Nunito', sans-serif;
+      background: #fafafa;
       color: #333;
     }
 
+    /* Top bar */
     .top-bar {
       text-align: center;
       padding: 15px;
-      background: var(--primary-color, #FFC107); /* yellow theme */
+      background: #fff;
+      border-bottom: 1px solid #eee;
     }
-
     .review-button {
-      background: #4CAF50; /* green button like homepage */
+      background: #ff6b6b;
       color: #fff;
       padding: 10px 20px;
       border-radius: 6px;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
     }
     .review-button:hover {
-      background: #388E3C;
+      background: #ff4040;
     }
 
+    /* Header */
     header {
       text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(to right, #fff3cd, #ffe082);
+      padding: 20px 10px;
     }
     header h1 {
-      font-family: "Bubblegum Sans", cursive; /* match heading font */
-      font-size: 2.2em;
-      color: #ff5722;
-      margin: 0 0 10px 0;
+      font-family: "Bubblegum Sans", cursive;
+      font-size: 2rem;
+      color: #e65100;
+      margin: 0 0 8px;
     }
     header p {
-      font-size: 1.1em;
+      font-size: 1rem;
       color: #444;
       margin: 0;
     }
 
+    /* Reviews */
     .reviews {
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 30px auto;
+      padding: 0 15px;
     }
     .review-card {
       background: #fff;
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     .review-card strong {
       color: #222;
     }
 
+    /* Section divider */
     h2 {
       text-align: center;
       margin-top: 50px;
-      font-size: 1.8em;
+      font-size: 1.6rem;
       color: #2b8a3e;
       font-family: "Bubblegum Sans", cursive;
     }
@@ -79,12 +82,15 @@
       border-radius: 5px;
     }
 
+    /* Image gallery */
     .image-gallery {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 30px;
-      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto 50px;
+      padding: 0 15px;
     }
     .image-gallery img {
       width: 280px;
@@ -94,16 +100,15 @@
     .image-gallery p {
       text-align: center;
       margin-top: 8px;
-      font-size: 0.9em;
-      color: #444;
+      font-size: 0.9rem;
     }
 
     footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
-      color: #777;
-      background: #f1f1f1;
+      color: #aaa;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
@@ -114,43 +119,52 @@
     <a href="index.html" class="review-button">← Back to Home</a>
   </div>
 
-  <!-- Page Title -->
+  <!-- Header -->
   <header>
     <h1>Customer Reviews</h1>
     <p>What families are saying about the Earth’s Pollinators coloring books:</p>
   </header>
 
   <!-- Reviews -->
-  <section class="reviews">
+  <main class="reviews">
     <div class="review-card">
       ⭐⭐⭐⭐⭐ <strong>Doug Smith</strong> – “Informational and entertaining!”  
       <p>A delightful book for all ages. Especially parents and grandparents who have young children to help them learn and have fun at the same time.</p>
     </div>
+
     <div class="review-card">
       ⭐⭐⭐⭐⭐ <strong>Bead.it.motherfelter</strong> – “Fun and educational”  
       <p>Such a fun coloring book. Not only are the pictures absolutely adorable, but this book is filled with fun facts to learn as you go. I can’t wait for the next book in this series.</p>
     </div>
+
     <div class="review-card">
       ⭐⭐⭐⭐⭐ <strong>Melanie Carlone</strong> – “Interactive learning”  
       <p>So good, bought two! Kids can ponder and take in the interesting facts as they draw. A great contribution to interactive learning.</p>
     </div>
+
     <div class="review-card">
       ⭐⭐⭐⭐⭐ <strong>Lisa Cooley</strong> – “Best coloring book!”  
       <p>I love this book. It’s educational, pretty, and super fun to color in. Shared it with so many people. Best coloring book I’ve bought in years.</p>
     </div>
+
     <div class="review-card">
       ⭐⭐⭐⭐⭐ <strong>Captain Wayne</strong> – “Beautiful and Peaceful Coloring Pages”  
-      <p>A beautiful, educational and interactive book! I gifted my 70-year-old mom and she loves it! Coloring in this book is a relaxing way to learn about pollinators and appreciate who they are when we see them in our gardens and the natural landscapes.</p>
+      <p>A beautiful, educational and interactive book! I gifted my 70-year-old mom and she loves it! Coloring in this book is a relaxing way to learn about pollinators.</p>
     </div>
+
     <div class="review-card">
       ⭐⭐⭐⭐⭐ <strong>Alexander Bedgood</strong> – “Homeschool must-have — we love this book!!!”  
-      <p>Hi to homeschool parents and families! 🌻🦋🌿 This is a great resource for teaching Earth science! The kids love the friendly space to learn and create. The thoughtful format is user-friendly and easy to follow. Kids love the pages and connect easily with the characters and learning is achieved! Anyone can learn from this amazing book, all people young and old! #homeschool #fun #happylearning We love this book and author!</p>
+      <p>Hi to homeschool parents and families! 🌻🦋🌿  
+      This is a great resource for teaching Earth science! The kids love the friendly space to learn and create. The thoughtful format is user-friendly and easy to follow. Kids love the pages and connect easily with the characters and learning is achieved!  
+      Anyone can learn from this amazing book, all people young and old! #homeschool #fun #happylearning  
+      We love this book and author!</p>
     </div>
-  </section>
+  </main>
 
-  <!-- Colored Pages Gallery -->
+  <!-- Gallery -->
   <h2>Our Young Artists in Action</h2>
   <div class="divider"></div>
+
   <div class="image-gallery">
     <div>
       <img src="images/carpenter-bee-resized.jpg" alt="Colored Carpenter Bee Page">
@@ -165,5 +179,6 @@
   <footer>
     © 2025 Kimmy Some Love. All Rights Reserved.
   </footer>
+
 </body>
 </html>
