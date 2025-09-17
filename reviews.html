@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Customer Reviews</title>
-  <link rel="stylesheet" href="style.css?v=6" />
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #fceabb, #e6f9d0);
       margin: 0;
       padding: 0;
+      background: linear-gradient(to bottom, #fff7e6, #e6f9d0);
       color: #333;
     }
     .review-nav {
@@ -27,142 +27,32 @@
     }
     .review-button:hover {
       background: #ff4040;
-header {
-  background: linear-gradient(to right, #fceabb, #e6f9d0);
-  text-align: center;
-  padding: 20px 0;   /* tighten vertical space */
-  margin: 0;         /* no extra margin */
-}
-
-header h1 {
-  font-size: 2em;
-  color: #ff6600;
-  margin: 0;         /* no margin */
-  padding: 5px 0;    /* small spacing */
-}
-
-header p {
-  font-size: 1.2em;
-  color: #555;
-  margin: 0;         /* no extra margin */
-  padding: 5px 0;    /* small spacing */
-}
-
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 2em;
+      color: #ff6600;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #444;
+    }
     .reviews {
-      max-width: 800px;
+      max-width: 900px;
       margin: 20px auto;
       padding: 0 20px;
     }
-    .reviews div {
+    .review-card {
+      background: #fff;
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 2px 2px 10px #ddd;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    h2 {
-      text-align: center;
-      color: #2b8a3e;
-      font-size: 1.8em;
-      margin-top: 40px;
-    }
-    .divider {
-      width: 80px;
-      height: 4px;
-      background: gold;
-      margin: 10px auto 30px;
-      border-radius: 5px;
-    }
-    .image-gallery {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      padding: 0 20px 60px;
-    }
-    .image-gallery img {
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Back to Home button -->
-  <div class="review-nav">
-    <a href="/" class="review-button">← Back to Home</a>
-  </div>
-
-  <header>
-    <h1>Customer Reviews</h1>
-    <p>What families are saying about the Earth’s Pollinators coloring books:</p>
-  </header>
-
-  <main class="reviews">
-    <!-- Doug Smith -->
-    <div style="background: #fffaf0;">
-      <p>⭐⭐⭐⭐⭐ <strong>Doug Smith</strong> – “Informational and entertaining!”<br>
-      A delightful book for all ages. Especially parents and grandparents who have young children to help them learn and have fun at the same time.</p>
-    </div>
-
-    <!-- Bead.it.motherfelter -->
-    <div style="background: #f0fff4;">
-      <p>⭐⭐⭐⭐⭐ <strong>Bead.it.motherfelter</strong> – “Fun and educational”<br>
-      Such a fun coloring book. Not only are the pictures absolutely adorable, but this book is filled with fun facts to learn as you go. I can’t wait for the next book in this series.</p>
-    </div>
-
-    <!-- Melanie Carlone -->
-    <div style="background: #f9f9ff;">
-      <p>⭐⭐⭐⭐⭐ <strong>Melanie Carlone</strong> – “Interactive learning”<br>
-      So good, bought two! Kids can ponder and take in the interesting facts as they draw, beauty in the making on all levels. What a great contribution to the field of interactive learning.</p>
-    </div>
-
-    <!-- Lisa Cooley -->
-    <div style="background: #fff0f5;">
-      <p>⭐⭐⭐⭐⭐ <strong>Lisa Cooley</strong> – “Best coloring book!”<br>
-      I love this book. As educational, it’s pretty, it’s super duper fun to color in. And I have been able to share it with so many people. This is the best purchased coloring book I’ve found in a long, long time. Thank you.</p>
-    </div>
-
-    <!-- Captain Wayne -->
-    <div style="background: #f0fff5;">
-      <p>⭐⭐⭐⭐⭐ <strong>Captain Wayne</strong> – “Beautiful and Peaceful Coloring Pages”<br>
-      A beautiful, educational and interactive book! I gifted my 70-year-old mom and she loves it! Coloring in this book is a relaxing way to learn about our pollinators and appreciate who they are when we see them in our gardens and the natural landscapes.</p>
-    </div>
-
-    <!-- Alexander Bedgood -->
-    <div style="background: #fff0f5;">
-      <p>⭐⭐⭐⭐⭐ <strong>Alexander Bedgood</strong> – “Homeschool must-have — we love this book!!!”<br>
-      Hi to homeschool parents and families! 🐝🌸🦋<br>
-      This is a great resource for teaching Earth science!<br>
-      The kids love the friendly space to learn and create! The thoughtful format is user-friendly and easy to follow. Kids love the pages and connect easily with the characters and learning is achieved!<br>
-      Anyone can learn from this amazing book, all people young and old! #homeschool #fun #happylearning<br>
-      We love this book and author!</p>
-    </div>
-  </main>
-
-  <h2>Our Young Artists in Action</h2>
-  <div class="divider"></div>
-
-  <div class="image-gallery">
-    <div style="text-align: center;">
-      <img src="images/carpenter-bee-resized.jpg" alt="Colored Carpenter Bee Page">
-      <p><strong>Colored by Frani Green, Atlanta, GA</strong></p>
-    </div>
-    <div style="text-align: center;">
-      <img src="images/annas_hummingbird.jpg" alt="Colored Anna's Hummingbird Page">
-      <p><strong>Colored by Frani Green, Atlanta, GA</strong></p>
-    </div>
-  </div>
-
-  <footer>
-    © 2025 Kimmy Some Love. All Rights Reserved.
-  </footer>
-
-</body>
-</html>
+    .review-card:nth-child(odd) { background: #fffaf0; }
+    .review-card:nth-child(even) { background: #f0fff4; }
+    .review-card p
