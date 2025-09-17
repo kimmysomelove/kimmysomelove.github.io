@@ -1771,3 +1771,26 @@ header img {
   object-fit: cover !important;
   object-position: center top !important;
 }
+.banner {
+  width: 100%;
+  height: 320px;  /* desktop height */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .banner { height: 260px; }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .banner { height: 200px; }
+}
