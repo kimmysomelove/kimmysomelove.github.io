@@ -1700,4 +1700,30 @@ nav ul li a:hover {
   font-weight: bold;
   text-decoration: none;
 }
+/* Navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #a4d65e, #d6e96f);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(135deg, #ff9800, #ffc107);
+  color: #333;
+}
 
