@@ -1772,6 +1772,13 @@ nav ul li a:hover {
   object-fit: cover;
   object-position: center top;
   max-height: 550px; /* adjust until heads + hands show nicely */
+}header img {
+  width: 100%;
+  height: auto;
+  max-height: 450px; /* adjust this number until you see the full kids coloring */
+  object-fit: cover; /* makes sure it fills without distortion */
+  object-position: center top; /* shows more of the top of the image */
 }
+
 
 
