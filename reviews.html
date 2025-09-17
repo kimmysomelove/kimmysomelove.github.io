@@ -10,13 +10,13 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background: #fafafa;
+      color: #333;
     }
 
     .top-bar {
       text-align: center;
       padding: 20px;
     }
-
     .review-button {
       background: #ff6b6b;
       color: #fff;
@@ -60,19 +60,62 @@
     .review-card strong {
       color: #333;
     }
+
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 1.8em;
+      color: #2b8a3e;
+    }
+    .divider {
+      width: 80px;
+      height: 4px;
+      background: gold;
+      margin: 10px auto 30px;
+      border-radius: 5px;
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 20px;
+    }
+    .image-gallery img {
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .image-gallery p {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 0.9em;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Back to Home -->
   <div class="top-bar">
-    <a href="https://kimmysomelove.github.io/index.html" class="review-button">← Back to Home</a>
+    <a href="index.html" class="review-button">← Back to Home</a>
   </div>
 
+  <!-- Page Title -->
   <header>
     <h1>Customer Reviews</h1>
     <p>What families are saying about the Earth’s Pollinators coloring books:</p>
   </header>
 
+  <!-- Reviews -->
   <section class="reviews">
     <div class="review-card">
       ⭐⭐⭐⭐⭐ <strong>Doug Smith</strong> – “Informational and entertaining!”  
@@ -90,8 +133,13 @@
     </div>
 
     <div class="review-card">
+      ⭐⭐⭐⭐⭐ <strong>Lisa Cooley</strong> – “Best coloring book!”  
+      <p>I love this book. It’s educational, pretty, and super fun to color in. Shared it with so many people. Best coloring book I’ve bought in years.</p>
+    </div>
+
+    <div class="review-card">
       ⭐⭐⭐⭐⭐ <strong>Captain Wayne</strong> – “Beautiful and Peaceful Coloring Pages”  
-      <p>A beautiful, educational and interactive book! I gifted my 70-year-old mom and she loves it! Coloring in this book is a relaxing way to learn about our pollinators and appreciate who they are when we see them in our gardens and the natural landscapes.</p>
+      <p>A beautiful, educational and interactive book! I gifted my 70-year-old mom and she loves it! Coloring in this book is a relaxing way to learn about pollinators and appreciate who they are when we see them in our gardens and the natural landscapes.</p>
     </div>
 
     <div class="review-card">
@@ -102,6 +150,25 @@
       We love this book and author!</p>
     </div>
   </section>
+
+  <!-- Colored Pages Gallery -->
+  <h2>Our Young Artists in Action</h2>
+  <div class="divider"></div>
+
+  <div class="image-gallery">
+    <div>
+      <img src="images/carpenter-bee-resized.jpg" alt="Colored Carpenter Bee Page">
+      <p><strong>Colored by Frani Green, Atlanta, GA</strong></p>
+    </div>
+    <div>
+      <img src="images/annas_hummingbird.jpg" alt="Colored Anna's Hummingbird Page">
+      <p><strong>Colored by Frani Green, Atlanta, GA</strong></p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Kimmy Some Love. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
