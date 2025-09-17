@@ -154,12 +154,13 @@ section {
         transform: translateY(0px);
     }
 header {
-  background: url("images/kidstopbanner.png") no-repeat center top;
-  background-size: cover;   /* stretch to fill width, crop if needed */
-  height: 450px;            /* adjust until heads + hands look right */
+  background: url("images/kidstopbanner.png") no-repeat center center;
+  background-size: 100% auto;  /* force it to span full width */
+  height: 400px;               /* keep your current height */
   position: relative;
   overflow: hidden;
 }
+
 
 .honeycomb-bg {
     position: absolute;
