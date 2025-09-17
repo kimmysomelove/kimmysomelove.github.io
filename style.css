@@ -1802,3 +1802,27 @@ nav ul li a:hover {
   position: relative;
   z-index: 1;
 }
+/* Review Page Styles */
+.review-card {
+  background: #fffbea; /* pale warm yellow inside */
+  border: 2px solid #ffe08a; /* soft yellow border */
+  border-radius: 20px; /* rounded for kid-friendly look */
+  margin-bottom: 25px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.review-card strong {
+  color: #ff6600; /* cheerful orange names */
+  font-size: 1.1rem;
+}
+
+.review-text {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.stars {
+  color: gold; /* make the ⭐⭐⭐⭐⭐ golden */
+  font-size: 1rem;
+}
