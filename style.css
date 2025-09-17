@@ -29,28 +29,73 @@ body {
   line-height: 1.6;
 }
 
+/* ==============================
+   HEADERS & TEXT
+   ============================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   margin-bottom: 1rem;
   color: var(--text-color);
 }
 
-h1 { font-size: 2.5rem; color: var(--accent-color); text-align: center; margin-bottom: 1.5rem; }
-h2 { font-size: 2rem; color: var(--secondary-color); text-align: center; margin-bottom: 2rem; position: relative; }
-h2:after { content: ''; display: block; width: 80px; height: 4px; background: var(--primary-color); margin: 0.5rem auto; border-radius: 2px; }
-h3 { font-size: 1.5rem; color: var(--accent-color); }
+h1 {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+h2:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
 p { margin-bottom: 1rem; }
 
-a { color: var(--accent-color); text-decoration: none; transition: var(--transition); }
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
 a:hover { color: var(--secondary-color); }
 
-ul { margin-bottom: 1rem; }
-img { max-width: 100%; height: auto; border-radius: var(--border-radius); }
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
 
-.container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 section { padding: 5rem 0; }
 
-/* --- Logo Bar --- */
+/* ==============================
+   LOGO BAR
+   ============================== */
 .logo-bar {
   background: linear-gradient(to right, #fff9c4, #ffe082);
   text-align: center;
@@ -58,16 +103,32 @@ section { padding: 5rem 0; }
   border-bottom: 3px solid #fbc02d;
   min-height: 140px;
 }
-.logo-text { font-family: "Bubblegum Sans", cursive; font-size: 2.8rem; margin: 0; color: #333; }
-.tagline { font-family: "Nunito", sans-serif; font-size: 1.3rem; margin: 5px 0 0; color: #444; }
 
-/* --- Banner --- */
+.logo-text {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 2.8rem;
+  margin: 0;
+  color: #333;
+}
+
+.tagline {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+  margin: 5px 0 0;
+  color: #444;
+}
+
+/* ==============================
+   BANNER IMAGE FIX (B)
+   ============================== */
 .banner {
+  position: relative;
   width: 100%;
-  height: 280px; /* adjust height */
+  height: 280px;
   overflow: hidden;
   border-radius: 12px 12px 0 0;
 }
+
 .banner img {
   width: 100%;
   height: 100%;
@@ -76,7 +137,9 @@ section { padding: 5rem 0; }
   display: block;
 }
 
-/* --- Nav --- */
+/* ==============================
+   NAVIGATION FIX (C)
+   ============================== */
 nav ul {
   list-style: none;
   display: flex;
@@ -86,6 +149,7 @@ nav ul {
   padding: 0;
   margin: 20px 0;
 }
+
 nav ul li a {
   display: inline-block;
   padding: 12px 20px;
@@ -96,105 +160,46 @@ nav ul li a {
   text-decoration: none;
   transition: background 0.3s;
 }
+
 nav ul li a:hover {
   background: linear-gradient(135deg, #ff9800, #ffc107);
   color: #333;
 }
 
-/* --- Honeycomb Backgrounds --- */
-.welcome-section,
-.samples-section,
-.mission-section,
-.contact-section {
-  position: relative;
-}
-.welcome-section:before,
-.samples-section:before,
-.mission-section:before,
-.contact-section:before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M50 37.5l25 14.4v28.8l-25 14.4-25-14.4V51.9z" fill="none" stroke="%23FFC107" stroke-width="1" /></svg>');
-  background-size: 100px 100px;
-  opacity: 0.15;
-  z-index: 0;
-}
-.welcome-section .container,
-.samples-section .container,
-.mission-section .container,
-.contact-section .container {
-  position: relative;
-  z-index: 1;
-}
-
-/* --- About Section --- */
-.about-section { background: #fff9e6; }
-.about-blocks {
-  display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 20px;
-}
-.about-card {
-  flex: 1 1 320px; max-width: 500px;
-  background: #fff8e1;
-  border: 2px solid orange;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: left;
-}
-.about-card h3 {
-  margin-top: 0; margin-bottom: 16px;
-  color: #e65100;
-  border-bottom: 2px solid #ff9800;
-  padding-bottom: .5rem;
-}
-.about-buttons { margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap; }
-.about-buttons .btn {
-  background: #ff9800; color: #fff; padding: 10px 16px; border-radius: 8px; font-weight: 700;
-}
-.about-buttons .btn:hover { background: #e68900; }
-
-/* --- Samples --- */
-.sample-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; }
-
-/* --- Author Section --- */
-.author-section { background: var(--light-color); }
-.author-content { display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; }
-.author-portrait { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 5px solid var(--accent-color); }
-
-/* --- Mission Section --- */
-.mission-section { background: #fff9e6; }
-.mission-content { display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; }
-
-/* --- Contact Section --- */
-.contact-section { background: var(--light-color); }
-.contact-content { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
-.form-group { margin-bottom: 1.5rem; }
-.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--secondary-color); }
-.form-group input, .form-group textarea {
-  width: 100%; padding: .75rem; border: 2px solid #ddd; border-radius: var(--border-radius);
-}
-
-/* --- Footer --- */
-footer { position: relative; padding: 2rem 0; background: #333; color: #fff; }
-.footer-content { display: flex; flex-direction: column; align-items: center; text-align: center; }
-.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-top: 1rem; }
-.footer-links a {
-  background: #fff; color: #333; padding: 8px 14px; border-radius: 12px;
-  font-family: var(--heading-font); font-weight: 600;
-}
-
-/* --- Responsive --- */
-@media (max-width: 768px) {
-  .about-content,
-  .mission-content,
-  .author-content,
-  .contact-content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .logo-text { font-size: 2rem; }
-  .banner { height: 200px; }
-}
-/* ===== FIX: offset for sticky header when jumping to #anchors ===== */
+/* ==============================
+   SCROLL OFFSET FIX (A)
+   ============================== */
 html { scroll-behavior: smooth; }
-[id] { scroll-margin-top: 120px; } /* adjusts landing position under the sticky bar */
+[id] { scroll-margin-top: 120px; }
+
+/* ==============================
+   FOOTER
+   ============================== */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.footer-links a {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.footer-links a:hover {
+  background-color: #ffd557;
+  color: #000;
+  transform: translateY(-1px);
+}
