@@ -165,12 +165,15 @@ background-color: #f9f9f9;
 }
 
 header {
-  background: url("images/bannerkids.png") no-repeat center center;
-background-size: contain;
-background-color: #f9f9f9;
- height: 400px;
+header {
+  background: url("images/kidstopbanner.png") no-repeat center center;
+  background-size: contain;
+  height: auto;
+  min-height: 400px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+}
+
 }
 
 
