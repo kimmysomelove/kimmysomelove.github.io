@@ -154,13 +154,14 @@ section {
         transform: translateY(0px);
     }
 header {
-  background: url("images/kidstopbanner.png") no-repeat center center;
-  background-size: 100% auto;  /* force it to span full width */
-  height: 400px;               /* keep your current height */
+  background: url("images/kidstopbanner.png") no-repeat center top;
+  background-size: contain;
+  height: auto;
+  min-height: 400px;  /* keeps some height even if image is short */
   position: relative;
-  overflow: hidden;
-}
+  overflow: visible;
 
+ }
 
 .honeycomb-bg {
     position: absolute;
@@ -1848,19 +1849,17 @@ body {
   color: gold;
   font-size: 1.1rem;
 }
-/* FINAL FIX - Banner Image Display */
+/* Banner Fix */
 .banner {
-  position: relative !important;
-  width: 100% !important;
-  height: auto !important;
-  overflow: visible !important;
-  max-height: none !important;
+  position: relative;
+  width: 100%;
+  height: auto;      /* Let height follow the image */
+  overflow: visible; /* Don’t hide parts of the image */
 }
 
 .banner img {
-  width: 100% !important;
-  height: auto !important;
-  object-fit: contain !important;
-  display: block !important;
-  max-height: none !important;
+  width: 100%;
+  height: auto;         /* Keep natural aspect ratio */
+  object-fit: contain;  /* Show the whole image */
+  display: block;
 }
