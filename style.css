@@ -3633,3 +3633,13 @@ section, .content, .wrapper {
   border: 2px solid #FF9800; /* orange border for contrast */
   color: #333; /* dark text inside boxes */
 }
+.title-white {
+  color: #ffffff;
+}
+
+.title-gradient {
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* purple → blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
