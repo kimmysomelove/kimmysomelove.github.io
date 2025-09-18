@@ -3386,19 +3386,7 @@ nav ul li a:hover {
   color: #333;
 }
 <link rel="stylesheet" href="style.css?v=2">
-/* Thin logo bar */
-.logo-bar {
-  background: #ffeb3b; /* light yellow honeycomb vibe */
-  text-align: center;
-  padding: 5px 0;
-  border-bottom: 2px solid #fbc02d;
-}
 
-.logo-text {
-  font-family: "Bubblegum Sans", cursive;
-  font-size: 1.5rem;
-  color: #333;
-}
 /* Full Logo/Header Bar */
 .logo-bar {
   background: linear-gradient(to right, #fff9c4, #ffe082); /* soft honey gradient */
