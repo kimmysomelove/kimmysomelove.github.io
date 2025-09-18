@@ -3549,8 +3549,20 @@ header {
 
 /* Navigation background */
 .banner nav {
-  background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
-  padding: 10px;
-  border-radius: 12px;
-  display: inline-block;
+  background: url("images/honeycomb.png") repeat center center;
+  background-size: 40px 40px; /* adjust size to make it pop */
+  padding: 15px;
+  border-radius: 0; /* remove rounded white block look */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
+/* Apply Bubblegum font to all headings and section titles */
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.page-banner h1,
+.section-box h2,
+.section-box h3 {
+  font-family: 'Bubblegum Sans', cursive;
+}
+
