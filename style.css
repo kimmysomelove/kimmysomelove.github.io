@@ -10,7 +10,7 @@ body {
   font-family: var(--body-font);
 }
 
- h2, h3, h4, h5, nav a {
+h1, h2, h3, h4, h5, nav a {
   font-family: var(--heading-font);
 }
 /* Global Styles */
@@ -48,16 +48,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-color);
 }
 
-.site-title {
-  font-family: var(--heading-font);
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 900;
-  text-align: center;
-  width: 75%;
-  margin: 0 auto 1.5rem auto;
-  background: linear-gradient(90deg, #ff66b2, #ff9933);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 h2 {
