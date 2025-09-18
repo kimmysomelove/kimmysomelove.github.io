@@ -3735,4 +3735,18 @@ body {
   font-weight: bold;
   color: #e65100;          /* warm orange */
 }
+/* Body text */
+body, p, li {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--text-color);
+}
 
