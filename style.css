@@ -3569,29 +3569,50 @@ h1, h2, h3, h4, h5, h6,
 .section-box h3 {
   font-family: 'Bubblegum Sans', cursive;
 }
-/* Make all section backgrounds green */
-section {
-  background: #006400; /* deep green, you can adjust */
-  color: #fff; /* default text white */
-  padding: 40px 20px;
+/* === GLOBAL BACKGROUND RESET === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0A7A24 !important; /* deep green */
+  color: #fff; /* default white text */
 }
 
-/* Keep the cards/boxes readable */
-.section-box {
-  background: #ffffff; /* keep boxes white */
-  color: #333; /* dark text inside */
-  border: 2px solid #ffcc00; /* yellow border for accent */
+/* === REMOVE OLD SECTION BACKGROUNDS === */
+section, .content, .wrapper {
+  background: transparent !important; /* allow green to show through */
+  box-shadow: none;
+}
+
+/* === WHITE/CREAM BOXES FOR READABILITY === */
+.section-box, .card, .info-section {
+  background: #fff;
+  color: #333;
   border-radius: 12px;
   padding: 25px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-/* Make the section titles stand out */
-.section-title {
-  font-family: 'Bubblegum Sans', cursive;
-  font-size: 2.5rem;
-  text-align: center;
-  color: #ffcc00; /* same yellow as "Just Released!" */
+/* === TITLES / HEADINGS === */
+.section-title, h2, h3 {
+  font-family: 'Bubblegum Sans', cursive !important;
+  color: #FF9800 !important; /* warm orange for pop */
   margin-bottom: 20px;
+  text-align: center;
 }
 
+/* === OPTIONAL ACCENT BOXES === */
+.section-box.orange {
+  background: #FFF3E0; /* soft peach/orange */
+  border: 2px solid #FF9800;
+}
+.section-box.pink {
+  background: #FFE4E1; /* light pink */
+  border: 2px solid #E91E63;
+}
+.section-box.yellow {
+  background: #FFFDE7; /* pale yellow */
+  border: 2px solid #FFD700;
+}
