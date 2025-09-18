@@ -114,10 +114,12 @@ section {
     padding: 5rem 0;
 }
 
-.top-header {
+header {
   background: url("images/bannerkids.png") no-repeat center center;
-  background-size: cover;
-  height: 400px;
+  background-size: contain;   /* or cover */
+  height: 200px;              /* change from 400px */
+  max-height: 200px;
+  background-color: #f9f9f9;  /* fills behind if contain doesn’t stretch */
   position: relative;
   overflow: hidden;
 }
