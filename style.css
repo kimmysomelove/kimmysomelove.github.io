@@ -3569,4 +3569,29 @@ h1, h2, h3, h4, h5, h6,
 .section-box h3 {
   font-family: 'Bubblegum Sans', cursive;
 }
+/* Make all section backgrounds green */
+section {
+  background: #006400; /* deep green, you can adjust */
+  color: #fff; /* default text white */
+  padding: 40px 20px;
+}
+
+/* Keep the cards/boxes readable */
+.section-box {
+  background: #ffffff; /* keep boxes white */
+  color: #333; /* dark text inside */
+  border: 2px solid #ffcc00; /* yellow border for accent */
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Make the section titles stand out */
+.section-title {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffcc00; /* same yellow as "Just Released!" */
+  margin-bottom: 20px;
+}
 
