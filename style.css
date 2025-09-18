@@ -3294,6 +3294,11 @@ nav ul li a:hover {
   margin: 40px 0 20px;
   color: #FFD700;  /* bright golden yellow, matches "Just Released!" */
 }
+/* Apply Bubblegum Sans + yellow to all section headers */
+h2, h3, .section-title {
+  font-family: 'Bubblegum Sans', cursive !important;
+  color: #FFD700 !important; /* same bright yellow as "Just Released" */
+}
 
 
 /* Section box */
