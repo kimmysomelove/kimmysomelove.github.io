@@ -3526,28 +3526,16 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* === FINAL CLEAN HEADER/BANNER === */
-header,
-.top-header,
-.banner {
-  position: relative;
+
+header {
+  background: url("images/kidstopbanner.png") no-repeat center center;
+  background-size: cover;   /* stretches edge-to-edge */
   width: 100%;
-  height: 200px; /* fixed banner height */
+  height: 300px;            /* set your preferred banner height */
+  position: relative;
   overflow: hidden;
-  background: url("images/bannerkids.png") no-repeat center center;
-  background-size: cover; /* fills the area */
-  background-color: #f9f9f9; /* fallback */
-  z-index: 0;
 }
 
-header img,
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top; /* shows faces/hands better */
-  display: block;
-  pointer-events: none;
-}
 
 /* Put nav/content above the banner */
 header .container,
