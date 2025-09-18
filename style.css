@@ -3724,3 +3724,15 @@ body {
   --heading-font: "Bubblegum Sans", cursive;
   --body-font: "Nunito", sans-serif;
 }
+/* Force About section headings above their paragraphs */
+.about-section h3 {
+  display: block;          /* makes sure headings sit on their own line */
+  margin-top: 1.5rem;      /* space above */
+  margin-bottom: 0.5rem;   /* space below before paragraph */
+  text-align: center;      /* keep them centered if you like */
+  font-family: var(--heading-font); /* Bubblegum Sans */
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e65100;          /* warm orange */
+}
+
