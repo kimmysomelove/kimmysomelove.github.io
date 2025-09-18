@@ -3616,3 +3616,20 @@ section, .content, .wrapper {
   background: #FFFDE7; /* pale yellow */
   border: 2px solid #FFD700;
 }
+/* === GLOBAL GREEN BACKGROUND TO FOOTER === */
+body {
+  background-color: #0A7A24 !important; /* deep green */
+  color: #fff; /* default text white for contrast */
+}
+
+/* Remove yellow/cream section backgrounds */
+section, .content, .wrapper {
+  background: transparent !important;
+}
+
+/* Style white/cream boxes only */
+.section-box, .card, .info-section {
+  background: rgba(255, 255, 255, 0.9); /* slightly translucent white */
+  border: 2px solid #FF9800; /* orange border for contrast */
+  color: #333; /* dark text inside boxes */
+}
