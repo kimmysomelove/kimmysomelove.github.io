@@ -3659,3 +3659,16 @@ section, .content, .wrapper {
 .contact-email a:hover {
   text-decoration: underline;
 }
+.contact-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap; /* ensures it stacks on smaller screens */
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  min-width: 320px; /* so they don’t get too narrow */
+}
