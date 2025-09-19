@@ -3672,3 +3672,17 @@ section, .content, .wrapper {
   flex: 1;
   min-width: 320px; /* so they don’t get too narrow */
 }
+#contact .contact-wrapper {
+  display: flex;
+  flex-direction: row;   /* force row layout */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;       /* still allows mobile stacking */
+}
+
+#contact .contact-info,
+#contact .contact-form {
+  flex: 1;
+  min-width: 320px;
+}
