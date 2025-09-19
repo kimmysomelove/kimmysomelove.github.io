@@ -3724,4 +3724,36 @@ section, .content, .wrapper {
   position: relative;
   z-index: 10;   /* bring inputs above any background layer */
 }
+/* === Contact Section Fix === */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;   /* center the two boxes */
+  align-items: flex-start;
+  gap: 40px;                 /* space between left + right */
+  max-width: 1100px;         /* wider layout */
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 5;                /* keep it above background */
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;                   /* equal sizing */
+  min-width: 350px;          /* don’t shrink too much */
+  max-width: 500px;          /* balance */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  position: relative;
+  z-index: 10;               /* inputs clickable */
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  position: relative;
+  z-index: 15;               /* keep controls above */
+}
 
