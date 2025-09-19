@@ -3762,11 +3762,12 @@ section, .content, .wrapper {
   margin: 0 auto;      /* keep it centered */
 }
 footer {
-  background: #0b8f2f; /* or same green as body background */
+  background-color: #0b8f2f !important;  /* force green */
   color: #fff;
   padding: 20px 0;
-  border-top: 4px solid #f0b400; /* keeps that gold line effect */
+  border-top: 4px solid #f0b400;
 }
+
 
 .footer-links {
   display: flex;
