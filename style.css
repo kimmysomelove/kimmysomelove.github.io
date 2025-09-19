@@ -3756,4 +3756,9 @@ section, .content, .wrapper {
   position: relative;
   z-index: 15;               /* keep controls above */
 }
+/* Make About the Author section wider */
+.author-section .container {
+  max-width: 1000px;   /* wider than default */
+  margin: 0 auto;      /* keep it centered */
+}
 
