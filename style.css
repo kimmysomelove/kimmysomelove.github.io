@@ -3775,5 +3775,8 @@ footer {
   gap: 12px;
   margin-top: 10px;
 }
+.contact-form, .contact-info {
+  min-height: 420px;  /* adjust until both look balanced */
+}
 
 
