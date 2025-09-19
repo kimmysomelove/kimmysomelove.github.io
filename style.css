@@ -3686,3 +3686,13 @@ section, .content, .wrapper {
   flex: 1;
   min-width: 320px;
 }
+.contact-wrapper {
+  display: flex;
+  justify-content: center;  /* centers the two boxes */
+  align-items: flex-start;
+  gap: 40px;                /* space between them */
+  flex-wrap: wrap;          /* stack on mobile */
+  max-width: 1000px;        /* keeps them from being too wide apart */
+  margin: 0 auto;           /* centers the wrapper itself */
+  padding: 20px;
+}
