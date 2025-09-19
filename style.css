@@ -3779,5 +3779,15 @@ footer {
 .contact-form, .contact-info {
   min-height: 420px;  /* adjust until both look balanced */
 }
+.contact-info,
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-section {
+  align-items: stretch; /* ensures both boxes stretch to same height */
+}
 
 
