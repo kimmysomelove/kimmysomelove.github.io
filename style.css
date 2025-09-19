@@ -3696,4 +3696,20 @@ section, .content, .wrapper {
   margin: 0 auto;           /* centers the wrapper itself */
   padding: 20px;
 }
+.contact-wrapper {
+  display: flex;
+  justify-content: center;   /* centers the group */
+  align-items: flex-start;
+  gap: 40px;                 /* space between the two boxes */
+  flex-wrap: wrap;           /* stack on smaller screens */
+  max-width: 1000px;         /* keeps the pair from spreading too wide */
+  margin: 0 auto;            /* centers the wrapper in the page */
+  padding: 20px;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  max-width: 450px;          /* keeps each box from stretching too big */
+}
 
