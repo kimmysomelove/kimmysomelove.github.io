@@ -3307,7 +3307,7 @@ h2, h3, .section-title {
   border-radius: var(--border-radius);
   padding: 25px;
   margin: 30px auto;
-  max-width: 900px;
+  max-width: 1100px;
   box-shadow: var(--box-shadow);
 }
 
