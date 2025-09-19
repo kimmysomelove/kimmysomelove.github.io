@@ -3643,3 +3643,19 @@ section, .content, .wrapper {
   -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
+.contact-email {
+  color: #ff3366; /* bold reddish-pink */
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.1em; /* slightly larger for emphasis */
+}
+
+.contact-email a {
+  color: #ff3366; /* match link to text/icon */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
