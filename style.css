@@ -133,16 +133,17 @@ section {
 
 .website-title {
     font-family: 'Bubblegum Sans', cursive;
-    font-size: 4.5rem;
-    color: #FFFFFF;
-    text-shadow: 
-        -3px -3px 0 #9C27B0,  
-        3px -3px 0 #9C27B0,
-        -3px 3px 0 #9C27B0,
-        3px 3px 0 #9C27B0;
-    margin: 0;
+    font-size: 5.5rem; /* Bigger font */
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    padding: 0 2in; /* makes it "wider" */
+    background: linear-gradient(90deg, #ff6f61, #ffb347, #ff69b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none; /* remove old shadow */
+    margin: 0 auto;
     letter-spacing: 2px;
-    animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
