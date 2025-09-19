@@ -3761,4 +3761,19 @@ section, .content, .wrapper {
   max-width: 1000px;   /* wider than default */
   margin: 0 auto;      /* keep it centered */
 }
+footer {
+  background: #ffffff; /* or keep transparent if you prefer */
+  text-align: center;
+  padding: 20px 0;
+  border-top: 3px solid #ff9800; /* adds that strong divider */
+  margin-top: 40px; /* reduce space above footer */
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
 
