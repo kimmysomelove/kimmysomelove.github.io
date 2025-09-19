@@ -414,13 +414,13 @@ document.addEventListener("DOMContentLoaded", function() {
       headers: { 'Accept': 'application/json' }
     }).then(response => {
       if (response.ok) {
-        form.reset(); // clear inputs
-        window.location.href = "thank-you.html"; // send to your page
+        form.reset(); // clears inputs immediately
+        alert("✅ Your message has been sent successfully!");
       } else {
-        alert("Oops! Something went wrong.");
+        alert("⚠️ Oops: Something went wrong.");
       }
     }).catch(() => {
-      alert("Oops! There was a problem submitting your form");
+      alert("⚠️ There was a problem submitting your form.");
     });
   });
 });
