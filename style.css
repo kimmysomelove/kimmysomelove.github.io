@@ -3718,4 +3718,10 @@ section, .content, .wrapper {
 .contact-info h3::after {
   content: none !important;
 }
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  position: relative;
+  z-index: 10;   /* bring inputs above any background layer */
+}
 
