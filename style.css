@@ -3681,14 +3681,13 @@ section, .content, .wrapper {
   flex-wrap: wrap;       /* still allows mobile stacking */
 }
 
-.contact-info,
+..contact-info,
 .contact-form {
-  flex: 1;
-  min-width: 400px; /* ensures they don’t shrink unevenly */
-  max-width: 500px; /* equal cap */
+  flex: 1;           /* makes them equal */
+  min-width: 350px;  /* prevents shrinking too small on mobile */
+  max-width: none;   /* let flex do the balancing */
 }
 
-}
 .contact-wrapper {
   display: flex;
   justify-content: center;  /* centers the two boxes */
