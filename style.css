@@ -135,18 +135,21 @@ section {
   font-family: 'Bubblegum Sans', cursive;
   font-size: 5rem;
   text-align: center;
-  background: linear-gradient(90deg, #ff4d4d, #ff9900, #ff66cc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent; /* <- kills old solid colors */
-  display: inline-block;
-  padding: 0 2rem;
-  letter-spacing: 3px;
+  color: #ff4dd2; /* base neon pink */
+  letter-spacing: 4px;
   font-weight: bold;
-  text-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  display: inline-block;
+
+  text-shadow: 
+    0 0 5px #ff4dd2,
+    0 0 10px #ff66ff,
+    0 0 20px #ff99ff,
+    0 0 40px #ff3399,
+    0 0 80px #ff0099;
+  
   animation: float 6s ease-in-out infinite;
 }
+
 
 
 @keyframes float {
