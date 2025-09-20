@@ -4139,5 +4139,53 @@ footer,
     width: 95%;
     max-width: 720px;
   }
+/* =========================
+   CONTACT + FOOTER WIDTH FIX
+   ========================= */
+
+/* Contact section wider (but not full page) */
+#contact {
+  width: 95%;             /* fills most of page */
+  max-width: 1600px;      /* wider than 1200px, but not edge-to-edge */
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+
+#contact .contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Contact info box + form box side by side */
+.contact-info,
+.contact-form {
+  flex: 1 1 45%;          /* each takes about half */
+  min-width: 340px;       /* keeps them usable on smaller screens */
+  max-width: 700px;       /* stops one from stretching crazy wide */
+  background: #fff;
+  border: 2px solid #ff9900;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer matches same width */
+footer {
+  width: 95%;
+  max-width: 1600px;      /* match contact width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
 
