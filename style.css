@@ -3984,3 +3984,43 @@ header h1 {
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+/* =========================
+   CONTACT SECTION FIX
+   Make contact + form sit wider and side by side
+   ========================= */
+#contact .contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;            /* space between the two boxes */
+  max-width: 1100px;    /* wider area */
+  margin: 0 auto;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1 1 45%;        /* each box takes ~half width */
+  min-width: 320px;     /* stop from getting too small */
+}
+
+/* =========================
+   FOOTER FIX
+   Widen and space out footer links
+   ========================= */
+footer {
+  max-width: 1100px;    /* match contact section */
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;            /* space between footer links */
+}
+
+footer nav a {
+  flex: 0 1 auto;
+}
