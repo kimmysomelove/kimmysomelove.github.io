@@ -123,18 +123,12 @@ img {
     height: auto;
     border-radius: var(--border-radius);
 }
-@media (max-width: 980px) {
-  .mission-box {
-    flex: 1 1 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-  }  
 
 .container {
-  width: 95%;
-  max-width: 1400px;   /* gives more room */
-  margin: 0 auto;
-  padding: 0 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 section {
@@ -3845,7 +3839,50 @@ footer {
   50%  { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
+.mission-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* makes it responsive for mobile */
+}
 
+.mission-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.mission-boxes {
+  display: flex;
+  flex-wrap: wrap; /* mobile-friendly */
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+.mission-box {
+  flex: 1 1 45%;   /* take about half each row */
+  min-width: 300px;
+  max-width: 550px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #ff9900;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.mission-box img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
+}
 /* FORCE HEADER TITLE STYLE */
 header h1 {
   font-family: 'Poppins', sans-serif !important;
@@ -3856,7 +3893,30 @@ header h1 {
   margin: 0 auto !important;
   text-align: center !important;
 }
+.mission-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1000px;
+}
 
+.mission-box {
+  flex: 1 1 45%;
+  background: #fdfdfd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.mission-box img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+
+}
 /* FINAL TITLE FIX */
 .website-title {
   font-family: 'Bubblegum Sans', cursive;
@@ -3866,286 +3926,3 @@ header h1 {
   margin: 0;
   text-align: center;
 }
-.website-title-wrapper {
-  position: relative;
-  display: inline-block;
-  padding: 20px 40px;
-  background: url("data:image/svg+xml;utf8,
-    <svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 100 100'>
-      <path d='M50 5 L93 27.5 V72.5 L50 95 L7 72.5 V27.5 Z' 
-            fill='none' stroke='%23f4c542' stroke-width='4'/>
-    </svg>") repeat;
-  background-size: 60px 60px;
-  border-radius: 12px;
-}
-
-.website-title {
-  font-family: 'Bubblegum Sans', cursive;
-  font-size: 5rem;
-  color: #d62828; /* strong warm red */
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-  margin: 0;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-body {
-  font-family: var(--body-font);
-  color: var(--text-color);
-  background-color: var(--background-color);
-  line-height: 1.6;
-  max-width: 100%;     /* 🔑 allow full width */
-  margin: 0 auto;
-  padding: 0;
-}
-
-/* 🔥 Force full width for main content */
-.container {
-  max-width: 1400px !important;
-  width: 95% !important;
-}
-
-/* 🔥 Fix bottom contact section boxes */
-.contact-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 2rem;
-}
-
-.contact-info,
-.contact-form {
-  flex: 1 1 45%;
-  min-width: 320px;
-  background: #fff;
-  border: 2px solid #ff9900;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Stack nicely on small screens */
-@media (max-width: 900px) {
-  .mission-box {
-    flex: 1 1 100% !important;
-    max-width: 100% !important;
-  }
-}
-/* === FORCE LAYOUT FIX — overrides everything === */
-
-/* Top mission section (Gila + 42¢) */
-#mission .mission-boxes {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  align-items: stretch !important;
-  gap: 2rem !important;
-  max-width: 1200px !important;
-  margin: 2rem auto !important;
-}
-
-#mission .mission-box {
-  flex: 1 1 45% !important;
-  min-width: 350px !important;
-  max-width: 550px !important;
-}
-
-/* Bottom contact section (Get in Touch + Form) */
-#contact .contact-wrapper {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  align-items: stretch !important;
-  gap: 2rem !important;
-  max-width: 1200px !important;
-  margin: 2rem auto !important;
-}
-
-#contact .contact-info,
-#contact .contact-form {
-  flex: 1 1 45% !important;
-  min-width: 350px !important;
-  max-width: 550px !important;
-}
-
-/* Mobile fallback */
-@media (max-width: 900px) {
-  #mission .mission-box,
-  #contact .contact-info,
-  #contact .contact-form {
-    flex: 1 1 100% !important;
-    max-width: 100% !important;
-  }
-}
-/* 🔥 Two simple side-by-side boxes */
-#mission {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-}
-
-#mission .box {
-  flex: 1 1 45%;
-  min-width: 300px;
-  max-width: 550px;
-  background: #fff;
-  border: 2px solid #ff9900;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-}
-/* ===== EMERGENCY OVERRIDE — KEEP THIS AS THE LAST RULES IN style.css ===== */
-
-/* widen just these two sections so the page's narrow wrapper can't squeeze them */
-#mission, #contact { width: 100%; }
-#mission .mission-boxes,
-#contact .contact-wrapper {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  align-items: stretch !important;
-  gap: 2rem !important;
-  max-width: 1200px !important;   /* wider row */
-  margin: 2rem auto !important;
-}
-
-/* two equal columns */
-#mission .mission-box,
-#contact .contact-info,
-#contact .contact-form {
-  flex: 1 1 48% !important;
-  min-width: 320px !important;     /* let them fit even in a narrower wrapper */
-  max-width: 560px !important;
-}
-
-/* inputs/forms must not break the flex sizing */
-#contact .contact-form form,
-#contact .contact-form,
-#contact .contact-info {
-  width: auto !important;
-}
-
-/* mobile: stack */
-@media (max-width: 900px) {
-  #mission .mission-box,
-  #contact .contact-info,
-  #contact .contact-form {
-    flex: 1 1 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-  }
-}
-
-/* absolutely kill any old narrow container rule that might still win */
-.container, main .container, .content .container {
-  max-width: 1200px !important;
-  width: 95% !important;
-}
-/* ===== EMERGENCY OVERRIDE — KEEP THIS AS THE LAST RULES IN style.css ===== */
-
-/* widen just these two sections so the page's narrow wrapper can't squeeze them */
-#mission, #contact { width: 100%; }
-#mission .mission-boxes,
-#contact .contact-wrapper {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  align-items: stretch !important;
-  gap: 2rem !important;
-  max-width: 1200px !important;   /* wider row */
-  margin: 2rem auto !important;
-}
-
-/* two equal columns */
-#mission .mission-box,
-#contact .contact-info,
-#contact .contact-form {
-  flex: 1 1 48% !important;
-  min-width: 320px !important;     /* let them fit even in a narrower wrapper */
-  max-width: 560px !important;
-}
-
-/* inputs/forms must not break the flex sizing */
-#contact .contact-form form,
-#contact .contact-form,
-#contact .contact-info {
-  width: auto !important;
-}
-
-/* mobile: stack */
-@media (max-width: 900px) {
-  #mission .mission-box,
-  #contact .contact-info,
-  #contact .contact-form {
-    flex: 1 1 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-  }
-}
-
-/* absolutely kill any old narrow container rule that might still win */
-.container, main .container, .content .container {
-  max-width: 1200px !important;
-  width: 95% !important;
-}
-/* === Mission Section (two side by side boxes) === */
-#mission .mission-boxes {
-  display: flex;
-  flex-wrap: wrap;          /* stack on smaller screens */
-  justify-content: center;
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 2rem auto;
-}
-
-#mission .mission-box {
-  flex: 1 1 45%;
-  min-width: 320px;
-  max-width: 500px;
-  background: #fff;
-  padding: 1.5rem;
-  border: 2px solid #ff9900;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* === Contact Section (two side by side boxes) === */
-#contact .contact-wrapper {
-  display: flex;
-  flex-wrap: wrap;          /* stack on smaller screens */
-  justify-content: center;
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 2rem auto;
-}
-
-#contact .contact-info,
-#contact .contact-form {
-  flex: 1 1 45%;
-  min-width: 320px;
-  max-width: 500px;
-  background: #fff;
-  padding: 1.5rem;
-  border: 2px solid #ff9900;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* === Mobile fallback === */
-@media (max-width: 900px) {
-  #mission .mission-box,
-  #contact .contact-info,
-  #contact .contact-form {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
-
-
