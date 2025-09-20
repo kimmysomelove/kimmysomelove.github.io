@@ -3966,3 +3966,21 @@ header h1 {
 .card button:hover {
   background: #45a049;
 }
+/* Contact section side-by-side layout */
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-box {
+  flex: 1 1 45%;
+  min-width: 300px;
+  max-width: 550px;
+  background: #fff;
+  border: 2px solid #ff9900;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
