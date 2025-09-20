@@ -42,6 +42,31 @@ body {
     line-height: 1.6;
 }
 
+/* HEADER STYLES */
+header {
+  background-color: var(--primary-color); /* Yellow background */
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3) 2%, transparent 2%),
+    radial-gradient(circle at 60% 70%, rgba(255,255,255,0.3) 2%, transparent 2%),
+    linear-gradient(60deg, #ffec80 25%, transparent 25%),
+    linear-gradient(-60deg, #ffec80 25%, transparent 25%),
+    linear-gradient(60deg, transparent 75%, #ffec80 75%),
+    linear-gradient(-60deg, transparent 75%, #ffec80 75%);
+  background-size: 40px 70px; /* tweak size for honeycomb look */
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* HEADER TITLE */
+header h1 {
+  font-family: var(--heading-font);
+  font-size: 3.5rem;
+  color: var(--accent-color); /* orange-red */
+  text-shadow: 2px 2px 0 #333; /* outline for contrast */
+  margin: 0;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 1rem;
