@@ -123,6 +123,12 @@ img {
     height: auto;
     border-radius: var(--border-radius);
 }
+@media (max-width: 980px) {
+  .mission-box {
+    flex: 1 1 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }  
 
 .container {
   width: 95%;
