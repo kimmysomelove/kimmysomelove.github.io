@@ -3926,3 +3926,10 @@ header h1 {
   margin: 0;
   text-align: center;
 }
+.mission-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* makes the image fill the box */
+  border-radius: 8px;  /* keeps rounded corners like your box */
+  display: block;
+}
