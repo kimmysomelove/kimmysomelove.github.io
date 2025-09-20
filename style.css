@@ -4024,3 +4024,18 @@ footer nav {
 footer nav a {
   flex: 0 1 auto;
 }
+/* =========================
+   Widen contact + footer section
+   ========================= */
+#contact {
+  max-width: 1200px;   /* make it much wider */
+  width: 95%;          /* stretch across most of the page */
+  margin: 0 auto;
+}
+
+footer {
+  max-width: 1200px;   /* match contact width */
+  width: 95%;
+  margin: 0 auto;
+}
+
