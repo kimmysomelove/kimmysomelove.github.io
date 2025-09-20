@@ -154,21 +154,12 @@ section {
 
 .website-title {
   font-family: 'Bubblegum Sans', cursive;
-  font-size: 5rem;
-  text-align: center;
-  color: #ff4dd2; /* base neon pink */
+  font-size: 4.5rem;
   letter-spacing: 4px;
-  font-weight: bold;
-  display: inline-block;
-
-  text-shadow: 
-    0 0 5px #ff4dd2,
-    0 0 10px #ff66ff,
-    0 0 20px #ff99ff,
-    0 0 40px #ff3399,
-    0 0 80px #ff0099;
-  
-  animation: float 6s ease-in-out infinite;
+  color: #FF4500 !important;   /* reddish-orange */
+  text-shadow: 2px 2px 4px #000000; /* stark contrast */
+  margin: 20px 0;
+  text-align: center;
 }
 
 
