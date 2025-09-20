@@ -3894,5 +3894,15 @@ footer {
   height: auto;
   margin-bottom: 1rem;
 }
+/* FORCE HEADER TITLE STYLE */
+header h1 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 3.8rem !important;
+  color: #e63946 !important;   /* rich red, pops without neon */
+  text-shadow: none !important; /* no blur/fuzz */
+  font-weight: 700 !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
 
 
