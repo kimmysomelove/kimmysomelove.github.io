@@ -4005,5 +4005,42 @@ body {
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+/* === HARD FIX: Force Mission Section two-column layout === */
+.mission-boxes {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 2rem !important;
+  margin: 40px auto !important;
+  max-width: 1200px !important;
+}
+
+.mission-box {
+  flex: 1 1 45% !important;   /* two side-by-side */
+  min-width: 320px !important;
+  max-width: 550px !important;
+  background: #fff !important;
+  border: 2px solid #ff9900 !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  text-align: center !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+.mission-box img {
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 8px !important;
+  margin-bottom: 15px !important;
+}
+
+/* Stack nicely on small screens */
+@media (max-width: 900px) {
+  .mission-box {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+}
 
 
