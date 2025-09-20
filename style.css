@@ -3925,3 +3925,54 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+/* FORCE FIX: Mission + Contact boxes side by side wider */
+
+/* apply to all .mission-boxes on page */
+.mission-boxes {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 2rem !important;
+
+  max-width: 1400px !important;   /* expand page width */
+  width: 95% !important;          /* use nearly full screen */
+  margin: 2rem auto !important;
+  padding: 0 1rem !important;
+}
+
+/* each box inside stays half width */
+.mission-box {
+  flex: 1 1 48% !important;
+  min-width: 420px !important;
+  max-width: 680px !important;
+
+  background: #fff !important;
+  padding: 2rem !important;
+  border: 2px solid #ff9900 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+/* images inside boxes */
+.mission-box img {
+  display: block !important;
+  margin: auto !important;
+  max-width: 95% !important;
+  height: auto !important;
+  border-radius: 8px !important;
+}
+
+/* fallback: on small screens, stack cleanly */
+@media (max-width: 980px) {
+  .mission-box {
+    flex: 1 1 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
