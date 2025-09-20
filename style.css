@@ -3888,52 +3888,34 @@ header h1 {
   display: flex;
   flex-wrap: wrap;         /* responsive on mobile */
   justify-content: center; /* center horizontally */
-  align-items: stretch;    /* force equal height */
+  align-items: stretch;    /* equal heights */
   gap: 2rem;
-  max-width: 1100px;
+  max-width: 1400px;       /* wider content area */
   margin: 2rem auto;
 }
 
 /* Each Mission Box */
 .mission-box {
-  flex: 1 1 45%;           /* ~half each row */
-  min-width: 300px;
-  max-width: 550px;
+  flex: 1 1 48%;           /* ~half each row, a bit wider */
+  min-width: 400px;        /* keep it from getting too skinny */
+  max-width: 650px;        /* allow wider paragraph space */
   background: #fff;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 8px;
   border: 2px solid #ff9900;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 
-  /* 🔑 Equal height trick */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centers inside */
-}
-.mission-box img {
-  display: block;
-  margin: auto;            /* centers image vertically + horizontally */
-  max-width: 90%;          /* larger fit */
-  height: auto;
-  border-radius: 8px;
-}
-.mission-box {
-  flex: 1 1 45%;
-  min-width: 300px;
-  max-width: 550px;
-  min-height: 500px;   /* ⬅️ ensures both stay tall and equal */
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 2px solid #ff9900;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-
+  /* Equal height trick */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-
-
+.mission-box img {
+  display: block;
+  margin: auto;
+  max-width: 95%;          /* nice big fit */
+  height: auto;
+  border-radius: 8px;
+}
