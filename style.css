@@ -3915,16 +3915,16 @@ header h1 {
   max-width: 100%;
   border-radius: 12px;
   margin-bottom: 15px;
+
 }
-/* FORCE site title no matter what */
-header h1, 
-header .site-title, 
-header .logo, 
-header .logo a {
-  color: #d63946 !important;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 3.8rem !important;
-  text-shadow: none !important;
+/* FINAL TITLE FIX */
+.website-title {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 4.5rem;
+  color: #d62828 !important;   /* strong reddish tone */
+  text-shadow: none !important; /* remove glow/neon fuzz */
+  margin: 0;
+  text-align: center;
 }
 
 
