@@ -3873,5 +3873,18 @@ footer {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
+.mission-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* space between */
+  max-width: 1200px; /* make them stretch more */
+  margin: 0 auto;
+}
+
+.mission-box {
+  flex: 1;
+  min-width: 400px; /* wider blocks */
+  max-width: 550px;
+}
 
 
