@@ -125,10 +125,10 @@ img {
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  width: 95%;
+  max-width: 1400px;   /* gives more room */
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 section {
