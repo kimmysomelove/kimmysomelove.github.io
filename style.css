@@ -3916,3 +3916,12 @@ header h1 {
   height: auto;
   border-radius: 8px;
 }
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  max-width: 100%;     /* 🔑 allow full width */
+  margin: 0 auto;
+  padding: 0;
+}
