@@ -3886,36 +3886,33 @@ header h1 {
 /* Mission Section Layout */
 .mission-boxes {
   display: flex;
-  flex-wrap: wrap;         /* responsive on mobile */
-  justify-content: center; /* center horizontally */
-  align-items: stretch;    /* equal heights */
+  flex-wrap: wrap;           /* responsive on mobile */
+  justify-content: center;   /* center horizontally */
+  align-items: stretch;      /* equal height columns */
   gap: 2rem;
-  max-width: 1400px;       /* wider content area */
+  max-width: 1400px;         /* 🔑 wider content area */
   margin: 2rem auto;
 }
 
 /* Each Mission Box */
 .mission-box {
-  flex: 1 1 48%;           /* ~half each row, a bit wider */
-  min-width: 400px;        /* keep it from getting too skinny */
-  max-width: 650px;        /* allow wider paragraph space */
+  flex: 1 1 45%;             /* about half the row */
+  min-width: 350px;          /* keeps boxes from shrinking too small */
   background: #fff;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 8px;
   border: 2px solid #ff9900;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 
-  /* Equal height trick */
   display: flex;
-  flex-direction: column;
+  flex-direction: column;    /* stack content inside */
   justify-content: center;
 }
-
 .mission-box img {
   display: block;
   margin: auto;
-  max-width: 95%;          /* nice big fit */
+  max-width: 90%;
   height: auto;
   border-radius: 8px;
 }
