@@ -4038,4 +4038,106 @@ footer {
   width: 95%;
   margin: 0 auto;
 }
+/* ======= CONTACT/FOOTER WIDEN + 2-column layout fix ======= */
+
+/* Make the contact area wider and centered (only affects contact & footer) */
+#contact,
+footer {
+  width: 95%;
+  max-width: 1200px;   /* how wide the center column can grow */
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Two-column style for the get-in-touch + form pair */
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;               /* space between boxes */
+  align-items: flex-start;
+  justify-content: center; /* center horizontally */
+}
+
+/* Left column (text) and right column (form) */
+.contact-info,
+.contact-form {
+  flex: 1 1 420px;    /* grow/shrink, base width 420px */
+  min-width: 320px;   /* prevent being too narrow on small screens */
+  max-width: 560px;   /* prevent one column from getting huge */
+}
+
+/* Make the inner cards keep their visual style (if you use .card) */
+.contact-info .card,
+.contact-form .card,
+.contact-info,
+.contact-form {
+  background: transparent; /* keep your existing card styling — override if needed */
+}
+
+/* Adjust form so it fits nicely inside its column */
+.contact-form form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Footer links layout: centered, wrapped, with spacing */
+footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+/* Make footer link pills look consistent and not overflow */
+footer .footer-links a {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 18px;
+  background: #ffffff; /* white pill like you had */
+  color: #0b5a2f;      /* keep readable */
+  text-decoration: none;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+  white-space: nowrap;
+}
+
+/* Center the copyright row and give some breathing room above footer links */
+footer .footer-content {
+  text-align: center;
+  padding-top: 4px;
+  margin-bottom: 6px;
+}
+
+/* OPTIONAL: remove honeycomb/background inside central area that might misalign visual gutters */
+/* If the honeycomb is causing the visual offset you complained about, uncomment these lines */
+/*
+#contact,
+footer,
+#contact .contact-wrapper {
+  background-image: none !important;
+}
+*/
+
+/* ADJUST PAGE GUTTERS: balance the green side-space (be careful: this affects layout width) */
+/* If your site has a global .page or .site or .container rule setting the narrow column, overriding it here fixes the right/left gutter imbalance for the center column only */
+.main-content,
+.container,
+.page {
+  /* don't force this unless you know it won't break the top sections */
+  /* width: 95%; max-width: 1200px; margin: 0 auto; */
+}
+
+/* Small screens: stack columns */
+@media (max-width: 880px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  #contact,
+  footer {
+    width: 95%;
+    max-width: 720px;
+  }
+}
 
