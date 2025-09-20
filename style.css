@@ -3974,5 +3974,30 @@ body {
     min-width: 100% !important;
     max-width: 100% !important;
   }
+/* 🔥 Force full width for main content */
+.container {
+  max-width: 1400px !important;
+  width: 95% !important;
 }
+
+/* 🔥 Fix bottom contact section boxes */
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1 1 45%;
+  min-width: 320px;
+  background: #fff;
+  border: 2px solid #ff9900;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 
