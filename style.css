@@ -4000,5 +4000,52 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
+/* ===== EMERGENCY OVERRIDE — KEEP THIS AS THE LAST RULES IN style.css ===== */
+
+/* widen just these two sections so the page's narrow wrapper can't squeeze them */
+#mission, #contact { width: 100%; }
+#mission .mission-boxes,
+#contact .contact-wrapper {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 2rem !important;
+  max-width: 1200px !important;   /* wider row */
+  margin: 2rem auto !important;
+}
+
+/* two equal columns */
+#mission .mission-box,
+#contact .contact-info,
+#contact .contact-form {
+  flex: 1 1 48% !important;
+  min-width: 320px !important;     /* let them fit even in a narrower wrapper */
+  max-width: 560px !important;
+}
+
+/* inputs/forms must not break the flex sizing */
+#contact .contact-form form,
+#contact .contact-form,
+#contact .contact-info {
+  width: auto !important;
+}
+
+/* mobile: stack */
+@media (max-width: 900px) {
+  #mission .mission-box,
+  #contact .contact-info,
+  #contact .contact-form {
+    flex: 1 1 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* absolutely kill any old narrow container rule that might still win */
+.container, main .container, .content .container {
+  max-width: 1200px !important;
+  width: 95% !important;
+}
 
 
