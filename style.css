@@ -34,6 +34,23 @@ h1, h2, h3, h4, h5, nav a {
     padding: 0;
     box-sizing: border-box;
 }
+/* Contact Section Full-Width Fix */
+#contact .contact-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 60px;                  /* bigger space between the two boxes */
+  max-width: 1800px !important;  /* stretch wider across the page */
+  margin: 0 auto !important;
+  padding: 40px 60px;         /* breathing room inside section */
+}
+
+/* Each box wider */
+#contact .contact-box {
+  flex: 1 1 50%;              /* each takes half the width */
+  min-width: 500px;           /* keep text comfortable */
+  max-width: 800px;           /* prevent runaway too wide */
+}
 
 body {
     font-family: 'Nunito', sans-serif;
