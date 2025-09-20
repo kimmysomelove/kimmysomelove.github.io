@@ -3916,5 +3916,15 @@ header h1 {
   border-radius: 12px;
   margin-bottom: 15px;
 }
+/* FORCE site title no matter what */
+header h1, 
+header .site-title, 
+header .logo, 
+header .logo a {
+  color: #d63946 !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 3.8rem !important;
+  text-shadow: none !important;
+}
 
 
