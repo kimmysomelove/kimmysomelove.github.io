@@ -3871,16 +3871,28 @@ footer {
 }
 .mission-boxes {
   display: flex;
+  flex-wrap: wrap; /* mobile-friendly */
   justify-content: center;
-  gap: 30px; /* space between */
-  max-width: 1200px; /* make them stretch more */
-  margin: 0 auto;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
 }
-
 .mission-box {
-  flex: 1;
-  min-width: 400px; /* wider blocks */
+  flex: 1 1 45%;   /* take about half each row */
+  min-width: 300px;
   max-width: 550px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #ff9900;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.mission-box img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 
