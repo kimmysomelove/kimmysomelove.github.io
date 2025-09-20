@@ -3829,5 +3829,24 @@ footer {
   50%  { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
+.mission-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* makes it responsive for mobile */
+}
+
+.mission-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
 
 
