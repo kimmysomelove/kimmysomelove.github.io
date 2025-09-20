@@ -3933,3 +3933,36 @@ header h1 {
   border-radius: 8px;  /* keeps rounded corners like your box */
   display: block;
 }
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.two-column .card {
+  flex: 1 1 45%;
+  min-width: 300px;
+  background: #fff;
+  border: 2px solid #ff9900;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #ff9900;
+}
+
+.card button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card button:hover {
+  background: #45a049;
+}
