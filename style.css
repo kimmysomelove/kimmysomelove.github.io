@@ -3895,5 +3895,28 @@ header h1 {
   margin: 0 auto !important;
   text-align: center !important;
 }
+.mission-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.mission-box {
+  flex: 1 1 45%;
+  background: #fdfdfd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.mission-box img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
 
 
