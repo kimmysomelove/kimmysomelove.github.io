@@ -4529,14 +4529,15 @@ footer p {
 .logo-bar,
 .website-title-wrapper {
   width: 100%;
-  background: #fff8dc;   /* honey-yellow strip */
+  background: #fff8dc;       /* honey-yellow strip */
   display: flex;
   justify-content: center;   /* horizontal centering */
   align-items: center;       /* vertical centering */
-  padding: 20px 0;           /* even space top + bottom */
+  padding: 40px 0;           /* taller banner so text stays inside */
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;
+  position: relative;
 }
 
 /* Title text */
@@ -4544,9 +4545,11 @@ footer p {
   font-size: clamp(1.5rem, 6vw, 2.5rem);
   font-weight: bold;
   color: #1b5e20;
-  margin: 0;             /* remove default H1 margin */
-  line-height: 1;        /* keeps text snug in strip */
+  margin: 0 !important;      /* kill ALL default margins */
+  padding: 0 !important;     /* no top padding to push it out */
+  line-height: 1.2;
   text-align: center;
   white-space: nowrap;
+  position: relative;
+  top: 10px;                 /* ✅ manually nudges text LOWER */
 }
-
