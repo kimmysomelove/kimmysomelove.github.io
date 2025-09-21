@@ -4253,3 +4253,44 @@ footer,
     min-width: auto;
   }
 }
+/* Make footer content align with page width */
+.site-footer {
+  background: #1b5e20;          /* deep green */
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 5px solid #ffcc33;
+}
+
+.site-footer .footer-inner {
+  max-width: 1200px;            /* match your main page width */
+  margin: 0 auto;
+}
+
+.site-footer p {
+  margin: 0 0 20px;
+  font-size: 1rem;
+}
+
+.site-footer .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.site-footer .footer-nav a {
+  background: #ffcc33;
+  color: #1b5e20;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.site-footer .footer-nav a:hover {
+  background: #fff176;
+  color: #000;
+}
