@@ -4493,4 +4493,14 @@ footer p {
   font-size: 0.9rem;
   color: #444;
 }
+.website-title {
+  font-size: clamp(1.2rem, 6vw, 2.5rem); /* scales: min 1.2rem, typical ~6vw, max 2.5rem */
+  font-weight: bold;
+  color: #1b5e20;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;     /* 🚨 never break onto 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis; /* if screen is too narrow, shows … instead of wrapping */
+}
 
