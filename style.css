@@ -4418,38 +4418,26 @@ footer p {
 /* On phones: no float, centered, yellow background */
 @media (max-width: 768px) {
   .website-title-wrapper {
-    position: relative !important;   /* stop absolute/floating */
+    position: relative !important;  /* stop absolute/floating */
     display: flex;
-    justify-content: center;         /* center horizontally */
-    align-items: center;             /* center vertically */
-    background-color: #FFD700;       /* solid yellow background */
-    padding: 12px;                   /* breathing room */
+    justify-content: center;        /* center horizontally */
+    align-items: center;            /* center vertically */
+    background-color: #FFD700;      /* solid yellow background */
+    padding: 12px;
   }
 
   .website-title {
-    font-size: 1.8rem !important;    /* fit smaller screens */
+    font-size: 1.8rem !important;   /* fit smaller screens */
     line-height: 1.2;
     margin: 0;
     text-align: center;
-    white-space: nowrap;             /* keep “42” on same line */
+    white-space: nowrap;            /* keep "42" on same line */
   }
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden; /* stop sideways scroll only */
-  overflow-y: auto;   /* allow vertical scrolling */
-}
-html, body {
-  height: auto !important;
-  min-height: 100% !important;
-  overflow-y: auto !important;   /* force vertical scroll */
-}
-/* === FLOATING TITLE SAFETY (phones only) === */
+
+/* Floating Title Safety (phones only) */
 @media (max-width: 768px) {
-  .site-title, 
+  .site-title,
   .website-title {
     background-color: #FFEB3B !important; /* solid yellow strip */
     color: #1b5e20 !important;            /* dark green text */
