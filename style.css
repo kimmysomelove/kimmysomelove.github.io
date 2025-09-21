@@ -4220,3 +4220,36 @@ footer,
   min-width: 600px;   /* text doesn’t get squished */
   max-width: 1400px;  /* each box can breathe */
 }
+/* CONTACT SECTION LAYOUT */
+#contact .contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+#contact .contact-box {
+  flex: 1 1 45%;
+  min-width: 400px;
+  max-width: 700px;
+  background: #fff;
+  border: 2px solid #ff9900;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive: stack vertically on mobile */
+@media (max-width: 768px) {
+  #contact .contact-wrapper {
+    flex-direction: column;
+  }
+  #contact .contact-box {
+    max-width: 100%;
+    min-width: auto;
+  }
+}
