@@ -4439,3 +4439,11 @@ footer p {
     white-space: nowrap;             /* keep “42” on same line */
   }
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* stop sideways scroll only */
+  overflow-y: auto;   /* allow vertical scrolling */
+}
