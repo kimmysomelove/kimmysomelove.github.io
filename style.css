@@ -4431,3 +4431,12 @@ footer p {
     transform: none !important;
   }
 }
+/* Force yellow honeycomb background behind title on phones */
+@media (max-width: 768px) {
+  .logo-bar, 
+  .website-title-wrapper {
+    background: #fff8dc url('images/honeycomb.png') repeat center center !important;
+    background-size: contain !important;
+    padding: 15px 10px !important;
+  }
+}
