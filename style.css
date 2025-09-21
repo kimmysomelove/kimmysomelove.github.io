@@ -4567,3 +4567,23 @@ footer p {
   overflow: hidden;
   position: relative;
 }
+/* Desktop: keep on one line */
+.website-title {
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  font-weight: bold;
+  color: #1b5e20;
+  margin: 0;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;   /* ✅ one line only on big screens */
+}
+
+/* 📱 Mobile: allow wrapping so it never floats out */
+@media (max-width: 768px) {
+  .website-title {
+    font-size: 2rem;        /* smaller so full word fits */
+    white-space: normal;    /* ✅ allow wrapping */
+    word-break: break-word; /* if needed, break between letters */
+    overflow-wrap: break-word;
+  }
+}
