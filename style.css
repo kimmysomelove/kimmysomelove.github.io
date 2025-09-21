@@ -4420,14 +4420,22 @@ footer p {
   display: block;
 }
 
-/* On phones: no float, no weird offsets */
+/* On phones: no float, centered, yellow background */
 @media (max-width: 768px) {
-  .site-title {
-    font-size: 2rem;       /* slightly smaller */
+  .website-title-wrapper {
+    position: relative !important;   /* stop absolute/floating */
+    display: flex;
+    justify-content: center;         /* center horizontally */
+    align-items: center;             /* center vertically */
+    background-color: #FFD700;       /* solid yellow background */
+    padding: 12px;                   /* breathing room */
+  }
+
+  .website-title {
+    font-size: 1.8rem !important;    /* fit smaller screens */
     line-height: 1.2;
-    padding: 12px 10px;    /* add breathing room */
-    position: static !important;   /* kill floating */
-    top: auto !important;
-    transform: none !important;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;             /* keep “42” on same line */
   }
 }
