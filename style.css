@@ -4637,3 +4637,32 @@ header, .logo-bar, .website-title-wrapper {
     overflow: visible !important;
   }
 }
+/* === Header Reset for All Devices === */
+header, .logo-bar, .website-title-wrapper {
+  background: #fff8dc;   /* solid honey-yellow */
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;    /* normal flow, not floating */
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* Title styling */
+.website-title {
+  font-size: clamp(2rem, 6vw, 3rem); /* scales with screen size */
+  font-weight: bold;
+  color: #1b5e20;  /* your deep green */
+  margin: 0;
+  white-space: nowrap;
+  overflow: visible;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .website-title {
+    font-size: 1.8rem;   /* smaller so "42" stays on one line */
+  }
+}
