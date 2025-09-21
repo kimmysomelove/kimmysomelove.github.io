@@ -4595,3 +4595,45 @@ footer p {
     overflow-wrap: break-word;
   }
 }
+/* --- HEADER FIX --- */
+header, .logo-bar, .website-title-wrapper {
+  background: #fff8dc !important;   /* soft honey-yellow strip */
+  width: 100% !important;
+  min-height: 80px;                 /* keeps space for title */
+  margin: 0 auto !important;
+  padding: 20px 0 !important;       /* adjust as needed */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;                      /* sit above other elements */
+}
+
+/* Title itself */
+.website-title {
+  margin: 0 !important;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  font-weight: bold;
+  color: #1b5e20 !important;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+/* ✅ On phones: disable float, just center title normally */
+@media (max-width: 768px) {
+  header, .logo-bar, .website-title-wrapper {
+    position: static !important;    /* no floating */
+    display: block !important;
+    text-align: center !important;
+    padding: 15px 0 !important;
+    background: #fff8dc !important; /* honey yellow strip */
+  }
+
+  .website-title {
+    font-size: 1.8rem !important;   /* smaller so it always fits */
+    line-height: 1.3;
+    white-space: nowrap;            /* keep "42" on the same line */
+    overflow: visible !important;
+  }
+}
