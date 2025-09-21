@@ -4464,4 +4464,36 @@ header, .logo-bar, .website-title-wrapper {
     overflow: hidden;
   }
 }
+/* Footer cleanup */
+footer {
+  background: #fff;                 /* clean white background */
+  text-align: center;
+  padding: 20px 0;
+  border-top: 3px solid #d4af37;    /* subtle golden top line */
+}
+
+/* Footer links */
+footer a {
+  font-size: 1.4rem;                /* make links ~2x bigger */
+  margin: 0 15px;
+  color: #006400;                   /* deep green by default */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #FFD700;                   /* yellow on hover */
+}
+
+footer a:active {
+  color: #FFD700;                   /* yellow when clicked */
+}
+
+/* Footer text */
+footer p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #444;
+}
 
