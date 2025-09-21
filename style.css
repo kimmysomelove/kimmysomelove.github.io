@@ -4425,15 +4425,12 @@ header, .logo-bar, .website-title-wrapper {
   box-sizing: border-box;
 }
 .website-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #1b5e20;
-  margin: 0;
-  text-align: center;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-  display: block;
+  font-size: 2rem;        /* smaller for phones, adjust if needed */
+  line-height: 1.2;
+  padding: 0 10px;
+  white-space: nowrap;    /* 🚨 keeps whole title on one line */
+  overflow: hidden;
+  text-overflow: ellipsis; /* just in case it ever overflows screen */
 }
 
 /* 📱 On phones */
