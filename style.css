@@ -4361,37 +4361,29 @@ footer,
 }
 
 
-/* Footer cleanup */
+/* Clean footer strip */
 footer {
-  background: #fff;                 /* clean white background */
+  background: #006400; /* dark green footer background */
+  padding: 25px 0;
   text-align: center;
-  padding: 20px 0;
-  border-top: 3px solid #d4af37;    /* subtle golden top line */
+  border: none !important;
+  box-shadow: none !important;
 }
 
-/* Footer links */
+/* Footer links styled like top nav */
 footer a {
-  font-size: 1.4rem;                /* make links ~2x bigger */
-  margin: 0 15px;
-  color: #006400;                   /* deep green by default */
+  font-size: 1.2rem;
   font-weight: bold;
+  margin: 0 18px;
+  color: #FF5722;  /* bright orange, matches header links */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #FFD700;                   /* yellow on hover */
+  color: #FFD700; /* golden yellow hover */
 }
 
-footer a:active {
-  color: #FFD700;                   /* yellow when clicked */
-}
-
-/* Footer text */
-footer p {
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #444;
 }
 /* Main site title */
 .site-title {
