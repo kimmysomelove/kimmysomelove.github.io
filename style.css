@@ -4445,4 +4445,11 @@ footer p {
     overflow: visible !important;
   }
 }
+/* === EMERGENCY SCROLL FIX === */
+html, body {
+  height: auto !important;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;  /* no sideways scroll */
+  overflow-y: scroll !important;  /* always vertical scrollbar */
+}
 
