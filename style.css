@@ -4183,3 +4183,40 @@ footer,
   min-width: 350px;  /* stop them from shrinking too small */
   max-width: 600px;  /* prevent runaway stretch */
 }
+/* From About the Author down — make sections full width */
+#about, #mission, #contact {
+  width: 100vw !important;                       
+  margin-left: calc(50% - 50vw) !important;      
+  margin-right: calc(50% - 50vw) !important;
+  max-width: none !important;                    
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+}
+
+/* Super wide content boxes */
+#about .box, 
+#mission .box, 
+#contact .box {
+  max-width: 3000px !important;   /* <<< set to 3000px */
+  margin: 0 auto;
+}
+
+/* Mission + Contact: force two side-by-side */
+#mission .mission-boxes,
+#contact .contact-wrapper {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 60px;
+  max-width: 3000px !important;   /* <<< also 3000px wide */
+  margin: 0 auto;
+}
+
+/* Each individual box */
+#mission .box, 
+#contact .box {
+  flex: 1 1 45%;
+  min-width: 600px;   /* text doesn’t get squished */
+  max-width: 1400px;  /* each box can breathe */
+}
