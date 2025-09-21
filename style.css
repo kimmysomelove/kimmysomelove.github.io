@@ -1,3 +1,11 @@
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden;
+  background: #fff !important;  /* force white instead of dark gray/black */
+}
 
 
 
