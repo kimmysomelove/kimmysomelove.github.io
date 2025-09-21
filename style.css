@@ -4447,21 +4447,21 @@ header, .logo-bar, .website-title-wrapper {
 /* Fix site title on small screens */
 @media (max-width: 768px) {
   .website-title {
-    font-size: 1.6rem !important;   /* shrink title size */
-    line-height: 1.2 !important;    /* tighter line height */
-    padding: 0 12px !important;     /* side padding so text never touches edge */
-    text-align: center !important;  /* center always */
-    white-space: normal !important; /* allow wrapping */
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    display: block !important;
+    font-size: 2rem !important;     /* slightly larger so 42 can fit */
+    line-height: 1.1 !important;    /* tighter spacing */
+    padding: 0 8px !important;      /* small side padding */
+    text-align: center !important;
+    white-space: nowrap !important; /* force everything onto one line */
+    overflow: hidden;
+    text-overflow: ellipsis;        /* safety if somehow too long */
     max-width: 100% !important;
   }
 
   .website-title-wrapper {
     max-width: 100% !important;
     text-align: center !important;
-    padding: 0 10px !important;
+    padding: 0 5px !important;
+    overflow: hidden;
   }
 }
 
