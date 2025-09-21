@@ -4299,9 +4299,8 @@ footer .buy-button:hover {
   flex-wrap: wrap;
 }
 
-
 .author-image img {
-  border-radius: 50%;
+  border-radius: 12px;   /* soft rounded edges */
   max-width: 250px;
   border: 5px solid #ff9900;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
