@@ -4334,3 +4334,32 @@ footer,
 }
 
 .site-footer .footer-nav
+/* Title banner wrapper */
+.site-header {
+  background: #ffeb3b url('images/honeycomb.png') repeat center center;
+  background-size: contain; /* scale honeycomb nicely */
+  text-align: center;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+/* Title text */
+.site-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1b5e20;     /* deep green text */
+  margin: 0;
+  word-wrap: break-word;
+  white-space: normal;
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* 📱 Responsive for phones */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 2rem;       /* shrink size */
+    line-height: 1.2;
+    padding: 0 10px;       /* add padding so it doesn’t hit edges */
+  }
+}
