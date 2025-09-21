@@ -3789,20 +3789,8 @@ section, .content, .wrapper {
   max-width: 1000px;   /* wider than default */
   margin: 0 auto;      /* keep it centered */
 }
-footer {
-  background-color: #0b8f2f !important;  /* force green */
-  color: #fff;
-  padding: 20px 0;
-  border-top: 4px solid #f0b400;
-}
 
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 10px;
 }
 .contact-form, .contact-info {
   min-height: 420px;  /* adjust until both look balanced */
@@ -4014,51 +4002,7 @@ header h1 {
   min-width: 320px;     /* stop from getting too small */
 }
 
-/* =========================
-   FOOTER FIX
-   Widen and space out footer links
-   ========================= */
-footer {
-  max-width: 1100px;    /* match contact section */
-  width: 95%;
-  margin: 0 auto;
-  text-align: center;
-}
 
-footer nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;            /* space between footer links */
-}
-
-footer nav a {
-  flex: 0 1 auto;
-}
-/* =========================
-   Widen contact + footer section
-   ========================= */
-#contact {
-  max-width: 1200px;   /* make it much wider */
-  width: 95%;          /* stretch across most of the page */
-  margin: 0 auto;
-}
-
-footer {
-  max-width: 1200px;   /* match contact width */
-  width: 95%;
-  margin: 0 auto;
-}
-/* ======= CONTACT/FOOTER WIDEN + 2-column layout fix ======= */
-
-/* Make the contact area wider and centered (only affects contact & footer) */
-#contact,
-footer {
-  width: 95%;
-  max-width: 1200px;   /* how wide the center column can grow */
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
 }
 
 /* Two-column style for the get-in-touch + form pair */
@@ -4092,44 +4036,9 @@ footer {
   box-sizing: border-box;
 }
 
-/* Footer links layout: centered, wrapped, with spacing */
-footer .footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 10px;
+
 }
 
-/* Make footer link pills look consistent and not overflow */
-footer .footer-links a {
-  display: inline-block;
-  padding: 8px 14px;
-  border-radius: 18px;
-  background: #ffffff; /* white pill like you had */
-  color: #0b5a2f;      /* keep readable */
-  text-decoration: none;
-  box-shadow: 0 2px 0 rgba(0,0,0,0.06);
-  white-space: nowrap;
-}
-
-/* Center the copyright row and give some breathing room above footer links */
-footer .footer-content {
-  text-align: center;
-  padding-top: 4px;
-  margin-bottom: 6px;
-}
-
-/* OPTIONAL: remove honeycomb/background inside central area that might misalign visual gutters */
-/* If the honeycomb is causing the visual offset you complained about, uncomment these lines */
-/*
-#contact,
-footer,
-#contact .contact-wrapper {
-  background-image: none !important;
-}
-*/
 
 /* ADJUST PAGE GUTTERS: balance the green side-space (be careful: this affects layout width) */
 /* If your site has a global .page or .site or .container rule setting the narrow column, overriding it here fixes the right/left gutter imbalance for the center column only */
@@ -4247,87 +4156,10 @@ footer,
     min-width: auto;
   }
 }
-/* Make footer content align with page width */
-.site-footer {
-  background: #1b5e20;          /* deep green */
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
-  border-top: 5px solid #ffcc33;
-}
 
-.site-footer .footer-inner {
-  max-width: 1200px;            /* match your main page width */
-  margin: 0 auto;
-}
 
-.site-footer p {
-  margin: 0 0 20px;
-  font-size: 1rem;
-}
 
-.site-footer .footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-}
 
-.site-footer .footer-nav a {
-  background: #ffcc33;
-  color: #1b5e20;
-  padding: 12px 24px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-}
-
-.site-footer .footer-nav a:hover {
-  background: #fff176;
-  color: #000;
-}
-/* Footer base styling */
-.site-footer {
-  background: #fff9c4;          /* light yellow */
-  color: #333;                  /* dark text for contrast */
-  text-align: center;
-  padding: 40px 20px;
-  border-top: 5px solid #ff9900; /* orange accent line */
-}
-
-.site-footer .footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.site-footer p {
-  margin: 0 0 20px;
-  font-size: 1rem;
-  color: #333;
-}
-
-/* Footer nav links */
-.site-footer .footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-}
-
-.site-footer .footer-nav a {
-  background: #ffcc33;           /* bold yellow buttons */
-  color: #1b5e20;                /* deep green text */
-  padding: 12px 24px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-}
-
-.site-footer .footer-nav
 /* Title banner wrapper */
 .site-header {
   background: #ffeb3b url('images/honeycomb.png') repeat center center;
@@ -4361,28 +4193,7 @@ footer,
 }
 
 
-/* Clean footer strip */
-footer {
-  background: #006400; /* dark green footer background */
-  padding: 25px 0;
-  text-align: center;
-  border: none !important;
-  box-shadow: none !important;
-}
 
-/* Footer links styled like top nav */
-footer a {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0 18px;
-  color: #FF5722;  /* bright orange, matches header links */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #FFD700; /* golden yellow hover */
-}
 
 }
 /* Main site title */
@@ -4429,5 +4240,40 @@ footer a:hover {
     white-space: normal !important;
     overflow: visible !important;
   }
+}
+/* ===== SIMPLE FULL-WIDTH FOOTER ===== */
+footer {
+  width: 100%;               /* take full width of page */
+  background: #1b5e20;       /* deep green background */
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer nav {
+  max-width: 1200px;         /* keep it same width as page content */
+  margin: 0 auto;            /* center the nav within footer */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;                 /* space between links */
+}
+
+footer nav a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;               /* white text */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+  color: #FFD700;            /* golden hover */
+}
+
+footer p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ddd;               /* lighter grey text */
+  text-align: center;
 }
 
