@@ -4445,11 +4445,15 @@ footer p {
     overflow: visible !important;
   }
 }
-/* === EMERGENCY SCROLL FIX === */
+/* === FINAL SCROLL FIX === */
 html, body {
   height: auto !important;
-  min-height: 100vh !important;
-  overflow-x: hidden !important;  /* no sideways scroll */
-  overflow-y: scroll !important;  /* always vertical scrollbar */
+  min-height: auto !important;
+  overflow-y: auto !important;  /* always allow vertical scroll */
+  overflow-x: hidden !important; /* no sideways scroll */
 }
+section, div {
+  overflow-y: visible !important;  /* let content flow */
+}
+
 
