@@ -4342,7 +4342,7 @@ footer .buy-button:hover {
 
 .author-image img {
   border-radius: 12px;
-  max-width: 320px;   /* increase size */
+  max-width: 420px;   /* increase size */
   border: 5px solid #ff9900;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
