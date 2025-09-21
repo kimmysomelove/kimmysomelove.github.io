@@ -4308,6 +4308,8 @@ footer .buy-button:hover {
 
 .author-box {
   flex: 1 1 600px;
+  max-width: 900px;   /* keeps it from stretching across entire page */
+  margin: 0 auto;     /* centers the box */
   background: #fff;
   padding: 1.5rem;
   border-radius: 12px;
@@ -4315,6 +4317,7 @@ footer .buy-button:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   color: #333;
   line-height: 1.6;
+
 }
 .author-box h2, 
 .author-box h3 {
