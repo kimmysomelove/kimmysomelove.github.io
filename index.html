@@ -344,54 +344,82 @@
 
 
 
- <!-- CONTACT SECTION -->
-<section id="contact">
+ <!-- Contact Section -->
+<section id="contact" class="contact-section">
   <div class="contact-wrapper">
-    <!-- Left box -->
+    
+    <!-- Left box: Get in Touch text -->
     <div class="contact-box">
       <h3>🌈 Get in Touch</h3>
-      <p>Have questions about our coloring books or want to share your colored pages? We’d love to hear from you!</p>
-      <p>Sign up to receive updates on new releases, coloring contests, and fun pollinator facts.</p>
-      <p>Each year, <strong>Kimmy Some Love 42</strong> donates 42 cents from every sale to organizations making a difference.</p>
-      <p><em>Next book in the series:</em><br><strong>Earth’s Pollinators of the Midwest!</strong></p>
-      <p>💗 Email:<br><a href="mailto:kimmysomelove42@gmail.com">kimmysomelove42@gmail.com</a></p>
+      <p>
+        Have questions about our coloring books or want to share your colored pages? We'd love to hear from you!
+      </p>
+      <p>
+        Sign up to receive updates on new releases, coloring contests, and fun pollinator facts.
+      </p>
+      <p>
+        We’d also love your input! If you know of a nonprofit, school, or community group in your area that protects pollinators, promotes biodiversity, or supports ecological education, please share their name with us. Each year, <strong>Kimmy Some Love 42</strong> donates 42 cents from every sale to organizations making a difference — and your suggestion could be part of our next donation campaign.
+      </p>
+      <p>
+        Stay tuned for our next book in the series — <br><strong>Earth’s Pollinators of the Midwest</strong>!
+      </p>
+      <p class="contact-email">
+        <span class="heart-icon">❤️</span> Email: <a href="mailto:kimmysomelove42@gmail.com">kimmysomelove42@gmail.com</a>
+      </p>
     </div>
 
-    <!-- Right box -->
+    <!-- Right box: Contact Form -->
     <div class="contact-box">
       <form action="https://formspree.io/f/xkgrewok" method="POST">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
 
-        <label for="email">Email</label>
-        <input id="email" name="_replyto" type="email" required>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
 
-        <button type="submit">SEND MESSAGE</button>
+        <input type="hidden" name="_subject" value="New message from website">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="form-group">
+          <button type="submit" class="submit-button">Send Message</button>
+        </div>
       </form>
     </div>
+
   </div>
 </section>
-<!-- END CONTACT SECTION -->
 
 
+        <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <p>&copy; 2025 KimmySomeLove42. All rights reserved.</p>
+          </div>
+        </div>
 
-    <!-- FOOTER -->
-<footer class="site-footer">
-  <p>© 2025 KimmySomeLove42. All rights reserved.</p>
-  <nav class="footer-nav">
-    <a href="about.html">About</a>
-    <a href="samples.html">Samples</a>
-    <a href="author.html">Author</a>
-    <a href="mission.html">Mission</a>
-    <a href="contact.html">Contact</a>
-    <a href="riddles.html">Riddles</a>
-    <a href="buy.html">Buy Now</a>
-    <a href="reviews.html">Read Reviews</a>
-  </nav>
-</footer>
+        <div class="footer-links">
+         
+          <a href="#about">About</a>
+          <a href="#samples">Samples</a>
+          <a href="#author">Author</a>
+          <a href="#mission">Mission</a>
+          <a href="#contact">Contact</a>
+          <a href="riddles.html">Riddles</a>
+          <a href="https://www.amazon.com/Pollinators-Insects-Beneficial-Friends-Northwest/dp/B0D6BD2NSY" target="_blank">Buy Now</a>
+          <a href="reviews.html" class="review-button">Read Reviews</a>
+        </div>
+      </div>
+    </footer>
 
 
 
