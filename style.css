@@ -4553,3 +4553,17 @@ footer p {
   position: relative;
   top: 10px;                 /* ✅ manually nudges text LOWER */
 }
+.logo-bar,
+.website-title-wrapper {
+  width: 100%;
+  background-color: #fff8dc !important;   /* force honey-yellow strip */
+  background-image: none !important;      /* no dark overlays */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
