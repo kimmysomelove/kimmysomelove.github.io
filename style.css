@@ -4405,4 +4405,14 @@ footer,
     padding: 0 10px;   /* little side padding so it never touches the green edges */
   }
 }
+/* Wrapper ensures the title never overflows */
+.website-title-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  overflow-wrap: break-word; /* allow long words to wrap */
+  word-break: break-word;    /* extra safety */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
 
