@@ -2,9 +2,10 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
   width: 100% !important;
-  overflow-x: hidden !important;  /* only hides sideways scroll */
-  overflow-y: auto !important;   /* keeps vertical scrolling working */
-  background: #fff9f9 !important; /* soft branded background */
+  min-height: 100% !important;
+  overflow-x: hidden !important;  /* disable sideways scroll */
+  overflow-y: auto !important;    /* always allow vertical scroll */
+  background: #fff9f9 !important; /* soft branded base background */
 }
 
 
