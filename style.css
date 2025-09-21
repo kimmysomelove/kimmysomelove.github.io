@@ -4241,39 +4241,35 @@ header h1 {
     overflow: visible !important;
   }
 }
-/* ===== SIMPLE FULL-WIDTH FOOTER ===== */
-footer {
-  width: 100%;               /* take full width of page */
+/* === CLEAN FOOTER STYLE === */
+.site-footer {
   background: #1b5e20;       /* deep green background */
-  padding: 20px 0;
   text-align: center;
+  padding: 20px;
 }
 
-footer nav {
-  max-width: 1200px;         /* keep it same width as page content */
-  margin: 0 auto;            /* center the nav within footer */
+.site-footer .footer-nav {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;                 /* space between links */
+  justify-content: center;
+  gap: 20px;                 /* spacing between links */
+  margin: 15px 0;
 }
 
-footer nav a {
-  font-size: 1.4rem;
+.site-footer .footer-nav a {
+  font-size: 1.3rem;         /* bigger text */
   font-weight: bold;
-  color: #fff;               /* white text */
+  color: #fff;               /* white links */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-footer nav a:hover {
-  color: #FFD700;            /* golden hover */
+.site-footer .footer-nav a:hover {
+  color: #FFD700;            /* gold on hover */
 }
 
-footer p {
-  margin-top: 15px;
+.site-footer p {
+  margin-top: 10px;
   font-size: 0.9rem;
-  color: #ddd;               /* lighter grey text */
-  text-align: center;
+  color: #eee;               /* lighter grey for copyright */
 }
-
