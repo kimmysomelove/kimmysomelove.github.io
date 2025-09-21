@@ -4324,3 +4324,32 @@ footer .buy-button:hover {
   color: #ff9900;
   margin-bottom: 1rem;
 }
+/* Author Section */
+.author-section {
+  padding: 60px 20px;
+  background: transparent; /* keeps the green site bg */
+}
+
+.author-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.author-image img {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 4px solid #ff9900;
+}
+
+.author-box {
+  flex: 1;
+  background: #fffdf8; /* slightly warm off-white */
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  line-height: 1.6;
+}
