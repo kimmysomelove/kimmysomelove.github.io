@@ -257,7 +257,6 @@ nav ul li a:hover {
 .welcome-section {
     background-color: var(--honeycomb-color);
     position: relative;
-    overflow: hidden;
     padding-top: 3rem;
 }
 
@@ -494,7 +493,6 @@ nav ul li a:hover {
 .sample-item {
     background-color: var(--light-color);
     border-radius: var(--border-radius);
-    overflow: hidden;
     box-shadow: var(--box-shadow);
     transition: var(--transition);
     border: 3px solid var(--primary-color);
@@ -509,7 +507,6 @@ nav ul li a:hover {
 
 .sample-image-container {
     height: 300px;
-    overflow: hidden;
     position: relative;
     background-color: #fff;
 }
@@ -1062,7 +1059,6 @@ footer::before {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
   gap: 8px;
 }
@@ -2003,7 +1999,6 @@ nav ul li a:hover {
 .welcome-section {
     background-color: var(--honeycomb-color);
     position: relative;
-    overflow: hidden;
     padding-top: 3rem;
 }
 
@@ -2255,7 +2250,6 @@ nav ul li a:hover {
 
 .sample-image-container {
     height: 300px;
-    overflow: hidden;
     position: relative;
     background-color: #fff;
 }
@@ -2808,7 +2802,6 @@ footer::before {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
   gap: 8px;
 }
@@ -4350,7 +4343,7 @@ footer,
   background-size: contain; /* scale honeycomb nicely */
   text-align: center;
   padding: 20px 10px;
-  overflow: hidden;
+ 
 }
 
 
