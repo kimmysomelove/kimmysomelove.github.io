@@ -4525,4 +4525,28 @@ footer p {
   margin: 0;
   white-space: nowrap;
 }
+/* Header wrapper */
+.logo-bar,
+.website-title-wrapper {
+  width: 100%;
+  background: #fff8dc;   /* honey-yellow strip */
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: center;       /* vertical centering */
+  padding: 20px 0;           /* even space top + bottom */
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Title text */
+.website-title {
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  font-weight: bold;
+  color: #1b5e20;
+  margin: 0;             /* remove default H1 margin */
+  line-height: 1;        /* keeps text snug in strip */
+  text-align: center;
+  white-space: nowrap;
+}
 
