@@ -1,13 +1,10 @@
 html, body {
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
-  min-height: 100vh !important;  /* vh = viewport height, always works better */
-  overflow-x: hidden !important; /* keep sideways scroll disabled */
-  overflow-y: scroll !important; /* force vertical scrollbar to always show */
-  background: #fff9f9 !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;  /* no sideways scroll */
+  background: #fff9f9; /* optional background */
 }
-
 
 
 
