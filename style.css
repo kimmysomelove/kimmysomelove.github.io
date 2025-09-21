@@ -4383,4 +4383,26 @@ footer,
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+/* Website Title */
+.website-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1b5e20;     /* deep green */
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  word-wrap: break-word;   /* let it break if too long */
+  white-space: normal;     /* wrap instead of staying one line */
+  padding: 10px;
+  display: block;
+}
+
+/* 📱 Responsive for phones */
+@media (max-width: 768px) {
+  .website-title {
+    font-size: 2rem;   /* smaller on phones */
+    line-height: 1.2;
+    padding: 0 10px;   /* little side padding so it never touches the green edges */
+  }
+}
 
