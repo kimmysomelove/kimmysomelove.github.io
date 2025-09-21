@@ -4503,4 +4503,26 @@ footer p {
   overflow: hidden;
   text-overflow: ellipsis; /* if screen is too narrow, shows … instead of wrapping */
 }
+/* Logo / Title wrapper */
+.logo-bar, 
+.website-title-wrapper {
+  width: 100%;
+  text-align: center;
+  background: #fff8dc;   /* light honey-like strip */
+  padding: 15px 10px;    /* enough room top + bottom */
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title text */
+.website-title {
+  font-size: clamp(1.2rem, 6vw, 2.5rem);
+  font-weight: bold;
+  color: #1b5e20;
+  margin: 0;
+  white-space: nowrap;
+}
 
