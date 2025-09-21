@@ -4438,15 +4438,4 @@ footer p {
     overflow: visible !important;
   }
 }
-/* === EMERGENCY SCROLL FIX === */
-html, body {
-  height: auto !important;
-  min-height: 100% !important;
-  overflow: visible !important;
-}
-
-* {
-  overflow-y: visible !important;
-  overflow-x: hidden !important;
-}
 
