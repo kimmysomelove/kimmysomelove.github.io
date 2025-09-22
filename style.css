@@ -2,6 +2,7 @@
 
 
 
+
 :root {
   --heading-font: "Bubblegum Sans", "Comic Neue", cursive;
   --body-font: "Poppins", "Nunito", sans-serif;
@@ -4438,83 +4439,41 @@ hr {
   margin: 20px auto;
   width: 80%;
 }
-/* Unified wide box layout — Mission, Author, Contact all match */
-#mission .box,
-#about .box,
-#contact .box {
-  flex: 1 1 45%;         /* side-by-side on big screens */
-  min-width: 300px;      /* safe for smaller screens */
-  max-width: 550px;      /* keeps them from stretching too wide */
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 2px solid #ff9900;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
+@media (max-width: 768px) {
+  .author-box {
+    max-width: 400px !important;  /* same as mission cards */
+    min-width: 280px !important;
+    margin: 0 auto 1.5rem auto !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+  }
 }
+/* === Author Box Emergency Override === */
+@media (max-width: 768px) {
+  .author-section .author-container,
+  .author-section .author-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 1rem !important;
+    box-sizing: border-box !important;
+    display: block !important;
+  }
 
-#mission .box img,
-#about .box img,
-#contact .box img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-/* Author Section fix — center logo + box */
-.author-section {
-  display: flex;
-  flex-direction: column;   /* stack logo on top of box */
-  align-items: center;      /* center everything */
-  justify-content: center;
-  padding: 60px 20px;
-  background: transparent;
-}
+  .author-section .author-container {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
 
-.author-image {
-  margin-bottom: 20px;  /* space between logo and box */
-  text-align: center;
-}
+  .author-section .author-box h2,
+  .author-section .author-box h3,
+  .author-section .author-box p {
+    text-align: center !important;
+  }
 
-.author-image img {
-  border-radius: 12px;
-  max-width: 250px;   /* size control */
-  border: 5px solid #ff9900;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  display: block;
-  margin: 0 auto;     /* keep it centered */
-}
-
-.author-box {
-  max-width: 800px;   /* same width logic as Mission */
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 2px solid #ff9900;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  margin: 0 auto;
-}
-/* Contact section fix – match Mission style */
-#contact .contact-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 40px;
-  max-width: 1100px;   /* same safe width as Mission */
-  margin: 0 auto;
-  padding: 40px;
-}
-
-#contact .contact-box {
-  flex: 1 1 45%;
-  min-width: 300px;
-  max-width: 550px;
-  background: #fff;
-  border: 2px solid #ff9900;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
+  .author-section .author-image img {
+    max-width: 220px !important;
+    margin: 0 auto 1rem auto !important;
+    display: block !important;
+  }
 }
