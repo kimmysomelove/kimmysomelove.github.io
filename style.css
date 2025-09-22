@@ -4361,25 +4361,52 @@ footer .buy-button:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   margin-left: 20px;  /* space between logo + text */
 }
-/* Fix narrow About the Author on mobile */
+/* === MOBILE FIX: Author + Contact Boxes === */
 @media (max-width: 768px) {
-  .about-author {
-    max-width: 100% !important;
-    width: 100% !important;
-    padding: 1rem; /* gives breathing room */
-    margin: 0 auto; /* centers it */
+  /* Author section */
+  .author-container {
+    flex-direction: column;   /* stack image + text */
+    align-items: center;      /* center on phone */
+    gap: 20px;
   }
 
-  .about-author img {
-    max-width: 200px;  /* keep author photo smaller on phone */
-    margin: 0 auto 1rem auto;
+  .author-box {
+    max-width: 95% !important;
+    width: 95% !important;
+    margin: 0 auto 1.5rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .author-image img {
+    max-width: 220px;
+    margin: 0 auto;
     display: block;
   }
 
-  .about-author p {
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: center; /* optional, looks friendlier on phone */
+  /* Contact section */
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 95% !important;
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  .contact-box,
+  .contact-form-box {
+    max-width: 95% !important;
+    width: 95% !important;
+    margin: 0 auto 1.5rem auto;
+    box-sizing: border-box;
+  }
+
+  /* prevent long email from escaping */
+  .contact-box p,
+  .contact-form-box p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 
