@@ -4409,4 +4409,33 @@ footer .buy-button:hover {
     overflow-wrap: break-word;
   }
 }
+/* --- Fix Amazon Buy Button --- */
+.buy-button {
+  display: inline-block;
+  background-color: #ffd700;   /* gold/yellow */
+  color: #1b5e20;              /* dark green text */
+  padding: 12px 20px;
+  margin: 10px auto;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;         /* keep text all on one line */
+  text-align: center;
+  line-height: 1.4;
+  max-width: 100%;
+}
+
+.buy-button:hover {
+  background-color: #ffeb3b;   /* lighter yellow */
+  color: #000;                 /* black on hover */
+}
+
+/* Divider line cleanup */
+hr {
+  border: none;
+  border-top: 2px solid #fff;  /* crisp white line */
+  margin: 20px auto;
+  width: 80%;
+}
 
