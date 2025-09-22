@@ -4438,41 +4438,42 @@ hr {
   margin: 20px auto;
   width: 80%;
 }
-@media (max-width: 768px) {
-  .author-box {
-    max-width: 400px !important;  /* same as mission cards */
-    min-width: 280px !important;
-    margin: 0 auto 1.5rem auto !important;
-    padding: 20px !important;
-    box-sizing: border-box !important;
-  }
+/* === FINAL CLEAN OVERRIDES === */
+
+/* Fix page width for sections */
+#about .author-box,
+#mission .mission-box,
+#contact .contact-box {
+  flex: 1 1 45%;
+  min-width: 350px;
+  max-width: 550px;
+  background: #fff;
+  border: 2px solid #ff9900;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-/* === Author Box Emergency Override === */
-@media (max-width: 768px) {
-  .author-section .author-container,
-  .author-section .author-box {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-    padding: 1rem !important;
-    box-sizing: border-box !important;
-    display: block !important;
-  }
 
-  .author-section .author-container {
-    flex-direction: column !important;
-    align-items: center !important;
-  }
+/* Wrappers match Mission section */
+#about .author-container,
+#mission .mission-boxes,
+#contact .contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px;
+}
 
-  .author-section .author-box h2,
-  .author-section .author-box h3,
-  .author-section .author-box p {
-    text-align: center !important;
-  }
-
-  .author-section .author-image img {
-    max-width: 220px !important;
-    margin: 0 auto 1rem auto !important;
-    display: block !important;
-  }
+/* Title safe style */
+.website-title, .site-title {
+  font-family: 'Bubblegum Sans', cursive !important;
+  font-size: 4rem !important;
+  text-align: center !important;
+  color: #d62828 !important;   /* strong red, readable */
+  margin: 0 auto !important;
+  text-shadow: none !important;
 }
