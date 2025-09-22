@@ -4447,38 +4447,28 @@ hr {
     box-sizing: border-box !important;
   }
 }
-/* === Author Box Emergency Override === */
-@media (max-width: 768px) {
-  .author-section .author-container,
-  .author-section .author-box {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-    padding: 1rem !important;
-    box-sizing: border-box !important;
+/* === Author Section Layout Fix === */
+@media (max-width: 1200px) {
+  .author-section .author-container {
+    flex-direction: column !important; /* stack logo + text */
+    align-items: center !important;    /* center horizontally */
+    text-align: center !important;
+  }
+
+  .author-section .author-image {
+    margin: 0 auto 1rem auto !important; /* center logo above */
     display: block !important;
   }
 
-  .author-section .author-container {
-    flex-direction: column !important;
-    align-items: center !important;
+  .author-section .author-box {
+    margin: 0 auto !important;          /* center text box */
+    text-align: center !important;
   }
 
   .author-section .author-box h2,
   .author-section .author-box h3,
   .author-section .author-box p {
     text-align: center !important;
-  }
-
-  .author-section .author-image img {
-    max-width: 220px !important;
-    margin: 0 auto 1rem auto !important;
-    display: block !important;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    background: hotpink !important;
   }
 }
 
