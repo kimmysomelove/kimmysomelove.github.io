@@ -4476,4 +4476,9 @@ hr {
     display: block !important;
   }
 }
+@media (max-width: 768px) {
+  body {
+    background: hotpink !important;
+  }
+}
 
