@@ -4361,4 +4361,25 @@ footer .buy-button:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   margin-left: 20px;  /* space between logo + text */
 }
+/* Fix narrow About the Author on mobile */
+@media (max-width: 768px) {
+  .about-author {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 1rem; /* gives breathing room */
+    margin: 0 auto; /* centers it */
+  }
+
+  .about-author img {
+    max-width: 200px;  /* keep author photo smaller on phone */
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+
+  .about-author p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center; /* optional, looks friendlier on phone */
+  }
+}
 
