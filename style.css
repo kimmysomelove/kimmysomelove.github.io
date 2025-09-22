@@ -4112,7 +4112,7 @@ max-width: 1100px;   /* ✅ safe replacement */
   justify-content: center !important;
   align-items: stretch !important;
   gap: 60px;
-  max-width: 3000px !important;   /* <<< also 3000px wide */
+max-width: 1100px;   /* safe replacement */
   margin: 0 auto;
 }
 
