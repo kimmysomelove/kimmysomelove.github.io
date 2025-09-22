@@ -4438,4 +4438,13 @@ hr {
   margin: 20px auto;
   width: 80%;
 }
+@media (max-width: 768px) {
+  .author-box {
+    max-width: 400px !important;  /* same as mission cards */
+    min-width: 280px !important;
+    margin: 0 auto 1.5rem auto !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+  }
+}
 
