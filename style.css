@@ -35,7 +35,16 @@ h1, h2, h3, h4, h5, nav a {
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Contact Section Full-Width Fix */
+#contact .contact-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 60px;                  /* bigger space between the two boxes */
+  max-width: 1800px !important;  /* stretch wider across the page */
+  margin: 0 auto !important;
+  padding: 40px 60px;         /* breathing room inside section */
+}
 
 /* Each box wider */
 #contact .contact-box {
@@ -3829,7 +3838,49 @@ section, .content, .wrapper {
   50%  { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
+.mission-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* makes it responsive for mobile */
+}
 
+.mission-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.mission-boxes {
+  display: flex;
+  flex-wrap: wrap; /* mobile-friendly */
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+.mission-box {
+  flex: 1 1 45%;   /* take about half each row */
+  min-width: 300px;
+  max-width: 550px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #ff9900;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.mission-box img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 /* FORCE HEADER TITLE STYLE */
 header h1 {
@@ -3841,6 +3892,28 @@ header h1 {
   margin: 0 auto !important;
   text-align: center !important;
 }
+.mission-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.mission-box {
+  flex: 1 1 45%;
+  background: #fdfdfd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.mission-box img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
 
 }
 /* FINAL TITLE FIX */
@@ -4027,7 +4100,7 @@ header h1 {
 #about .box, 
 #mission .box, 
 #contact .box {
-max-width: 1100px;   /* ✅ safe replacement */
+  max-width: 3000px !important;   /* <<< set to 3000px */
   margin: 0 auto;
 }
 
@@ -4039,7 +4112,7 @@ max-width: 1100px;   /* ✅ safe replacement */
   justify-content: center !important;
   align-items: stretch !important;
   gap: 60px;
-max-width: 1100px;   /* safe replacement */
+  max-width: 3000px !important;   /* <<< also 3000px wide */
   margin: 0 auto;
 }
 
@@ -4073,7 +4146,10 @@ max-width: 1100px;   /* safe replacement */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-
+/* Responsive: stack vertically on mobile */
+@media (max-width: 768px) {
+  #contact .contact-wrapper {
+    flex-direction: column;
   }
   #contact .contact-box {
     max-width: 100%;
@@ -4132,6 +4208,16 @@ max-width: 1100px;   /* safe replacement */
   padding: 10px;
   display: block;
 }
+
+/* On phones: no float, centered, yellow background */
+@media (max-width: 768px) {
+  .website-title-wrapper {
+    position: relative !important;  /* stop absolute/floating */
+    display: flex;
+    justify-content: center;        /* center horizontally */
+    align-items: center;            /* center vertically */
+    background-color: #FFD700;      /* solid yellow background */
+    padding: 12px;
   }
 
   .website-title {
@@ -4140,11 +4226,20 @@ max-width: 1100px;   /* safe replacement */
     margin: 0;
     text-align: center;
     white-space: nowrap;            /* keep "42" on same line */
-  
+  }
 }
 
-
-
+/* Floating Title Safety (phones only) */
+@media (max-width: 768px) {
+  .site-title,
+  .website-title {
+    background-color: #FFEB3B !important; /* solid yellow strip */
+    color: #1b5e20 !important;            /* dark green text */
+    padding: 12px 10px !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
 }
 /* === CLEAN FOOTER STYLE === */
 .site-footer {
@@ -4266,7 +4361,53 @@ footer .buy-button:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   margin-left: 20px;  /* space between logo + text */
 }
+/* === MOBILE FIX: Author + Contact Boxes === */
+@media (max-width: 768px) {
+  /* Author section */
+  .author-container {
+    flex-direction: column;   /* stack image + text */
+    align-items: center;      /* center on phone */
+    gap: 20px;
+  }
 
+  .author-box {
+    max-width: 95% !important;
+    width: 95% !important;
+    margin: 0 auto 1.5rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .author-image img {
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Contact section */
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 95% !important;
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  .contact-box,
+  .contact-form-box {
+    max-width: 95% !important;
+    width: 95% !important;
+    margin: 0 auto 1.5rem auto;
+    box-sizing: border-box;
+  }
+
+  /* prevent long email from escaping */
+  .contact-box p,
+  .contact-form-box p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 }
 /* --- Fix Amazon Buy Button --- */
 .buy-button {
@@ -4297,5 +4438,36 @@ hr {
   margin: 20px auto;
   width: 80%;
 }
+@media (max-width: 768px) {
+  .author-box {
+    max-width: 400px !important;  /* same as mission cards */
+    min-width: 280px !important;
+    margin: 0 auto 1.5rem auto !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+  }
+}
+/* === Author Section Layout Fix === */
+@media (max-width: 1200px) {
+  .author-section .author-container {
+    flex-direction: column !important; /* stack logo + text */
+    align-items: center !important;    /* center horizontally */
+    text-align: center !important;
+  }
 
+  .author-section .author-image {
+    margin: 0 auto 1rem auto !important; /* center logo above */
+    display: block !important;
+  }
 
+  .author-section .author-box {
+    margin: 0 auto !important;          /* center text box */
+    text-align: center !important;
+  }
+
+  .author-section .author-box h2,
+  .author-section .author-box h3,
+  .author-section .author-box p {
+    text-align: center !important;
+  }
+}
