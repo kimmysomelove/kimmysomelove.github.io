@@ -4707,3 +4707,78 @@ section, div, article, aside, header, footer {
     max-width: 700px;
   }
 }
+/* ===== Get in Touch / Contact form width fix ===== */
+#get-in-touch,
+#getintouch,
+#contact,
+.contact-section {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;            /* match author + mission width */
+  margin: 0 auto;
+}
+
+.contact-box,
+form[action*="formspree"],
+form.contact-form {
+  width: 100%;
+  max-width: 700px;            /* same as author box */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 24px;
+  text-align: left;
+}
+
+/* Inputs + textarea clean alignment */
+.contact-box input,
+.contact-box textarea,
+form[action*="formspree"] input,
+form[action*="formspree"] textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Center submit button like Amazon button */
+.contact-box button,
+form[action*="formspree"] button,
+form[action*="formspree"] input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 24px;
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.contact-box button:hover,
+form[action*="formspree"] button:hover,
+form[action*="formspree"] input[type="submit"]:hover {
+  background: var(--primary-color);
+}
+
+/* Make sure it stays centered and full-width on phones */
+@media (max-width: 768px) {
+  .contact-wrapper, .contact-box, form[action*="formspree"] {
+    max-width: 700px;
+    width: 100%;
+  }
+}
