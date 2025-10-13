@@ -4782,3 +4782,9 @@ form[action*="formspree"] input[type="submit"]:hover {
     width: 100%;
   }
 }
+/* ===== SCROLLBAR RESTORE FIX ===== */
+html, body {
+  overflow-x: hidden;   /* stop horizontal drift */
+  overflow-y: auto;     /* re-enable vertical scrolling */
+  height: auto;
+}
