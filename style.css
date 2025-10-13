@@ -4731,27 +4731,3 @@ hr {
 
 /* ensure vertical scrolling is enabled */
 html, body { overflow-y: auto !important; }
-/* ==== Contact: remove double border on Formspree ==== */
-#contact .contact-form form,
-.contact-form form,
-form[action*="formspree"] {
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  padding: 0 !important;      /* let the outer card provide padding */
-}
-
-/* Optional: make inputs/buttons fill nicely inside the outer card */
-#contact .contact-form form input,
-#contact .contact-form form textarea,
-#contact .contact-form form button,
-.contact-form form input,
-.contact-form form textarea,
-.contact-form form button,
-form[action*="formspree"] input,
-form[action*="formspree"] textarea,
-form[action*="formspree"] button,
-form[action*="formspree"] input[type="submit"] {
-  width: 100%;
-  box-sizing: border-box;
-}
