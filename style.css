@@ -4520,3 +4520,47 @@ hr {
   .samples-card img { height: 200px; }
   .samples-section { padding: 2.5rem 0; }
 }
+/* ===== Unified Samples (PNW + SW) ===== */
+.samples-section { padding: 3rem 0; }
+
+.samples-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.samples-card {
+  background: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.samples-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 18px rgba(0,0,0,.12);
+  border-color: var(--accent-color);
+}
+
+/* Normalize image size across both editions */
+.samples-card img {
+  display: block;
+  width: 100%;
+  height: 280px;          /* SAME height for every sample */
+  object-fit: contain;    /* no cropping */
+  padding: 12px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* Hide any leftover captions from old PNW markup */
+.sample-item h3, .sample-item p { display: none !important; }
+
+@media (max-width: 900px) {
+  .samples-card img { height: 240px; }
+}
+@media (max-width: 540px) {
+  .samples-card img { height: 200px; }
+  .samples-section { padding: 2.25rem 0; }
+}
