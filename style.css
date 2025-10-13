@@ -4608,3 +4608,126 @@ hr {
     gap: 18px !important;
   }
 }
+/* ========= PHONE FIXES: Author + Contact (scoped, safe) ========= */
+@media (max-width: 768px) {
+  /* --- About the Author --- */
+  #author .author-wrapper {
+    display: flex !important;
+    flex-direction: column !important;     /* logo above text */
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    max-width: 720px !important;           /* comfy width */
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+  }
+  #author .author-image {
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  #author .author-portrait {
+    max-width: 220px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border-radius: 12px !important;
+  }
+  #author .author-box {
+    width: 100% !important;
+    max-width: 720px !important;
+    margin: 0 auto !important;
+    padding: 16px !important;
+    box-sizing: border-box !important;
+    background: #fff !important;
+    border: 2px solid #ff9900 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
+    text-align: left !important;
+  }
+
+  /* --- Get in Touch / Contact --- */
+  /* kill “double box” look on wrappers */
+  #contact .contact-wrapper,
+  .contact-section .contact-wrapper,
+  .contact-section .contact-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+    max-width: 720px !important;
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  /* actual boxes (info + form) */
+  #contact .contact-box,
+  #contact .contact-form,
+  #contact .contact-form-box,
+  .contact-section .contact-info,
+  .contact-section .contact-form,
+  form[action*="formspree"] {
+    width: 100% !important;
+    max-width: 720px !important;
+    margin: 0 auto !important;
+    padding: 16px !important;
+    box-sizing: border-box !important;
+    background: #fff !important;
+    border: 2px solid #ff9900 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
+    text-align: left !important;
+  }
+
+  /* images never force sideways overflow on phone */
+  img { max-width: 100% !important; height: auto !important; display: block !important; }
+
+  /* stop any right-side wiggle */
+  html, body { overflow-x: hidden !important; }
+}
+
+/* ========= DESKTOP sanity (keeps roomy layout, no double boxes) ========= */
+@media (min-width: 769px) {
+  #author .author-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 32px !important;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+  }
+  #contact .contact-wrapper,
+  .contact-section .contact-wrapper,
+  .contact-section .contact-content {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 24px !important;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  #contact .contact-box,
+  #contact .contact-form,
+  #contact .contact-form-box,
+  .contact-section .contact-info,
+  .contact-section .contact-form,
+  form[action*="formspree"] {
+    flex: 1 1 480px !important;   /* two comfortable columns */
+    max-width: 540px !important;
+  }
+}
+
+/* ensure vertical scrolling is enabled */
+html, body { overflow-y: auto !important; }
