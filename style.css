@@ -4566,3 +4566,45 @@ hr {
   .samples-card img { height: 200px; }
   .samples-section { padding: 2.25rem 0; }
 }
+/* ===== PHONE OVERFLOW HOTFIX (scoped, won't touch desktop) ===== */
+@media (max-width: 768px) {
+  html, body {
+    width: 100% !important;
+    overflow-x: hidden !important;   /* stop sideways scroll */
+  }
+
+  /* Force main sections to respect the viewport width */
+  header, section, footer,
+  .site-header, .yellow-section,
+  .samples-section, .author-section,
+  #mission, #contact {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Containers: center + safe inner padding */
+  .container, [class*="container"],
+  .author-wrapper, .contact-wrapper {
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Images never exceed their parent */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* Sample grids: single column on the smallest screens */
+  .samples-gallery, .samples-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+}
