@@ -4873,3 +4873,83 @@ html, body {
   text-align: center;
   white-space: normal;
 }
+/* ==== Author + Contact: final sizing pass (scoped, safe) ==== */
+
+/* Mobile-first: stack + comfy width */
+@media (max-width: 768px) {
+  /* AUTHOR */
+  #author.author-section .author-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+    gap: 20px !important;
+  }
+  #author.author-section .author-image,
+  #author.author-section .author-box {
+    width: 100% !important;
+    max-width: 700px !important;
+    margin: 0 auto !important;
+  }
+
+  /* CONTACT / GET IN TOUCH */
+  .contact-section .contact-wrapper,
+  .contact-section .contact-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+    gap: 20px !important;
+  }
+  .contact-section .contact-info,
+  .contact-section .contact-form,
+  .contact-section form,
+  form[action*="formspree"] {
+    width: 100% !important;
+    max-width: 700px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Desktop/tablet: give them room again */
+@media (min-width: 769px) {
+  /* AUTHOR */
+  #author.author-section .author-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    gap: 40px !important;
+  }
+  #author.author-section .author-image { max-width: 260px !important; }
+  #author.author-section .author-box {
+    flex: 1 1 auto !important;
+    max-width: 900px !important; /* wider than before */
+  }
+
+  /* CONTACT / GET IN TOUCH */
+  .contact-section .contact-wrapper,
+  .contact-section .contact-content {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+  }
+  .contact-section .contact-info,
+  .contact-section .contact-form,
+  .contact-section form,
+  form[action*="formspree"] {
+    max-width: 900px !important;  /* match author width */
+  }
+}
+
+/* Make sure scrolling is normal while still blocking sideways drift */
+html, body { overflow-x: hidden; overflow-y: auto; height: auto; }
