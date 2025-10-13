@@ -4731,3 +4731,31 @@ hr {
 
 /* ensure vertical scrolling is enabled */
 html, body { overflow-y: auto !important; }
+/* ===== DESKTOP SCROLL UNLOCK (do not edit) ===== */
+html, body {
+  position: static !important;
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-x: hidden !important;  /* keep phone wiggle gone */
+  overflow-y: auto !important;    /* FORCE vertical scroll */
+}
+
+/* If a wrapper is locking the page, put it back in normal flow */
+main, .page, .page-wrapper, .content, #root, #app {
+  position: static !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Any full-screen overlay that might be covering the page */
+[class*="overlay"], [class*="modal"], [class*="backdrop"] {
+  pointer-events: none !important;  /* stop blocking wheel/touch */
+  position: static !important;      /* stop covering the viewport */
+}
+
+/* Safety: prevent any section from setting its own viewport lock */
+section, header, footer {
+  max-height: none !important;
+  overflow: visible !important;
+}
