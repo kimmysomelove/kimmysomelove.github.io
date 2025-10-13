@@ -4651,3 +4651,59 @@ section, div, article, aside, header, footer {
 [class*="section"], [class*="wrapper"], [class*="wrap"] {
   max-width: 100%;
 }
+/* ===== About the Author layout fix ===== */
+.author-section {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.author-wrapper {
+  display: flex;
+  flex-direction: column;          /* logo above box on mobile */
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;                /* same comfortable width as mission box */
+  margin: 0 auto;
+}
+
+.author-image {
+  margin-bottom: 24px;
+}
+
+.author-portrait {
+  max-width: 220px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* the text box */
+.author-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 24px;
+  text-align: left;
+  width: 100%;
+  max-width: 700px;                /* matches mission box feel */
+  margin: 0 auto;
+}
+
+/* widen and align on desktop */
+@media (min-width: 900px) {
+  .author-wrapper {
+    flex-direction: row;           /* side by side again */
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .author-image {
+    margin-bottom: 0;
+  }
+
+  .author-box {
+    text-align: left;
+    max-width: 700px;
+  }
+}
