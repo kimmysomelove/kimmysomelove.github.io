@@ -4060,6 +4060,8 @@ header h1 {
     width: 95%;
     max-width: 720px;
   }
+  }  /* closes @media (max-width: 880px) */
+
 /* ===== FORCE FULL-WIDTH CONTACT + MISSION SECTIONS ===== */
 #mission,
 #contact {
