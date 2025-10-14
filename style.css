@@ -4917,3 +4917,83 @@ footer {
   width: 100%;
   margin: 0;
 }
+/* ===== PHONE-ONLY FIXES (leave desktop alone) ===== */
+@media (max-width: 768px) {
+
+  /* 1) Mission / 42¢ section: center its text on mobile */
+  #mission .mission-box h3,
+  #mission .mission-box p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* If your mission section uses two side-by-side boxes, stack them full-width */
+  #mission .mission-boxes {
+    display: block !important;
+  }
+  #mission .mission-box {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* 2) Make the last two boxes (Get In Touch + Contact Form) full width like 42¢ */
+  /* Try all common wrappers so we don't miss your class/id names */
+  #contact,
+  #get-in-touch,
+  #contact-form,
+  .contact-section,
+  .contact-wrapper,
+  .contact-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* If they were in a grid/columns, force single column on mobile */
+  .contact-grid {
+    display: block !important;
+  }
+  .contact-info,
+  .contact-form {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* 3) Kill the "double box" look around the Formspree form on mobile */
+  .contact-form .card,
+  .contact-form .box,
+  .contact-form .panel,
+  .contact-form fieldset {
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  /* 4) Make sure form fields actually span the mobile width */
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select,
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form select {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* 5) Center the headings/text for the contact blocks on mobile */
+  #contact h2,
+  #get-in-touch h2,
+  .contact-form h3 {
+    text-align: center !important;
+  }
+
+  /* 6) If a generic container is constraining width on mobile, uncap it */
+  .container, .wrapper, .inner {
+    max-width: 100% !important;
+  }
+}
