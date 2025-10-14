@@ -5022,3 +5022,76 @@ footer a {
 footer a:hover {
   color: #000;
 }
+/* ===== MOBILE FIX: contact blocks full-width + no double box ===== */
+@media (max-width: 768px) {
+  /* Uncap any generic containers on mobile */
+  .container, .wrapper, .inner, .content, .section {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Force the last two boxes to match 42¢ width (full width) */
+  #get-in-touch,
+  #contact,
+  #contact-form,
+  .contact-section,
+  .contact-wrapper,
+  .contact-grid,
+  .contact-info,
+  .contact-form {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* If they were side-by-side, stack them */
+  .contact-grid { display: block !important; }
+
+  /* Nuke the “second box” around the Formspree form */
+  .contact-form .card,
+  .contact-form .box,
+  .contact-form .panel,
+  #contact-form .card,
+  #contact-form .box,
+  #contact-form .panel,
+  .contact-form fieldset,
+  #contact-form fieldset {
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Make inputs truly full width */
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select,
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form select {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Center the headings on mobile */
+  #get-in-touch h2,
+  #contact h2,
+  .contact-form h3 {
+    text-align: center !important;
+  }
+
+  /* Center the 42¢ text on mobile (in case it isn't already) */
+  #mission .mission-box h3,
+  #mission .mission-box p {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
