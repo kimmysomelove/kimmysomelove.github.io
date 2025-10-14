@@ -4759,3 +4759,24 @@ section, header, footer {
   max-height: none !important;
   overflow: visible !important;
 }
+/* === Section Divider (Simple Gold Bar) === */
+.section-divider {
+  border: 0;
+  height: 6px;
+  width: 80%;
+  max-width: 700px;
+  margin: 50px auto 40px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, transparent, #FFD700, transparent);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  opacity: 0.9;
+}
+
+/* Mobile tweak */
+@media (max-width: 768px) {
+  .section-divider {
+    height: 5px;
+    width: 85%;
+    margin: 40px auto 30px;
+  }
+}
