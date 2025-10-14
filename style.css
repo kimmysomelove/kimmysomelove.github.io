@@ -4862,3 +4862,58 @@ footer {
   background-position: center;
   background-size: contain;
 }
+/* Make ONLY the section title big */
+#mission > h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+  margin-bottom: 2rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+#mission > h3::after {
+  content: "";
+  display: block;
+  width: 120px; height: 5px;
+  background: linear-gradient(90deg, #ffb300, #fff176, #ffb300);
+  margin: 12px auto 0; border-radius: 3px;
+}
+
+/* Normal size + centered text for the card heading */
+#mission .mission-box h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffb300;
+  text-shadow: none;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+/* Center the mission card text */
+#mission .mission-box p {
+  text-align: center;
+  line-height: 1.6;
+}
+/* Contact section: un-crop and align cleanly */
+#contact .contact-wrapper {
+  align-items: stretch;          /* same height columns without cropping */
+  overflow: visible !important;  /* never clip tops */
+}
+
+#contact .contact-box,
+#contact .contact-form-box,
+#contact .contact-form {
+  position: relative; top: 0;           /* no sneaky offset */
+  margin-top: 0;
+  padding-top: 20px;                     /* show full rounded top */
+  box-sizing: border-box;
+  overflow: visible !important;
+}
+
+/* Inputs fill the column properly */
+#contact .contact-form-box form,
+#contact .contact-form form {
+  width: 100%;
+  margin: 0;
+}
