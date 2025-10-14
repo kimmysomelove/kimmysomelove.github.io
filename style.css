@@ -4780,3 +4780,25 @@ section, header, footer {
     margin: 40px auto 30px;
   }
 }
+/* ===== Mission Section Heading Upgrade ===== */
+#mission h3 {
+  text-align: center;
+  font-size: 2.75rem;       /* bigger and more heroic */
+  color: #ffcc00;           /* soft honey-yellow tone */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* Optional underline bar (clean, centered accent) */
+#mission h3::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #ffcc00;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
