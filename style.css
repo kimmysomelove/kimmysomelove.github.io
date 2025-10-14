@@ -4997,3 +4997,28 @@ footer {
     max-width: 100% !important;
   }
 }
+/* ===== HONEYCOMB BACKGROUND: HEADER + FOOTER ONLY ===== */
+
+/* Header area */
+.site-header {
+  background: #ffeb3b url('images/honeycomb.png') repeat center center;
+  background-size: contain;
+  color: #000;
+}
+
+/* Footer area behind the links */
+footer {
+  background: #ffeb3b url('images/honeycomb.png') repeat center center;
+  background-size: contain;
+  color: #000;
+}
+
+/* Optional: make footer links more readable on yellow */
+footer a {
+  color: #333;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: #000;
+}
