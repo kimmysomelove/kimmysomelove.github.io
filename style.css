@@ -4842,3 +4842,23 @@ section, header, footer {
   margin: 10px auto 0;
   border-radius: 2px;
 }
+/* ===== HONEYCOMB ONLY BEHIND HEADER & FOOTER ===== */
+
+/* Header honeycomb background */
+.site-header,
+header {
+  background-color: #ffeb3b;
+  background-image: url('images/honeycomb.png');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Footer honeycomb background */
+footer {
+  background-color: #ffeb3b;
+  background-image: url('images/honeycomb.png');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
