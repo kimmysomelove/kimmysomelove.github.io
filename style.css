@@ -5271,3 +5271,45 @@ footer a:hover {
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
+/* POLISH MIDWEST FEATURE */
+.midwest-feature {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  padding: 80px 20px 60px !important;
+}
+
+.midwest-feature h2 {
+  color: #ffffff !important;
+  font-size: clamp(3rem, 6vw, 5rem) !important;
+  text-shadow: 3px 3px 0 #ff9800 !important;
+  margin-bottom: 20px !important;
+}
+
+.midwest-feature h3 {
+  color: #ffd84d !important;
+  font-size: clamp(1.8rem, 3vw, 2.8rem) !important;
+  text-shadow: 2px 2px 0 #0b5f1e !important;
+  margin-bottom: 24px !important;
+}
+
+.midwest-feature p {
+  max-width: 850px !important;
+  margin: 0 auto 35px !important;
+  color: #ffffff !important;
+  font-size: 1.25rem !important;
+  line-height: 1.7 !important;
+  text-align: center !important;
+}
+
+.midwest-cover-row {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 30px !important;
+  flex-wrap: wrap !important;
+}
+
+.midwest-cover-row img {
+  max-width: 340px !important;
+}
