@@ -5179,3 +5179,26 @@ footer a:hover {
     margin: 0 auto;
     border-radius: 20px;
 }
+/* FINAL MISSION SECTION TIGHTEN */
+#mission .mission-boxes {
+  max-width: 1050px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  gap: 30px !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+#mission .mission-box {
+  flex: 0 1 460px !important;
+  max-width: 460px !important;
+  padding: 20px !important;
+}
+
+#mission .mission-box img {
+  max-width: 360px !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
