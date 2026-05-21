@@ -5130,3 +5130,19 @@ footer a:hover {
         transform: translateY(0px);
     }
 }
+/* FINAL FLOAT OVERRIDE */
+.website-title {
+  animation: titleFloat 3s ease-in-out infinite !important;
+}
+
+@keyframes titleFloat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
