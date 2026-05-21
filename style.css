@@ -5202,3 +5202,33 @@ footer a:hover {
   display: block !important;
   margin: 0 auto !important;
 }
+/* EMERGENCY RESTORE: OUR MISSION CARDS */
+#mission .mission-boxes {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 40px !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+#mission .mission-box {
+  background: #ffffff !important;
+  border: 3px solid #ff9800 !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  flex: 0 1 520px !important;
+  max-width: 520px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+#mission .mission-box img {
+  width: 100% !important;
+  max-width: 460px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+  border-radius: 12px !important;
+}
