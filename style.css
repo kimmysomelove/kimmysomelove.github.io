@@ -5232,3 +5232,42 @@ footer a:hover {
   margin: 0 auto !important;
   border-radius: 12px !important;
 }
+.midwest-feature {
+    text-align: center;
+    padding: 60px 20px;
+    background: #006400;
+}
+
+.midwest-feature h2 {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.midwest-feature h3 {
+    font-size: 2rem;
+    color: #ffcc33;
+    margin-bottom: 20px;
+}
+
+.midwest-feature p {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.midwest-cover-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.midwest-cover-row img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
