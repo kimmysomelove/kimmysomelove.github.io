@@ -5094,7 +5094,20 @@ footer a:hover {
   color: #ff5a36 !important;
   padding: 0.5rem 0 !important;
   text-shadow: none !important;
-  animation: none !important;
+  animation: titleFloat 3s ease-in-out infinite !important;
+}
+@keyframes titleFloat {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 /* FLOATING TITLE MOTION */
 .website-title {
