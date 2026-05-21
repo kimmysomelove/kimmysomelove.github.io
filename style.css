@@ -1672,16 +1672,23 @@ nav ul li a:hover {
 <link rel="stylesheet" href="style.css?v=2">
 /* Thin logo bar */
 .logo-bar {
-  background: #ffeb3b; /* light yellow honeycomb vibe */
-  text-align: center;
-  padding: 5px 0;
-  border-bottom: 2px solid #fbc02d;
+    background: linear-gradient(to right, #fff9c4, #ffe082);
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 3px solid #fbc02d;
+    position: relative;
+    z-index: 1000;
+    min-height: 140px;
 }
 
 .logo-text {
-  font-family: "Bubblegum Sans", cursive;
-  font-size: 1.5rem;
-  color: #333;
+    font-family: "Bubblegum Sans", cursive;
+    font-size: clamp(42px, 5vw, 72px);
+    color: #ff5a36;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 2px;
+    transform: translateY(6px);
 }
 /* Full Logo/Header Bar */
 .logo-bar {
