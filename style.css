@@ -1671,42 +1671,9 @@ nav ul li a:hover {
 }
 <link rel="stylesheet" href="style.css?v=2">
 /* Thin logo bar */
-.logo-bar {
-    background: linear-gradient(to right, #fff9c4, #ffe082);
-    text-align: center;
-    padding: 30px 0;
-    border-bottom: 3px solid #fbc02d;
-    position: relative;
-    z-index: 1000;
-    min-height: 140px;
-}
 
-.logo-text {
-    font-family: "Bubblegum Sans", cursive;
-    font-size: clamp(42px, 5vw, 72px);
-    color: #ff5a36;
-    margin: 0;
-    line-height: 1;
-    letter-spacing: 2px;
-    transform: translateY(6px);
-}
-/* Full Logo/Header Bar */
-.logo-bar {
-  background: linear-gradient(to right, #fff9c4, #ffe082); /* soft honey gradient */
-  text-align: center;
-  padding: 30px 0; /* controls height */
-  border-bottom: 3px solid #fbc02d;
-  position: relative;
-  z-index: 1000;
-  min-height: 140px; /* about 2 inches on most screens */
-}
 
-.logo-text {
-  font-family: "Bubblegum Sans", cursive;
-  font-size: 2.8rem;
-  margin: 0;
-  color: #333;
-}
+
 
 .tagline {
   font-family: "Nunito", sans-serif;
@@ -5100,4 +5067,32 @@ footer a:hover {
     margin-left: auto !important;
     margin-right: auto !important;
   }
+}
+/* FINAL HEADER OVERRIDE */
+.logo-bar {
+  background: linear-gradient(180deg, #fff6b8 0%, #ffe58a 100%) !important;
+  text-align: center !important;
+  padding: 8px 0 !important;
+  border-bottom: 3px solid #fbc02d !important;
+  position: relative !important;
+  z-index: 1000 !important;
+  min-height: auto !important;
+}
+
+.website-title-wrapper {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.website-title {
+  font-family: 'Bubblegum Sans', cursive !important;
+  font-size: clamp(42px, 5vw, 72px) !important;
+  text-align: center !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+  letter-spacing: 2px !important;
+  color: #ff5a36 !important;
+  padding: 0.5rem 0 !important;
+  text-shadow: none !important;
+  animation: none !important;
 }
