@@ -5159,3 +5159,23 @@ footer a:hover {
     transform: translateY(0px);
   }
 }
+/* FINAL OUR MISSION LAYOUT FIX */
+#mission .mission-boxes {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+#mission .mission-box {
+    flex: 1 1 400px;
+}
+
+#mission .mission-box img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
