@@ -30,73 +30,86 @@
     }
     .library-page { overflow: hidden; min-height: 100vh; }
     .hero {
-      position: relative;
-      padding: 2.6rem 1rem 2.25rem;
-      text-align: center;
-      color: white;
-      background:
-        radial-gradient(circle at 14% 18%, rgba(255,255,255,0.25), transparent 9rem),
-        radial-gradient(circle at 80% 24%, rgba(255,212,90,0.26), transparent 10rem),
-        linear-gradient(135deg, #2e7f52, #6abf8a 45%, #70bfd4);
-      border-bottom: 9px solid rgba(255, 212, 90, 0.95);
-    }
-    .hero::before, .hero::after {
-      content: "✿ 🐝 ✿ 🦋 ✿";
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      opacity: 0.42;
-      font-size: clamp(1.5rem, 4vw, 3rem);
-      letter-spacing: 0.7rem;
-      pointer-events: none;
-    }
-    .hero::before { top: 0.35rem; }
-    .hero::after { bottom: 0.2rem; }
-    .hero h1 {
-      position: relative;
-      margin: 0;
-      z-index: 1;
-      font-family: 'Bubblegum Sans', cursive;
-      font-size: clamp(2.8rem, 7vw, 5.2rem);
-      line-height: 0.98;
-      text-shadow: 0 5px 0 rgba(35, 70, 50, 0.24);
-    }
-    .hero .tagline {
-      position: relative;
-      z-index: 1;
-      max-width: 830px;
-      margin: 0.9rem auto 1.4rem;
-      font-size: clamp(1rem, 2.4vw, 1.28rem);
-      line-height: 1.55;
-      font-weight: 600;
-    }
-    .hero-flower-row {
-      position: relative;
-      z-index: 1;
-      margin: 0.4rem auto 1rem;
-      font-size: clamp(2rem, 5vw, 3.3rem);
-      filter: drop-shadow(0 5px 5px rgba(30, 60, 40, 0.22));
-    }
-    .top-actions, .bottom-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
-      align-items: center;
-    }
-    .button {
-      display: inline-block;
-      padding: 0.78rem 1.25rem;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 800;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.16);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .button:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(0,0,0,0.2); }
-    .home-button { background: #ff7a3d; color: white; }
-    .nav-button { background: rgba(255,255,255,0.95); color: #276344; }
+  position: relative;
+  padding: 3rem 1rem 2.6rem;
+  text-align: center;
+  color: white;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.22), transparent 8rem),
+    radial-gradient(circle at 88% 20%, rgba(255, 212, 90, 0.18), transparent 9rem),
+    linear-gradient(135deg, #2e7f52 0%, #6abf8a 45%, #70bfd4 100%);
+  border-bottom: 9px solid rgba(255, 212, 90, 0.95);
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  display: none;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: clamp(3rem, 7vw, 5.4rem);
+  line-height: 0.98;
+  text-shadow: 0 5px 0 rgba(35, 70, 50, 0.24);
+}
+
+.hero .tagline {
+  position: relative;
+  z-index: 1;
+  max-width: 830px;
+  margin: 0.9rem auto 1.5rem;
+  font-size: clamp(1.05rem, 2.3vw, 1.3rem);
+  line-height: 1.55;
+  font-weight: 600;
+}
+
+.hero-flower-row {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 1rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  filter: drop-shadow(0 5px 5px rgba(30, 60, 40, 0.22));
+}
+
+.top-actions,
+.bottom-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.78rem 1.25rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+}
+
+.home-button {
+  background: #ff7a3d;
+  color: white;
+}
+
+.nav-button {
+  background: rgba(255,255,255,0.96);
+  color: #276344;
+}
     main { width: min(1200px, calc(100% - 28px)); margin: 0 auto; padding: 2rem 0 4rem; }
     .intro-card, .footer-card {
       margin: 0 auto 2rem;
