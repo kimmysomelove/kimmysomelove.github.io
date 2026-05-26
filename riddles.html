@@ -30,86 +30,67 @@
     }
     .library-page { overflow: hidden; min-height: 100vh; }
     .hero {
-  position: relative;
-  padding: 3rem 1rem 2.6rem;
-  text-align: center;
-  color: white;
-  background:
-    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.22), transparent 8rem),
-    radial-gradient(circle at 88% 20%, rgba(255, 212, 90, 0.18), transparent 9rem),
-    linear-gradient(135deg, #2e7f52 0%, #6abf8a 45%, #70bfd4 100%);
-  border-bottom: 9px solid rgba(255, 212, 90, 0.95);
-  overflow: hidden;
-}
-
-.hero::before,
-.hero::after {
-  display: none;
-}
-
-.hero h1 {
-  position: relative;
-  z-index: 1;
-  margin: 0;
-  font-family: 'Bubblegum Sans', cursive;
-  font-size: clamp(3rem, 7vw, 5.4rem);
-  line-height: 0.98;
-  text-shadow: 0 5px 0 rgba(35, 70, 50, 0.24);
-}
-
-.hero .tagline {
-  position: relative;
-  z-index: 1;
-  max-width: 830px;
-  margin: 0.9rem auto 1.5rem;
-  font-size: clamp(1.05rem, 2.3vw, 1.3rem);
-  line-height: 1.55;
-  font-weight: 600;
-}
-
-.hero-flower-row {
-  position: relative;
-  z-index: 1;
-  margin: 0 auto 1rem;
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  filter: drop-shadow(0 5px 5px rgba(30, 60, 40, 0.22));
-}
-
-.top-actions,
-.bottom-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.78rem 1.25rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 800;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.16);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
-}
-
-.home-button {
-  background: #ff7a3d;
-  color: white;
-}
-
-.nav-button {
-  background: rgba(255,255,255,0.96);
-  color: #276344;
-}
+      position: relative;
+      padding: 3rem 1rem 2.6rem;
+      text-align: center;
+      color: white;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.22), transparent 8rem),
+        radial-gradient(circle at 88% 20%, rgba(255, 212, 90, 0.18), transparent 9rem),
+        linear-gradient(135deg, #2e7f52 0%, #6abf8a 45%, #70bfd4 100%);
+      border-bottom: 9px solid rgba(255, 212, 90, 0.95);
+      overflow: hidden;
+    }
+    .hero::before, .hero::after { display: none; }
+    .hero h1 {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: clamp(3rem, 7vw, 5.4rem);
+      line-height: 0.98;
+      text-shadow: 0 5px 0 rgba(35, 70, 50, 0.24);
+    }
+    .hero .tagline {
+      position: relative;
+      z-index: 1;
+      max-width: 830px;
+      margin: 0.9rem auto 1.5rem;
+      font-size: clamp(1.05rem, 2.3vw, 1.3rem);
+      line-height: 1.55;
+      font-weight: 600;
+    }
+    .hero-flower-row {
+      position: relative;
+      z-index: 1;
+      margin: 0 auto 1rem;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      filter: drop-shadow(0 5px 5px rgba(30, 60, 40, 0.22));
+    }
+    .top-actions, .bottom-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.78rem 1.25rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+    }
+    .home-button { background: #ff7a3d; color: white; }
+    .nav-button { background: rgba(255,255,255,0.96); color: #276344; }
     main { width: min(1200px, calc(100% - 28px)); margin: 0 auto; padding: 2rem 0 4rem; }
     .intro-card, .footer-card {
       margin: 0 auto 2rem;
@@ -198,9 +179,8 @@
       list-style: none;
       padding: 0;
       margin: 0;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.55rem;
+      columns: 2;
+      column-gap: 1rem;
     }
     .index-list li {
       display: flex;
@@ -212,6 +192,8 @@
       line-height: 1.28;
       font-size: 0.94rem;
       border: 1px solid rgba(154,84,29,0.08);
+      break-inside: avoid;
+      margin-bottom: 0.55rem;
     }
     .index-list span {
       flex: 0 0 auto;
@@ -229,8 +211,8 @@
     .storybook-spread {
       position: relative;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.05rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
       padding: 0.8rem;
       border-radius: 30px;
       background:
@@ -240,7 +222,7 @@
       box-shadow: inset 0 0 0 5px rgba(255,255,255,0.55), 0 12px 24px rgba(99,70,35,0.12);
     }
     .storybook-page {
-      padding: 1rem;
+      padding: 0.85rem;
       border-radius: 24px;
       background:
         repeating-linear-gradient(0deg, rgba(122,89,45,0.045) 0, rgba(122,89,45,0.045) 1px, transparent 1px, transparent 38px),
@@ -311,14 +293,14 @@
     .pnw .riddle-number { background: #5d8fd8; }
     .midwest .riddle-number { background: #d49a2f; }
     .footer-card { margin-top: 2.2rem; }
-    @media (max-width: 900px) {
+    @media (max-width: 720px) {
       .storybook-spread { grid-template-columns: 1fr; background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,248,223,0.94)); }
       .cover-icons { position: relative; right: auto; top: auto; margin-top: 0.5rem; }
     }
     @media (max-width: 640px) {
       main { width: min(100% - 18px, 1200px); padding-top: 1.1rem; }
       .hero { padding: 2rem 0.7rem 1.7rem; }
-      .index-list { grid-template-columns: 1fr; }
+      .index-list { columns: 1; }
       .book-content { padding: 0.75rem; }
       .index-page, .answer-area { padding: 0.8rem; border-radius: 22px; }
       .storybook-spread { padding: 0.5rem; }
@@ -331,7 +313,7 @@
 <body>
   <div class="library-page">
     <header class="hero">
-<div class="hero-flower-row" aria-hidden="true">🌼 🐝 🦋 🌸</div>
+      <div class="hero-flower-row" aria-hidden="true">🌼 🐝 🦋 🌸</div>
       <h1>Riddle Garden Library</h1>
       <p class="tagline">A playful answer library for KimmySomeLove42 coloring books, where every riddle blooms into a clue, a creature, a plant, or a helpful garden friend.</p>
       <div class="top-actions">
@@ -346,7 +328,8 @@
         <h2>Open the garden book and match your riddles</h2>
         <p>Each book has an A to Z index and two riddle pages. Read each riddle, then peek at the sunny answer tag beside it.</p>
       </section>
-<section id="pnw-book" class="book-section pnw">
+
+      <section id="pnw-book" class="book-section pnw">
         <div class="book-cover">
           <span class="book-badge">Book 1 in the series</span>
           <h2>Pacific Northwest</h2>
@@ -359,31 +342,31 @@
             <p class="mini-note">Find each pollinator, plant, insect, and beneficial friend from this book.</p>
             <ol class="index-list">
               <li><span>A</span>Anna’s Hummingbird</li>
-<li><span>B</span>Blue Orchard Bee</li>
-<li><span>C</span>Carpenter Bee</li>
-<li><span>D</span>Dun’s Skipper</li>
-<li><span>E</span>Evening Primrose Moth</li>
-<li><span>F</span>Franklin’s Bumblebee</li>
-<li><span>G</span>Glorious Ladybug</li>
-<li><span>H</span>Horned Mason Bee</li>
-<li><span>I</span>Incense Cedar</li>
-<li><span>J</span>Juniper Hairstreak Butterfly</li>
-<li><span>K</span>Kissing Bat</li>
-<li><span>L</span>Lupine Blue Butterfly</li>
-<li><span>M</span>Milkweed Moth</li>
-<li><span>N</span>Nootka Rose Beetle</li>
-<li><span>O</span>Oregon Grape Moth</li>
-<li><span>P</span>Pacific Paper Wasp</li>
-<li><span>Q</span>Quaking Aspen Leaf Beetle</li>
-<li><span>R</span>Rufous Hummingbird</li>
-<li><span>S</span>Saddleback Caterpillar</li>
-<li><span>T</span>Tortoise Beetle</li>
-<li><span>U</span>Ulmus Elm Tree</li>
-<li><span>V</span>Variegated Meadowhawk Dragonfly</li>
-<li><span>W</span>White-Lined Sphinx Moth</li>
-<li><span>X</span>Xeno-Mantis</li>
-<li><span>Y</span>Yellow Garden Spider</li>
-<li><span>Z</span>Zinnia</li>
+              <li><span>B</span>Blue Orchard Bee</li>
+              <li><span>C</span>Carpenter Bee</li>
+              <li><span>D</span>Dun Skipper</li>
+              <li><span>E</span>Evening Primrose Moth</li>
+              <li><span>F</span>Franklin’s Bumblebee</li>
+              <li><span>G</span>Glorious Ladybug</li>
+              <li><span>H</span>Horned Mason Bee</li>
+              <li><span>I</span>Incense Cedar</li>
+              <li><span>J</span>Juniper Hairstreak Butterfly</li>
+              <li><span>K</span>Kissing Bat</li>
+              <li><span>L</span>Lupine Blue Butterfly</li>
+              <li><span>M</span>Milkweed Moth</li>
+              <li><span>N</span>Nootka Rose Beetle</li>
+              <li><span>O</span>Oregon Grape Moth</li>
+              <li><span>P</span>Pacific Paper Wasp</li>
+              <li><span>Q</span>Quaking Aspen Leaf Beetle</li>
+              <li><span>R</span>Rufous Hummingbird</li>
+              <li><span>S</span>Saddleback Caterpillar</li>
+              <li><span>T</span>Tortoise Beetle</li>
+              <li><span>U</span>Ulmus Elm Tree (American Elm)</li>
+              <li><span>V</span>Variegated Meadowhawk Dragonfly</li>
+              <li><span>W</span>White-lined Sphinx Moth</li>
+              <li><span>X</span>Xeno-Mantis</li>
+              <li><span>Y</span>Yellow Garden Spider</li>
+              <li><span>Z</span>Zinnia</li>
             </ol>
           </div>
 
@@ -395,199 +378,200 @@
                 <h4>Page 1 <span>Riddles 1 to 13</span></h4>
                 <ol class="riddle-list">
                   <li class="riddle-card">
-            <span class="riddle-number">1</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I hum at feeders, emerald and bright, hovering midair, a shimmering sight.</p>
-              <p class="answer-tag"><span>Answer</span> Anna’s Hummingbird</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">2</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I build my nest in hollow trees, buzzing blue with gentle ease.</p>
-              <p class="answer-tag"><span>Answer</span> Blue Orchard Bee</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">3</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I carve my home inside a tree, no honey here, just buzzing me!</p>
-              <p class="answer-tag"><span>Answer</span> Carpenter Bee</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">4</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Brown wings flashing, I skim the breeze, tiny skipper among the trees.</p>
-              <p class="answer-tag"><span>Answer</span> Dun’s Skipper</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">5</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">By moonlight’s glow on primrose sweet, I dance unseen where blossoms meet.</p>
-              <p class="answer-tag"><span>Answer</span> Evening Primrose Moth</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">6</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Rare and golden, I bumble near, a fragile hum that may disappear.</p>
-              <p class="answer-tag"><span>Answer</span> Franklin’s Bumblebee</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">7</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Bright and spotted, tiny and round, I feast on pests where they are found.</p>
-              <p class="answer-tag"><span>Answer</span> Glorious Ladybug</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">8</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Horns on my head, and mud my tool, I build strong homes, nature’s school.</p>
-              <p class="answer-tag"><span>Answer</span> Horned Mason Bee</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">9</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I stand up tall with scented grace, and offer bugs a hiding place.</p>
-              <p class="answer-tag"><span>Answer</span> Incense Cedar</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">10</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Green wings coppery in the light, near juniper blooms I take flight.</p>
-              <p class="answer-tag"><span>Answer</span> Juniper Hairstreak Butterfly</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">11</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Silent at dusk, I take to the air, a bat with kisses beyond compare.</p>
-              <p class="answer-tag"><span>Answer</span> Kissing Bat</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">12</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Soft wings of blue in summer’s air, I flutter near lupines without a care.</p>
-              <p class="answer-tag"><span>Answer</span> Lupine Blue Butterfly</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">13</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I rest on milkweed, striped and still, a quiet moth with nature’s skill.</p>
-              <p class="answer-tag"><span>Answer</span> Milkweed Moth</p>
-            </div>
-          </li>
+                    <span class="riddle-number">1</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I stand up tall with scented grace, and offer bugs a hiding place.</p>
+                      <p class="answer-tag"><span>Answer</span> Incense Cedar</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">2</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I’m green and spiky, low to the ground, a funky crawler that won’t be found.</p>
+                      <p class="answer-tag"><span>Answer</span> Saddleback Caterpillar</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">3</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I shimmer bright in emerald green, the tiniest thing you’ve ever seen.</p>
+                      <p class="answer-tag"><span>Answer</span> Anna’s Hummingbird</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">4</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I dive and twirl to hunt at night, I snatch up bugs mid-air in flight.</p>
+                      <p class="answer-tag"><span>Answer</span> Kissing Bat</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">5</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My wings are blue with black-framed tips, I flutter through where flowers sip.</p>
+                      <p class="answer-tag"><span>Answer</span> Lupine Blue Butterfly</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">6</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">With stripes I hover like a bird, I’m often seen but seldom heard.</p>
+                      <p class="answer-tag"><span>Answer</span> Rufous Hummingbird</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">7</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I flutter low, beneath moonlight showers, I find my feast in companion flowers.</p>
+                      <p class="answer-tag"><span>Answer</span> Evening Primrose Moth</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">8</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I chew on roses, shiny green, I sparkle where the thorns are seen.</p>
+                      <p class="answer-tag"><span>Answer</span> Nootka Rose Beetle</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">9</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I carve my home inside a tree, no honey here—just buzzing me!</p>
+                      <p class="answer-tag"><span>Answer</span> Carpenter Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">10</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My colors burst like rainbow cheer, I bloom for months and bring bugs near.</p>
+                      <p class="answer-tag"><span>Answer</span> Zinnia</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">11</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">Two tiny horns upon my face, I work with mud to build my place.</p>
+                      <p class="answer-tag"><span>Answer</span> Horned Mason Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">12</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I’m round and red with hidden might, I snack on pests from dawn to night.</p>
+                      <p class="answer-tag"><span>Answer</span> Glorious Ladybug</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">13</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I dart through clouds on wings so bright, a copper flash in springtime flight.</p>
+                      <p class="answer-tag"><span>Answer</span> Variegated Meadowhawk Dragonfly</p>
+                    </div>
+                  </li>
                 </ol>
               </article>
               <article class="storybook-page">
                 <h4>Page 2 <span>Riddles 14 to 26</span></h4>
                 <ol class="riddle-list" start="14">
                   <li class="riddle-card">
-            <span class="riddle-number">14</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Green and shiny, beneath the rose, I crawl where only the gardener knows.</p>
-              <p class="answer-tag"><span>Answer</span> Nootka Rose Beetle</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">15</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Orange wings flutter, grapevine bound, near berries sweet I can be found.</p>
-              <p class="answer-tag"><span>Answer</span> Oregon Grape Moth</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">16</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Paper home, I buzz around, striped in black and yellow sound.</p>
-              <p class="answer-tag"><span>Answer</span> Pacific Paper Wasp</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">17</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I nibble leaves of quaking trees, spotted fast upon the breeze.</p>
-              <p class="answer-tag"><span>Answer</span> Quaking Aspen Leaf Beetle</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">18</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Copper flash in the springtime sky, I dart with speed as flowers fly by.</p>
-              <p class="answer-tag"><span>Answer</span> Rufous Hummingbird</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">19</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Strange and spiny, I hide away, a saddle on leaves where I lay.</p>
-              <p class="answer-tag"><span>Answer</span> Saddleback Caterpillar</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">20</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Slow and shiny, I carry my dome, a beetle in leaves making a home.</p>
-              <p class="answer-tag"><span>Answer</span> Tortoise Beetle</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">21</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Majestic and tall, elm is my name, in shady groves I stake my claim.</p>
-              <p class="answer-tag"><span>Answer</span> Ulmus Elm Tree</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">22</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Wings of glass, I hover and dart, a dragonfly fierce with a gentle heart.</p>
-              <p class="answer-tag"><span>Answer</span> Variegated Meadowhawk Dragonfly</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">23</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">At dusk I rise with patterned wing, to the night flowers I softly cling.</p>
-              <p class="answer-tag"><span>Answer</span> White-Lined Sphinx Moth</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">24</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Alien stance, my legs hold true, a mantis rare with an emerald hue.</p>
-              <p class="answer-tag"><span>Answer</span> Xeno-Mantis</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">25</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">In webs I shine with threads of gold, guarding the garden, brave and bold.</p>
-              <p class="answer-tag"><span>Answer</span> Yellow Garden Spider</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">26</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Rainbow petals, colors grand, I bloom with joy across the land.</p>
-              <p class="answer-tag"><span>Answer</span> Zinnia</p>
-            </div>
-          </li>
+                    <span class="riddle-number">14</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I flit from flower to orchard tree, I buzz in spring and work with glee.</p>
+                      <p class="answer-tag"><span>Answer</span> Blue Orchard Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">15</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My wings are brown with dabs of gold, I skip near grass and never fold.</p>
+                      <p class="answer-tag"><span>Answer</span> Dun Skipper</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">16</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I vanish fast in mountain air, once common here, now sadly rare.</p>
+                      <p class="answer-tag"><span>Answer</span> Franklin’s Bumblebee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">17</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My green wings flash with copper shine, I sip from blooms on juniper vine.</p>
+                      <p class="answer-tag"><span>Answer</span> Juniper Hairstreak Butterfly</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">18</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I flutter near the leaves I crave, their milky sap I sweetly save.</p>
+                      <p class="answer-tag"><span>Answer</span> Milkweed Moth</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">19</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I’m born on berries deep and blue, I flutter dusk with golden hue.</p>
+                      <p class="answer-tag"><span>Answer</span> Oregon Grape Moth</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">20</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I build with paper, stripe and sleek, I buzz near roofs and garden creek.</p>
+                      <p class="answer-tag"><span>Answer</span> Pacific Paper Wasp</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">21</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I nibble leaves in trembling trees, I’m spotted quick on quaking breeze.</p>
+                      <p class="answer-tag"><span>Answer</span> Quaking Aspen Leaf Beetle</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">22</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My shell is smooth, my pace is slow, I shimmer where the beetles go.</p>
+                      <p class="answer-tag"><span>Answer</span> Tortoise Beetle</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">23</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My arms reach wide in summer shade, I stand through storms yet never fade.</p>
+                      <p class="answer-tag"><span>Answer</span> Ulmus Elm Tree (American Elm)</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">24</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I zoom with wings of red and black, I chase down gnats and don’t look back.</p>
+                      <p class="answer-tag"><span>Answer</span> White-lined Sphinx Moth</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">25</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I raise my arms like I’m in pose, my alien shape keeps all on their toes.</p>
+                      <p class="answer-tag"><span>Answer</span> Xeno-Mantis</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">26</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I guard the garden, gold and bold, I spin my threads with threads of gold.</p>
+                      <p class="answer-tag"><span>Answer</span> Yellow Garden Spider</p>
+                    </div>
+                  </li>
                 </ol>
               </article>
             </div>
           </div>
         </div>
       </section>
-<section id="southwest-book" class="book-section southwest">
+
+      <section id="southwest-book" class="book-section southwest">
         <div class="book-cover">
           <span class="book-badge">Book 2 in the series</span>
           <h2>Southwest</h2>
@@ -600,31 +584,31 @@
             <p class="mini-note">Find each pollinator, plant, insect, and beneficial friend from this book.</p>
             <ol class="index-list">
               <li><span>A</span>Agave Bee</li>
-<li><span>B</span>Black-Chinned Hummingbird</li>
-<li><span>C</span>Cactus Longhorned Beetle</li>
-<li><span>D</span>Dragonfly</li>
-<li><span>E</span>Elf Owl</li>
-<li><span>F</span>Fig Beetle</li>
-<li><span>G</span>Gila Woodpecker</li>
-<li><span>H</span>Horny Toad</li>
-<li><span>I</span>Isabella Tiger Moth</li>
-<li><span>J</span>Joshua Tree</li>
-<li><span>K</span>Krameria</li>
-<li><span>L</span>Leaping Lizard</li>
-<li><span>M</span>Mesquite Tree</li>
-<li><span>N</span>Net-Winged Beetle</li>
-<li><span>O</span>Orchard Bee</li>
-<li><span>P</span>Prickly Pear Cactus</li>
-<li><span>Q</span>Queen Carpenter Ant</li>
-<li><span>R</span>Resin Bee</li>
-<li><span>S</span>Sacred Datura</li>
-<li><span>T</span>Tarantula</li>
-<li><span>U</span>Underwing Moth</li>
-<li><span>V</span>Vinegaroon</li>
-<li><span>W</span>White Cabbage Butterfly</li>
-<li><span>X</span>Xylocopa Bee</li>
-<li><span>Y</span>Yellow Evening Primrose</li>
-<li><span>Z</span>Zigzag Spider</li>
+              <li><span>B</span>Black-Chinned Hummingbird</li>
+              <li><span>C</span>Cactus Longhorned Beetle</li>
+              <li><span>D</span>Dragonfly</li>
+              <li><span>E</span>Elf Owl</li>
+              <li><span>F</span>Fig Beetle</li>
+              <li><span>G</span>Gila Woodpecker</li>
+              <li><span>H</span>Horny Toad</li>
+              <li><span>I</span>Isabella Tiger Moth</li>
+              <li><span>J</span>Joshua Tree</li>
+              <li><span>K</span>Krameria</li>
+              <li><span>L</span>Leaping Lizard</li>
+              <li><span>M</span>Mesquite Tree</li>
+              <li><span>N</span>Nighthawk</li>
+              <li><span>O</span>Orchard Bee</li>
+              <li><span>P</span>Prickly Pear Cactus</li>
+              <li><span>Q</span>Queen Carpenter Ant</li>
+              <li><span>R</span>Resin Bee</li>
+              <li><span>S</span>Sacred Datura</li>
+              <li><span>T</span>Tarantula</li>
+              <li><span>U</span>Underwing Moth</li>
+              <li><span>V</span>Vinegaroon</li>
+              <li><span>W</span>White Cabbage Butterfly</li>
+              <li><span>X</span>Xylocopa Bee</li>
+              <li><span>Y</span>Yellow Evening Primrose</li>
+              <li><span>Z</span>Zigzag Spider</li>
             </ol>
           </div>
 
@@ -636,199 +620,200 @@
                 <h4>Page 1 <span>Riddles 1 to 13</span></h4>
                 <ol class="riddle-list">
                   <li class="riddle-card">
-            <span class="riddle-number">1</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I dart through sagebrush in desert heat, with wings of glass, I’m fast and fleet.</p>
-              <p class="answer-tag"><span>Answer</span> Dragonfly</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">2</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Golden and fuzzy, I bumble around, helping cactus bloom in dry, dusty ground.</p>
-              <p class="answer-tag"><span>Answer</span> Agave Bee</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">3</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Shiny and buzzing with a fruity beat, I show up near blossoms and sugary treat.</p>
-              <p class="answer-tag"><span>Answer</span> Fig Beetle</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">4</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Six-legged and strong, I tunnel and roam, starting a colony under my home.</p>
-              <p class="answer-tag"><span>Answer</span> Queen Carpenter Ant</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">5</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">At night I hoot with giant eyes, desert’s tiniest hunter in starry skies.</p>
-              <p class="answer-tag"><span>Answer</span> Elf Owl</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">6</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Black throat flashing in desert air, I hover at flowers without a care.</p>
-              <p class="answer-tag"><span>Answer</span> Black-Chinned Hummingbird</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">7</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">With twisted arms I touch the sky, while desert moths and breezes fly.</p>
-              <p class="answer-tag"><span>Answer</span> Joshua Tree</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">8</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Across warm rocks I dash and spring, a tiny desert acrobat thing.</p>
-              <p class="answer-tag"><span>Answer</span> Leaping Lizard</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">9</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Low desert flowers call bees near, with purple blooms from year to year.</p>
-              <p class="answer-tag"><span>Answer</span> Krameria</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">10</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Woolly as a youngster, winged when grown, I change my form when spring is shown.</p>
-              <p class="answer-tag"><span>Answer</span> Isabella Tiger Moth</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">11</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I scuttle low with armored might, my spines defend both day and night.</p>
-              <p class="answer-tag"><span>Answer</span> Horny Toad</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">12</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">With antennae long and a desert stride, I crawl where cactus arms grow wide.</p>
-              <p class="answer-tag"><span>Answer</span> Cactus Longhorned Beetle</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">13</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I creep on webs with zigzag spun, my silky trap catches bugs in sun.</p>
-              <p class="answer-tag"><span>Answer</span> Zigzag Spider</p>
-            </div>
-          </li>
+                    <span class="riddle-number">1</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I dart through sagebrush in desert heat, with wings of glass, I’m fast and fleet.</p>
+                      <p class="answer-tag"><span>Answer</span> Dragonfly</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">2</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">Golden and fuzzy, I bumble around, helping cactus bloom in dry, dusty ground.</p>
+                      <p class="answer-tag"><span>Answer</span> Agave Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">3</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My pink flowers pop in the driest land, low to the ground in desert sand.</p>
+                      <p class="answer-tag"><span>Answer</span> Krameria</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">4</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I’m striped and winged with red or green, buzzing through blossoms rarely seen.</p>
+                      <p class="answer-tag"><span>Answer</span> Cactus Longhorned Beetle</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">5</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I burrow and guard my silken brood, with eight bold legs and a spooky mood.</p>
+                      <p class="answer-tag"><span>Answer</span> Tarantula</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">6</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">From tree to tree, my pecking’s loud, in desert holes I’m nature-proud.</p>
+                      <p class="answer-tag"><span>Answer</span> Gila Woodpecker</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">7</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I sneak at dusk with feathers so small, big-eyed hunter with a tiny call.</p>
+                      <p class="answer-tag"><span>Answer</span> Elf Owl</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">8</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I buzz near cactus with golden glee, I am native to the Southwest what can I be?</p>
+                      <p class="answer-tag"><span>Answer</span> Orchard Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">9</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I bloom at night in ghostly white, a desert trumpet under moonlight.</p>
+                      <p class="answer-tag"><span>Answer</span> Sacred Datura</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">10</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My cactus is round, my fruit turns red, with paddle arms and prickly head.</p>
+                      <p class="answer-tag"><span>Answer</span> Prickly Pear Cactus</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">11</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I shimmer in black with a violet sheen, hover in place, barely seen.</p>
+                      <p class="answer-tag"><span>Answer</span> Underwing Moth</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">12</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">On cliffside walls I make my home, with armored tail I like to roam.</p>
+                      <p class="answer-tag"><span>Answer</span> Vinegaroon</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">13</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">Long and lean with spiny shell, I munch on cacti and hide so well.</p>
+                      <p class="answer-tag"><span>Answer</span> Horny Toad</p>
+                    </div>
+                  </li>
                 </ol>
               </article>
               <article class="storybook-page">
                 <h4>Page 2 <span>Riddles 14 to 26</span></h4>
                 <ol class="riddle-list" start="14">
                   <li class="riddle-card">
-            <span class="riddle-number">14</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Petals yellow in moon’s embrace, I bloom at night with gentle grace.</p>
-              <p class="answer-tag"><span>Answer</span> Yellow Evening Primrose</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">15</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Prickly pads with fruit I bear, I feed the desert when hunger’s near.</p>
-              <p class="answer-tag"><span>Answer</span> Prickly Pear Cactus</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">16</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I buzz inside blossoms orchard-bound, where citrus flowers can be found.</p>
-              <p class="answer-tag"><span>Answer</span> Orchard Bee</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">17</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I hum and bore with carpenter’s might, black and shiny, a buzzing sight.</p>
-              <p class="answer-tag"><span>Answer</span> Xylocopa Bee</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">18</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Tap, tap, tap in cactus tall, I make a home in a desert wall.</p>
-              <p class="answer-tag"><span>Answer</span> Gila Woodpecker</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">19</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Sticky treasures help me prepare a tiny nursery with careful care.</p>
-              <p class="answer-tag"><span>Answer</span> Resin Bee</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">20</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I offer shade and seedpods sweet, where desert friends can rest and eat.</p>
-              <p class="answer-tag"><span>Answer</span> Mesquite Tree</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">21</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">With patterned wings like little lace, I wander through the desert place.</p>
-              <p class="answer-tag"><span>Answer</span> Net-Winged Beetle</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">22</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">My trumpet blooms glow pale and bright, opening softly in the night.</p>
-              <p class="answer-tag"><span>Answer</span> Sacred Datura</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">23</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Hairy and gentle, I roam the night, not as scary as I look at first sight.</p>
-              <p class="answer-tag"><span>Answer</span> Tarantula</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">24</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Plain when resting, surprise when I fly, hidden bright colors flash through the sky.</p>
-              <p class="answer-tag"><span>Answer</span> Underwing Moth</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">25</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">Soft white wings in garden air, I flutter lightly here and there.</p>
-              <p class="answer-tag"><span>Answer</span> White Cabbage Butterfly</p>
-            </div>
-          </li>
-<li class="riddle-card">
-            <span class="riddle-number">26</span>
-            <div class="riddle-copy">
-              <p class="riddle-text">I lift my tail with a curious flair, but vinegar spray is my desert scare.</p>
-              <p class="answer-tag"><span>Answer</span> Vinegaroon</p>
-            </div>
-          </li>
+                    <span class="riddle-number">14</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">Snowy wings drift through garden air, landing on greens with gentle care.</p>
+                      <p class="answer-tag"><span>Answer</span> White Cabbage Butterfly</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">15</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">With spotted wings in fading light, I dance through dusk to hunt the night.</p>
+                      <p class="answer-tag"><span>Answer</span> Nighthawk</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">16</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">Tiny and fuzzy, I buzz near trees, orange blossoms and citrus please.</p>
+                      <p class="answer-tag"><span>Answer</span> Xylocopa Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">17</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I’m wood and shade with a twisty grin, home to bees and beetles within.</p>
+                      <p class="answer-tag"><span>Answer</span> Joshua Tree</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">18</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My yellow petals bloom at night, stretching wide with glowing light.</p>
+                      <p class="answer-tag"><span>Answer</span> Yellow Evening Primrose</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">19</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">With colors like bark, I hide in the day, then spread my wings and flutter away.</p>
+                      <p class="answer-tag"><span>Answer</span> Isabella Tiger Moth</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">20</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">Bright green and fast, I leap with pride, sun-bathing still, then off I glide.</p>
+                      <p class="answer-tag"><span>Answer</span> Leaping Lizard</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">21</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">Needles and shade from bark so rough, I grow where deserts are dry and tough.</p>
+                      <p class="answer-tag"><span>Answer</span> Mesquite Tree</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">22</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I shimmer in black with a violet sheen, hover in place, barely seen.</p>
+                      <p class="answer-tag"><span>Answer</span> Black-Chinned Hummingbird</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">23</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">Tiny and fuzzy, I buzz near trees, orange blossoms and citrus please.</p>
+                      <p class="answer-tag"><span>Answer</span> Orchard Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">24</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">Six-legged and strong, I tunnel and roam, starting a colony under my home.</p>
+                      <p class="answer-tag"><span>Answer</span> Queen Carpenter Ant</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">25</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">Sticky treasures help me prepare, a tiny nursery with careful care.</p>
+                      <p class="answer-tag"><span>Answer</span> Resin Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">26</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">With zigzag stripes and stealthy crawl, I’m a desert hunter, tiniest of all.</p>
+                      <p class="answer-tag"><span>Answer</span> Zigzag Spider</p>
+                    </div>
+                  </li>
                 </ol>
               </article>
             </div>
           </div>
         </div>
       </section>
-<section id="midwest-book" class="book-section midwest">
+
+      <section id="midwest-book" class="book-section midwest">
         <div class="book-cover">
           <span class="book-badge">Book 3 in the series</span>
           <h2>Midwest</h2>
@@ -841,268 +826,235 @@
             <p class="mini-note">Find each pollinator, plant, insect, and beneficial friend from this book.</p>
             <ol class="index-list">
               <li><span>A</span>American Bumblebee</li>
-<li><span>B</span>Black-eyed Susan</li>
-<li><span>C</span>Caddisfly</li>
-<li><span>D</span>Digger Bee</li>
-<li><span>E</span>Eastern Tiger Swallowtail</li>
-<li><span>F</span>Firefly</li>
-<li><span>G</span>Green Lacewing</li>
-<li><span>H</span>Half-black Bumblebee</li>
-<li><span>I</span>Indigo Bunting</li>
-<li><span>J</span>Jagged Ambush Bug</li>
-<li><span>K</span>Karner Blue Butterfly</li>
-<li><span>L</span>Leafcutter Bee</li>
-<li><span>M</span>Monarch Butterfly</li>
-<li><span>N</span>Nine-spotted Ladybug</li>
-<li><span>O</span>Orchard Orbweaver</li>
-<li><span>P</span>Paper Birch</li>
-<li><span>Q</span>Queen-of-the-Prairie</li>
-<li><span>R</span>Ruby-throated Hummingbird</li>
-<li><span>S</span>Sugar Maple</li>
-<li><span>T</span>Tree Frog</li>
-<li><span>U</span>Unicorn Clubtail Dragonfly</li>
-<li><span>V</span>Velvet Ant</li>
-<li><span>W</span>Water Strider</li>
-<li><span>X</span>Xylobiont Beetle</li>
-<li><span>Y</span>Yellow-banded Bumble Bee</li>
-<li><span>Z</span>Zebra Jumping Spider</li>
+              <li><span>B</span>Black-eyed Susan</li>
+              <li><span>C</span>Caddisfly</li>
+              <li><span>D</span>Digger Bee</li>
+              <li><span>E</span>Eastern Tiger Swallowtail</li>
+              <li><span>F</span>Firefly</li>
+              <li><span>G</span>Green Lacewing</li>
+              <li><span>H</span>Honey Bee</li>
+              <li><span>I</span>Indigo Bunting</li>
+              <li><span>J</span>Jagged Ambush Bug</li>
+              <li><span>K</span>Karner Blue Butterfly</li>
+              <li><span>L</span>Leafcutter Bee</li>
+              <li><span>M</span>Monarch Butterfly</li>
+              <li><span>N</span>Nine-spotted Ladybug</li>
+              <li><span>O</span>Orchard Orbweaver</li>
+              <li><span>P</span>Paper Birch</li>
+              <li><span>Q</span>Queen-of-the-Prairie</li>
+              <li><span>R</span>Ruby-throated Hummingbird</li>
+              <li><span>S</span>Sugar Maple</li>
+              <li><span>T</span>Tree Frog</li>
+              <li><span>U</span>Unicorn Clubtail Dragonfly</li>
+              <li><span>V</span>Velvet Ant</li>
+              <li><span>W</span>Water Strider</li>
+              <li><span>X</span>Xylobiont Beetle</li>
+              <li><span>Y</span>Yellow-banded Bumble Bee</li>
+              <li><span>Z</span>Zebra Jumping Spider</li>
             </ol>
           </div>
 
-<section class="book-section midwest-section" id="midwest">
-  <h2>Midwest Riddles + Answers</h2>
-  <p class="section-intro">Answers for <em>Earth’s Pollinators, Insects, and Beneficial Friends of the Midwest</em>.</p>
-
-  <div class="riddle-pages">
-
-    <div class="riddle-page">
-      <h3>Page 1</h3>
-
-      <ol class="riddle-list">
-
-        <li class="riddle-card">
-          <span class="riddle-number">1</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I glow in the darkness on warm summer nights, floating through meadows with tiny green lights.</p>
-            <p class="answer-tag"><span>Answer</span> Firefly</p>
+          <div class="answer-area">
+            <h3>Riddle Pages + Answer Tags</h3>
+            <p class="mini-note">Read the riddle, then peek at the answer beside it, just like opening a secret garden clue.</p>
+            <div class="storybook-spread">
+              <article class="storybook-page">
+                <h4>Page 1 <span>Riddles 1 to 13</span></h4>
+                <ol class="riddle-list">
+                  <li class="riddle-card">
+                    <span class="riddle-number">1</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I glow in the darkness on warm summer nights, floating through meadows with tiny green lights.</p>
+                      <p class="answer-tag"><span>Answer</span> Firefly</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">2</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I buzz underground in tunnels so deep, making small nursery rooms where my babies can sleep.</p>
+                      <p class="answer-tag"><span>Answer</span> Digger Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">3</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My blue little feathers shine bright as the sky, through forests and fields you may see me fly.</p>
+                      <p class="answer-tag"><span>Answer</span> Indigo Bunting</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">4</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I wear fuzzy yellow bands and buzz flower to flower, helping wild plants bloom with pollinating power.</p>
+                      <p class="answer-tag"><span>Answer</span> Yellow-banded Bumble Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">5</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I skate across ponds without sinking below, with long skinny legs helping me glide as I go.</p>
+                      <p class="answer-tag"><span>Answer</span> Water Strider</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">6</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I flash orange and black on a long autumn flight, traveling thousands of miles before wintertime night.</p>
+                      <p class="answer-tag"><span>Answer</span> Monarch Butterfly</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">7</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My blossoms are golden with dark centers bright, growing in prairies and fields full of light.</p>
+                      <p class="answer-tag"><span>Answer</span> Black-eyed Susan</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">8</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I climb through the orchard where apple trees grow, collecting sweet nectar wherever I go.</p>
+                      <p class="answer-tag"><span>Answer</span> Honey Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">9</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I spin giant round webs with silvery thread, waiting for insects to wander ahead.</p>
+                      <p class="answer-tag"><span>Answer</span> Orchard Orbweaver</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">10</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I shimmer bright green with lace looking wings, guarding the garden from pest buggy things.</p>
+                      <p class="answer-tag"><span>Answer</span> Green Lacewing</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">11</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My leaves turn bright colors of orange and red, and sweet maple syrup comes from me instead.</p>
+                      <p class="answer-tag"><span>Answer</span> Sugar Maple</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">12</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I look like a tiny dragon with wings clear and wide, hunting mosquitoes near wetlands with pride.</p>
+                      <p class="answer-tag"><span>Answer</span> Unicorn Clubtail Dragonfly</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">13</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I creep through the garden with spots on my shell, eating tiny aphids that farmers know well.</p>
+                      <p class="answer-tag"><span>Answer</span> Nine-spotted Ladybug</p>
+                    </div>
+                  </li>
+                </ol>
+              </article>
+              <article class="storybook-page">
+                <h4>Page 2 <span>Riddles 14 to 26</span></h4>
+                <ol class="riddle-list" start="14">
+                  <li class="riddle-card">
+                    <span class="riddle-number">14</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I build tiny homes from soft pieces of leaves, rolling green circles with wonderful ease.</p>
+                      <p class="answer-tag"><span>Answer</span> Leafcutter Bee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">15</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My bark peels like paper in strips thin and white, standing by forests and lakes in soft light.</p>
+                      <p class="answer-tag"><span>Answer</span> Paper Birch</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">16</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I leap through the grass with huge curious eyes, croaking near wetlands beneath rainy skies.</p>
+                      <p class="answer-tag"><span>Answer</span> Tree Frog</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">17</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I wear stripes like a tiger with wings large and bright, floating through flowers in warm golden light.</p>
+                      <p class="answer-tag"><span>Answer</span> Eastern Tiger Swallowtail</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">18</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I hide beneath flowers with arms ready tight, grabbing small insects with lightning quick might.</p>
+                      <p class="answer-tag"><span>Answer</span> Jagged Ambush Bug</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">19</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">My flowers are fluffy and pink as can be, waving through wetlands for butterflies to see.</p>
+                      <p class="answer-tag"><span>Answer</span> Queen-of-the-Prairie</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">20</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I scamper through grasses with fuzzy red flair, though people call me an ant, I’m a wasp with great care.</p>
+                      <p class="answer-tag"><span>Answer</span> Velvet Ant</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">21</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I flutter with blue wings so tiny and rare, depending on lupine flowers with care.</p>
+                      <p class="answer-tag"><span>Answer</span> Karner Blue Butterfly</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">22</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I crawl through old forests where fallen trees stay, helping break rotting wood slowly away.</p>
+                      <p class="answer-tag"><span>Answer</span> Xylobiont Beetle</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">23</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I’m a big fuzzy helper with thumbs up so wide, buzzing through prairies with flowers beside.</p>
+                      <p class="answer-tag"><span>Answer</span> American Bumblebee</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">24</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I rest on wildflowers with long delicate wings, starting my life in streams among watery things.</p>
+                      <p class="answer-tag"><span>Answer</span> Caddisfly</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">25</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I jump through the garden with stripes black and white, pouncing on insects with excellent sight.</p>
+                      <p class="answer-tag"><span>Answer</span> Zebra Jumping Spider</p>
+                    </div>
+                  </li>
+                  <li class="riddle-card">
+                    <span class="riddle-number">26</span>
+                    <div class="riddle-copy">
+                      <p class="riddle-text">I zip through the flowers with wings fast as light, sipping sweet nectar from morning till night.</p>
+                      <p class="answer-tag"><span>Answer</span> Ruby-throated Hummingbird</p>
+                    </div>
+                  </li>
+                </ol>
+              </article>
+            </div>
           </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">2</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I buzz underground in tunnels so deep, making small nursery rooms where my babies can sleep.</p>
-            <p class="answer-tag"><span>Answer</span> Digger Bee</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">3</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">My blue little feathers shine bright as the sky, through forests and fields you may see me fly.</p>
-            <p class="answer-tag"><span>Answer</span> Indigo Bunting</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">4</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I wear fuzzy yellow bands and buzz flower to flower, helping wild plants bloom with pollinating power.</p>
-            <p class="answer-tag"><span>Answer</span> Yellow-banded Bumble Bee</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">5</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I skate across ponds without sinking below, with long skinny legs helping me glide as I go.</p>
-            <p class="answer-tag"><span>Answer</span> Water Strider</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">6</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I flash orange and black on a long autumn flight, traveling thousands of miles before wintertime night.</p>
-            <p class="answer-tag"><span>Answer</span> Monarch Butterfly</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">7</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">My blossoms are golden with dark centers bright, growing in prairies and fields full of light.</p>
-            <p class="answer-tag"><span>Answer</span> Black-eyed Susan</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">8</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I climb through the orchard where apple trees grow, collecting sweet nectar wherever I go.</p>
-            <p class="answer-tag"><span>Answer</span> Honey Bee</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">9</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I spin giant round webs with silvery thread, waiting for insects to wander ahead.</p>
-            <p class="answer-tag"><span>Answer</span> Orchard Orbweaver</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">10</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I shimmer bright green with lace looking wings, guarding the garden from pest buggy things.</p>
-            <p class="answer-tag"><span>Answer</span> Green Lacewing</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">11</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">My leaves turn bright colors of orange and red, and sweet maple syrup comes from me instead.</p>
-            <p class="answer-tag"><span>Answer</span> Sugar Maple</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">12</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I look like a tiny dragon with wings clear and wide, hunting mosquitoes near wetlands with pride.</p>
-            <p class="answer-tag"><span>Answer</span> Unicorn Clubtail</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">13</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I creep through the garden with spots on my shell, eating tiny aphids that farmers know well.</p>
-            <p class="answer-tag"><span>Answer</span> Nine-spotted Ladybug</p>
-          </div>
-        </li>
-
-      </ol>
-    </div>
-
-    <div class="riddle-page">
-      <h3>Page 2</h3>
-
-      <ol class="riddle-list" start="14">
-
-        <li class="riddle-card">
-          <span class="riddle-number">14</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I build tiny homes from soft pieces of leaves, rolling green circles with wonderful ease.</p>
-            <p class="answer-tag"><span>Answer</span> Leafcutter Bee</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">15</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">My bark peels like paper in strips thin and white, standing by forests and lakes in soft light.</p>
-            <p class="answer-tag"><span>Answer</span> Paper Birch</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">16</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I leap through the grass with huge curious eyes, croaking near wetlands beneath rainy skies.</p>
-            <p class="answer-tag"><span>Answer</span> Tree Frog</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">17</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I wear stripes like a tiger with wings large and bright, floating through flowers in warm golden light.</p>
-            <p class="answer-tag"><span>Answer</span> Eastern Tiger Swallowtail</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">18</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I hide beneath flowers with arms ready tight, grabbing small insects with lightning quick might.</p>
-            <p class="answer-tag"><span>Answer</span> Jagged Ambush Bug</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">19</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">My flowers are fluffy and pink as can be, waving through wetlands for butterflies to see.</p>
-            <p class="answer-tag"><span>Answer</span> Queen-of-the-Prairie</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">20</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I scamper through grasses with fuzzy red flair, though people call me an ant, I’m a wasp with great care.</p>
-            <p class="answer-tag"><span>Answer</span> Velvet Ant</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">21</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I flutter with blue wings so tiny and rare, depending on lupine flowers with care.</p>
-            <p class="answer-tag"><span>Answer</span> Karner Blue Butterfly</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">22</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I crawl through old forests where fallen trees stay, helping break rotting wood slowly away.</p>
-            <p class="answer-tag"><span>Answer</span> Xylobiont Beetle</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">23</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I’m a big fuzzy helper with thumbs up so wide, buzzing through prairies with flowers beside.</p>
-            <p class="answer-tag"><span>Answer</span> American Bumblebee</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">24</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I rest on wildflowers with long delicate wings, starting my life in streams among watery things.</p>
-            <p class="answer-tag"><span>Answer</span> Caddisfly</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">25</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I jump through the garden with stripes black and white, pouncing on insects with excellent sight.</p>
-            <p class="answer-tag"><span>Answer</span> Zebra Jumping Spider</p>
-          </div>
-        </li>
-
-        <li class="riddle-card">
-          <span class="riddle-number">26</span>
-          <div class="riddle-copy">
-            <p class="riddle-text">I zip through the flowers with wings fast as light, sipping sweet nectar from morning till night.</p>
-            <p class="answer-tag"><span>Answer</span> Ruby-throated Hummingbird</p>
-          </div>
-        </li>
-
-      </ol>
-    </div>
-
-  </div>
-</section>
         </div>
       </section>
+
       <section class="footer-card">
         <h2>Happy coloring and exploring!</h2>
         <p>Thanks for visiting the Riddle Garden Library from KimmySomeLove42.</p>
