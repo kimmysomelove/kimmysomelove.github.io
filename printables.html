@@ -5,160 +5,174 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free Printables | KimmySomeLove42</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Chewy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      background: #fffbe6;
-      color: #24491f;
+      background: #fffbe8;
+      color: #214b1e;
       font-family: "Fredoka", sans-serif;
     }
 
     .hero {
-      background: linear-gradient(135deg, #4f8f24, #78b83b);
+      background: linear-gradient(135deg, #3f8d22, #77bb36);
       color: white;
       text-align: center;
-      padding: 55px 20px 45px;
-      border-bottom: 8px solid #d6ef67;
+      padding: 55px 20px;
+      border-bottom: 10px solid #d8f35f;
     }
 
     .hero h1 {
       font-family: "Chewy", cursive;
-      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-size: clamp(3rem, 8vw, 6rem);
       margin: 0;
+      text-shadow: 4px 4px 0 #235d18;
       letter-spacing: 2px;
-      text-shadow: 4px 4px 0 #2b5e1d;
     }
 
     .hero p {
       font-size: 1.35rem;
-      max-width: 780px;
+      font-weight: 700;
+      max-width: 850px;
       margin: 18px auto 0;
-      font-weight: 600;
     }
 
-    .page-wrap {
-      max-width: 1050px;
-      margin: 50px auto;
-      padding: 0 20px;
+    .wrap {
+      max-width: 1250px;
+      margin: 45px auto;
+      padding: 0 22px;
     }
 
-    .printable-card {
+    .card {
       background: white;
-      border-radius: 30px;
+      border: 5px solid #d6ef67;
+      border-radius: 32px;
       padding: 35px;
       box-shadow: 0 10px 28px rgba(50, 70, 20, 0.18);
-      border: 4px solid #d6ef67;
       text-align: center;
     }
 
     .badge {
       display: inline-block;
-      background: #f8d75b;
-      color: #2e5f20;
-      padding: 10px 20px;
+      background: #ffd95a;
+      color: #28551e;
+      padding: 10px 22px;
       border-radius: 999px;
-      font-weight: 700;
-      font-size: 1rem;
-      margin-bottom: 15px;
+      font-weight: 800;
+      margin-bottom: 16px;
     }
 
-    .printable-card h2 {
+    h2 {
       font-family: "Chewy", cursive;
-      color: #2e6822;
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      margin: 10px 0;
-      text-shadow: 2px 2px 0 #f8d75b;
+      font-size: clamp(2.4rem, 6vw, 4.8rem);
+      color: #2e7222;
+      margin: 10px 0 16px;
+      text-shadow: 3px 3px 0 #ffd95a;
     }
 
-    .printable-card p {
-      font-size: 1.2rem;
+    .intro {
+      max-width: 850px;
+      margin: 0 auto 30px;
+      font-size: 1.25rem;
       line-height: 1.55;
-      max-width: 760px;
-      margin: 15px auto;
+      font-weight: 600;
     }
 
-    .preview {
-      margin: 30px auto;
-      max-width: 620px;
-      border-radius: 22px;
-      overflow: hidden;
-      border: 5px solid #f8d75b;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.16);
-      background: #fff;
+    .pages {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin: 35px 0;
+      align-items: start;
     }
 
-    .preview img {
+    .page-preview {
+      background: #fffdf4;
+      border: 5px solid #ffd95a;
+      border-radius: 24px;
+      padding: 14px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+    }
+
+    .page-preview h3 {
+      font-family: "Chewy", cursive;
+      font-size: 2rem;
+      color: #2e7222;
+      margin: 0 0 12px;
+    }
+
+    .page-preview img {
       width: 100%;
+      height: auto;
       display: block;
+      border-radius: 16px;
     }
 
     .button-row {
+      margin: 34px 0 25px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 18px;
-      margin-top: 28px;
     }
 
     .btn {
       display: inline-block;
       background: #a7db2b;
-      color: #24491f;
+      color: #234719;
       text-decoration: none;
-      font-weight: 800;
-      font-size: 1.2rem;
-      padding: 16px 28px;
-      border-radius: 16px;
-      box-shadow: 0 5px 0 #6d9d19;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      font-weight: 900;
+      font-size: 1.25rem;
+      padding: 17px 30px;
+      border-radius: 18px;
+      box-shadow: 0 6px 0 #6d9d19;
     }
 
     .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 0 #6d9d19;
+      transform: translateY(-2px);
     }
 
-    .btn.secondary {
-      background: #f8d75b;
-      box-shadow: 0 5px 0 #d39b1c;
+    .btn.home {
+      background: #ffd95a;
+      box-shadow: 0 6px 0 #d49e22;
     }
 
     .tips {
       margin-top: 35px;
-      background: #f3ffd6;
-      border-radius: 24px;
-      padding: 24px;
-      border: 3px dashed #8cc63f;
+      background: #f0ffd0;
+      border: 4px dashed #7ac943;
+      border-radius: 28px;
+      padding: 28px;
     }
 
     .tips h3 {
       font-family: "Chewy", cursive;
-      font-size: 2rem;
-      margin: 0 0 10px;
-      color: #2e6822;
+      font-size: 2.5rem;
+      color: #2e7222;
+      margin: 0 0 12px;
     }
 
     .tips p {
-      margin: 8px auto;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 8px 0;
+    }
+
+    .footer-note {
+      margin-top: 28px;
       font-size: 1.1rem;
+      font-weight: 700;
     }
 
-    .back-home {
-      text-align: center;
-      margin: 40px 0;
-    }
+    @media (max-width: 850px) {
+      .pages {
+        grid-template-columns: 1fr;
+      }
 
-    .back-home a {
-      color: #2e6822;
-      font-weight: 800;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-
-    .back-home a:hover {
-      text-decoration: underline;
+      .card {
+        padding: 24px 16px;
+      }
     }
   </style>
 </head>
@@ -170,49 +184,58 @@
     <p>Whimsical nature fun for kids, gardeners, homeschool families, pollinator lovers, and Earth-friendly friends.</p>
   </section>
 
-  <main class="page-wrap">
+  <main class="wrap">
+    <section class="card">
 
-    <section class="printable-card">
       <div class="badge">🐝 New Freebie</div>
 
       <h2>Free Pollinator Activity & Coloring Pages</h2>
 
-      <p>
-        Download this sweet two-page printable filled with friendly flowers, buzzing bees,
-        butterfly magic, and nature-loving fun.
-      </p>
+      <div class="intro">
+        <p>
+          Download this sweet two-page printable filled with friendly flowers, buzzing bees,
+          butterfly magic, and nature-loving fun.
+        </p>
+        <p>
+          Page one is colorful and cheerful. Page two is black and white so kids can color their own pollinator garden.
+        </p>
+      </div>
 
-      <p>
-        Page one is colorful and cheerful. Page two is black and white so kids can color their own pollinator garden.
-      </p>
+      <div class="pages">
+        <div class="page-preview">
+          <h3>🌸 Color Page</h3>
+          <img src="images/pollinator-printable-color.png" alt="Colorful free pollinator printable with friendly flowers, bees, and garden tips">
+        </div>
 
-      <div class="preview">
-        <img src="images/pollinator-printable-preview.png" alt="Preview of the free KimmySomeLove42 pollinator printable with flowers, bees, and coloring activities">
+        <div class="page-preview">
+          <h3>🎨 Coloring Page</h3>
+          <img src="images/pollinator-printable-coloring.png" alt="Black and white pollinator coloring page with flowers, bees, butterflies, and garden friends">
+        </div>
       </div>
 
       <div class="button-row">
         <a class="btn" href="printables/KimmySomeLove42_Free_Pollinator_Printable-1.pdf" target="_blank">
-          🐝 Download Free PDF
+          🐝 Download the Free PDF
         </a>
 
-        <a class="btn secondary" href="index.html">
+        <a class="btn home" href="index.html">
           🌻 Back to Home
         </a>
       </div>
 
       <div class="tips">
         <h3>🌸 Be Kind to Pollinators</h3>
-        <p>Plant a variety of flowers.</p>
-        <p>Skip pesticides when you can.</p>
-        <p>Offer water, shelter, and safe garden spaces.</p>
-        <p>Let some flowers go to seed for birds and tiny nature friends.</p>
+        <p>🐝 Plant a variety of flowers.</p>
+        <p>🦋 Skip pesticides when you can.</p>
+        <p>💧 Offer water, shelter, and safe garden spaces.</p>
+        <p>🌼 Let some flowers go to seed for birds and tiny nature friends.</p>
       </div>
+
+      <div class="footer-note">
+        💛 Together we can help nature bloom. 💛
+      </div>
+
     </section>
-
-    <div class="back-home">
-      <a href="index.html">← Back to Home</a>
-    </div>
-
   </main>
 
 </body>
